@@ -1,14 +1,18 @@
 # JavaScript Arrays
 
-## Overview
+## Objectives
++ Explain what an array is and why we wuse it
++ Create an array
++ Add an element to an array
++ Access an element in an array
++ Replace an element in an array
++ Delete an element from an array
++ Iterate over an array
 
-* Creation
-* Adding an Element
-* Accessing an Element
-* Replacing an Element
-* Removing an Element
-* Iteration
-* Resources
+
+## Instructions
+
+You'll be coding along in `array.js`. There are tests to run to make sure you're on the right track.
 
 ## Creation
 
@@ -37,6 +41,8 @@ Array constructor is another approach to making a new JavaScript array.
 ```javascript
 var evenNumbers = new Array();
 ```
+
++ Define a function called `createArray`. The function does not need to accept an argument, but should return an array of the strings `snickers`, `hundred grand`, `kitkat`, and `skittles`.
 
 ## Adding an Element
 
