@@ -71,6 +71,8 @@ evenNumbers[3] = 8;
 
 Notice that since we didn't tell JavaScript what value we wanted the third element to have, it defaulted to `undefined`.
 
++ Define a function `addElementToArray`, that adds `A Christmas Story` to the end of the array. The function should return the entire array.
+
 ## Accessing an Element
 
 You can get elements out of arrays if you know their index. Just like in Ruby, array elements' indexes start at 0 and increment by 1, so the first element's index is 0, the second element's index is 1, the third element's is 2, etc.
@@ -89,6 +91,8 @@ console.log(entrepreneurs[2] + bio);
 entrepreneurs[9];
 ```
 
++ Define a function `accessElementFromArray`. The function should return the third item in the array.
+
 ## Replacing an Element
 
 Replacing the value of an element in a JavaScript array is very similar to the equivalent in Ruby. Say you have an array of author names, and you would like to replace the second element, J. D. Salinger, with the string "Harper Lee". Since the second element has an index of 1, you simply reassign using the index number:
@@ -99,6 +103,8 @@ var authors = ["ray bradbury", "j. d. salinger", "maya angelou"];
 authors[1] = "harper lee";
 // authors is now ["ray bradbury", "harper lee", "maya angelou"];
 ```
+
++ Define a function `replaceElementInArray` which replaces the second item in the array with `"Carter"`. The function should return the replaced item from the array.
 
 ## Removing an Element
 
@@ -129,6 +135,8 @@ var removedFishes = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
 // myFish is ['parrot', 'anemone', 'blue', 'trumpet', 'surgeon']
 // removedFishes is ['angel', 'clown']
 ```
+
++ Define a function `removeElementFromArray` that removes the third and fourth item from the array, and adds "Roast Chicken" to the end, using the `splice` function. The function should return the updated array.
 
 ## Iteration
 
