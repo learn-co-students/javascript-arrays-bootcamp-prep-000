@@ -179,6 +179,9 @@ letters.forEach(function(letter, index) {
 // 8. s
 ```
 
++ Write a function `iterateArray`. The body of the function should contain an array of the numbers 1-10. The body should also contain an empty array, stored in the variable `newNums`. You should iterate over the array of numbers, add 5 to each number, and store the larger number in the array `newNums`. The function should return the `newNums` array.
+
+
 ## Resources
 
 * [MDN - Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)

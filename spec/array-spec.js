@@ -36,5 +36,12 @@ describe('#removeElementFromArray', function(){
 });
 
 
+describe('#iterateArray', function(){
+  it("should iterate over an original array to create a new array with updated elements from the original array'", function(){
+      expect(iterateArray()).toEqual([6, 7, 8, 9, 10, 11, 12, 13, 14, 15])
+  });
+
+});
+
 
 
