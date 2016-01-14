@@ -1,7 +1,7 @@
 # JavaScript Arrays
 
 ## Objectives
-+ Explain what an array is and why we wuse it
++ Explain what an array is and why we use it
 + Create an array
 + Add an element to an array
 + Access an element in an array
@@ -16,7 +16,7 @@ You'll be coding along in `array.js`. There are tests to run to make sure you're
 
 ## Creation
 
-JavaScript arrays can contain any types of values and they can be of mixed types. You can create arrays in two different ways, the most common of which is to list values in a pair of square brackets. These are called array literals. 
+JavaScript arrays can contain any types of values and they can be of mixed types, just like in Ruby. You can create arrays in two different ways, the most common of which is to list values in a pair of square brackets. These are called array literals. 
 
 Syntax:
 
@@ -36,7 +36,7 @@ var weirdGreeting = [ "he", 110, "w", 0, "r", {"1":"d"} ];
 var empty = [];
 ```
 
-Array constructor is another approach to making a new JavaScript array.
+The Array constructor is another approach to making a new JavaScript array.
 
 ```javascript
 var evenNumbers = new Array();
@@ -57,7 +57,7 @@ superheroines.push("wonder woman");
 
 To add elements to an array at specific indexes, you use the bracket equals notation. This notation will also work for replacing values.
 
-Let's add three elements to our empty `evenNumbers` array. First, decide what index you want your element to have, remember the first element in an array has an index of 0. Then you wrap this desired index in brackets, place the array's variable name directly to the left. Remember to place an equal sign to the right of the closing square bracket, and put the value that you want your element to have after the equal sign.
+Let's add three elements to our empty `evenNumbers` array. First, decide what index you want your element to have (remember the first element in an array has an index of 0). Then you wrap this desired index in brackets, place the array's variable name directly to the left. Remember to place an equal sign to the right of the closing square bracket, and put the value that you want your element to have after the equal sign.
 
 ```javascript
 var evenNumbers = new Array();
@@ -70,6 +70,7 @@ evenNumbers[3] = 8;
 ```
 
 Notice that since we didn't tell JavaScript what value we wanted the third element to have, it defaulted to `undefined`.
+
 
 + Define a function `addElementToArray`, that accepts an array as a parameter. The function should  add `"A Christmas Story"` to the end of the array. The function should return the entire array.
 
