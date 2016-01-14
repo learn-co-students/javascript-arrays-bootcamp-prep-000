@@ -71,7 +71,7 @@ evenNumbers[3] = 8;
 
 Notice that since we didn't tell JavaScript what value we wanted the third element to have, it defaulted to `undefined`.
 
-+ Define a function `addElementToArray`, that adds `A Christmas Story` to the end of the array. The function should return the entire array.
++ Define a function `addElementToArray`, that accepts an array as a parameter. The function should  add `"A Christmas Story"` to the end of the array. The function should return the entire array.
 
 ## Accessing an Element
 
@@ -91,7 +91,7 @@ console.log(entrepreneurs[2] + bio);
 entrepreneurs[9];
 ```
 
-+ Define a function `accessElementFromArray`. The function should return the third item in the array.
++ Define a function `accessElementFromArray`. The function should accept an array of states as an argument and return the third item in the array.
 
 ## Replacing an Element
 
@@ -104,7 +104,7 @@ authors[1] = "harper lee";
 // authors is now ["ray bradbury", "harper lee", "maya angelou"];
 ```
 
-+ Define a function `replaceElementInArray` which replaces the second item in the array with `"Carter"`. The function should return the replaced item from the array.
++ Define a function `replaceElementInArray` which should accept an array of names as an argument. The function should replace the second item in the array with `"Carter"`. The function should return the replaced item from the array.
 
 ## Removing an Element
 
@@ -136,7 +136,7 @@ var removedFishes = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
 // removedFishes is ['angel', 'clown']
 ```
 
-+ Define a function `removeElementFromArray` that removes the third and fourth item from the array, and adds "Roast Chicken" to the end, using the `splice` function. The function should return the updated array.
++ Define a function `removeElementFromArray` that take an array of dishes as a paramet. The function should remove the third and fourth item from the array, and adds "Roast Chicken" to the end, using the `splice` function. The function should return the updated array.
 
 ## Iteration
 
@@ -179,7 +179,7 @@ letters.forEach(function(letter, index) {
 // 8. s
 ```
 
-+ Write a function `iterateArray`. The body of the function should contain an array of the numbers 1-10. The body should also contain an empty array, stored in the variable `newNums`. You should iterate over the array of numbers, add 5 to each number, and store the larger number in the array `newNums`. The function should return the `newNums` array.
++ Write a function `iterateArray` that accepts an array of numbers as a parameter. The body should also contain an empty array, stored in the variable `newNums`. You should iterate over the array of numbers, add 5 to each number, and store the larger number in the array `newNums`. The function should return the `newNums` array.
 
 
 ## Resources
