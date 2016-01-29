@@ -1,18 +1,22 @@
 # JavaScript Arrays
 
-## Overview
+## Objectives
++ Explain what an array is and why we use it
++ Create an array
++ Add an element to an array
++ Access an element in an array
++ Replace an element in an array
++ Delete an element from an array
++ Iterate over an array
 
-* Creation
-* Adding an Element
-* Accessing an Element
-* Replacing an Element
-* Removing an Element
-* Iteration
-* Resources
+
+## Instructions
+
+You'll be coding along in `array.js`. There are tests to run to make sure you're on the right track.
 
 ## Creation
 
-JavaScript arrays can contain any types of values and they can be of mixed types. You can create arrays in two different ways, the most common of which is to list values in a pair of square brackets. These are called array literals. 
+JavaScript arrays can contain any types of values and they can be of mixed types, just like in Ruby. You can create arrays in two different ways, the most common of which is to list values in a pair of square brackets. These are called array literals. 
 
 Syntax:
 
@@ -32,11 +36,13 @@ var weirdGreeting = [ "he", 110, "w", 0, "r", {"1":"d"} ];
 var empty = [];
 ```
 
-Array constructor is another approach to making a new JavaScript array.
+The Array constructor is another approach to making a new JavaScript array.
 
 ```javascript
 var evenNumbers = new Array();
 ```
+
++ Define a function called `createArray`. The function does not need to accept an argument, but should return an array of the strings `snickers`, `hundred grand`, `kitkat`, and `skittles`.
 
 ## Adding an Element
 
@@ -51,7 +57,7 @@ superheroines.push("wonder woman");
 
 To add elements to an array at specific indexes, you use the bracket equals notation. This notation will also work for replacing values.
 
-Let's add three elements to our empty `evenNumbers` array. First, decide what index you want your element to have, remember the first element in an array has an index of 0. Then you wrap this desired index in brackets, place the array's variable name directly to the left. Remember to place an equal sign to the right of the closing square bracket, and put the value that you want your element to have after the equal sign.
+Let's add three elements to our empty `evenNumbers` array. First, decide what index you want your element to have (remember the first element in an array has an index of 0). Then you wrap this desired index in brackets, place the array's variable name directly to the left. Remember to place an equal sign to the right of the closing square bracket, and put the value that you want your element to have after the equal sign.
 
 ```javascript
 var evenNumbers = new Array();
@@ -64,6 +70,9 @@ evenNumbers[3] = 8;
 ```
 
 Notice that since we didn't tell JavaScript what value we wanted the third element to have, it defaulted to `undefined`.
+
+
++ Define a function `addElementToArray`, that accepts an array as a parameter. The function should  add `"A Christmas Story"` to the end of the array. The function should return the entire array.
 
 ## Accessing an Element
 
@@ -83,6 +92,8 @@ console.log(entrepreneurs[2] + bio);
 entrepreneurs[9];
 ```
 
++ Define a function `accessElementFromArray`. The function should accept an array of states as an argument and return the third item in the array.
+
 ## Replacing an Element
 
 Replacing the value of an element in a JavaScript array is very similar to the equivalent in Ruby. Say you have an array of author names, and you would like to replace the second element, J. D. Salinger, with the string "Harper Lee". Since the second element has an index of 1, you simply reassign using the index number:
@@ -93,6 +104,8 @@ var authors = ["ray bradbury", "j. d. salinger", "maya angelou"];
 authors[1] = "harper lee";
 // authors is now ["ray bradbury", "harper lee", "maya angelou"];
 ```
+
++ Define a function `replaceElementInArray` which should accept an array of names as an argument. The function should replace the second item in the array with `"Carter"`. The function should return the replaced item from the array.
 
 ## Removing an Element
 
@@ -123,6 +136,8 @@ var removedFishes = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
 // myFish is ['parrot', 'anemone', 'blue', 'trumpet', 'surgeon']
 // removedFishes is ['angel', 'clown']
 ```
+
++ Define a function `removeElementFromArray` that take an array of dishes as a paramet. The function should remove the third and fourth item from the array, and adds "Roast Chicken" to the end, using the `splice` function. The function should return the updated array.
 
 ## Iteration
 
@@ -164,6 +179,9 @@ letters.forEach(function(letter, index) {
 // 7. t
 // 8. s
 ```
+
++ Write a function `iterateArray` that accepts an array of numbers as a parameter. The body should also contain an empty array, stored in the variable `newNums`. You should iterate over the array of numbers, add 5 to each number, and store the larger number in the array `newNums`. The function should return the `newNums` array.
+
 
 ## Resources
 

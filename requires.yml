@@ -1,0 +1,6 @@
+# A list of javascript files required for the project, in dependency order
+javascripts:
+  files:
+    - array.js
+  specs:
+    - spec/array-spec.js
