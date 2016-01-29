@@ -170,4 +170,4 @@ letters.forEach(function(letter, index) {
 * [MDN - Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 * [Codecademy - Arrays](http://www.codecademy.com/glossary/javascript)
 
-<a href='https://learn.co/lessons/intro-to-arrays.js' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-arrays.js' title='JavaScript Arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
