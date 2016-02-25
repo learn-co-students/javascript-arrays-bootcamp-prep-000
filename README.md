@@ -16,7 +16,7 @@ You'll be coding along in `array.js`. There are tests to run to make sure you're
 
 ## Creation
 
-JavaScript arrays can contain any types of values and they can be of mixed types, just like in Ruby. You can create arrays in two different ways, the most common of which is to list values in a pair of square brackets. These are called array literals. 
+JavaScript arrays can contain any types of values and they can be of mixed types, just like in Ruby. You can create arrays in two different ways, the most common of which is to list values in a pair of square brackets. These are called array literals.
 
 Syntax:
 
@@ -182,6 +182,31 @@ letters.forEach(function(letter, index) {
 
 + Write a function `iterateArray` that accepts an array of numbers as a parameter. The body should also contain an empty array, stored in the variable `newNums`. You should iterate over the array of numbers, add 5 to each number, and store the larger number in the array `newNums`. The function should return the `newNums` array.
 
+## Array Wackiness
+
+It's important to remember that arrays in JavaScript are really just special
+kinds of `Object`s. You can assign properties to them:
+
+```js
+var array = [1, 2, 3];
+
+array.myProperty = "I'm an object!";
+
+```
+
+Which can lead to weird behavior:
+
+```js
+array;
+// [1, 2, 3];
+
+// Where did our property go?
+array.myProperty;
+// "I'm an object!";
+
+array.length;
+// 3 - Would you have expected 3 or 4?
+```
 
 ## Resources
 
