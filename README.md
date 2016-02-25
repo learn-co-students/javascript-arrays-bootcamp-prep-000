@@ -184,13 +184,13 @@ letters.forEach(function(letter, index) {
 
 ## Array Wackiness
 
-It's important to remember that arrays in JavaScript are really just special
-kinds of `Object`s. You can assign properties to them:
+It's important to remember that arrays in JavaScript are kind of wonky. You can
+assign properties to them:
 
 ```js
 var array = [1, 2, 3];
 
-array.myProperty = "I'm an object!";
+array.myProperty = "I'm a property!";
 
 ```
 
@@ -202,11 +202,15 @@ array;
 
 // Where did our property go?
 array.myProperty;
-// "I'm an object!";
+// "I'm a property!";
 
 array.length;
 // 3 - Would you have expected 3 or 4?
 ```
+
+We don't tend to do these kinds of things on purpose, but it's important to be
+aware that they can happen so that you have a good sense of where to look
+if/when strange bugs start to appear.
 
 ## Resources
 
