@@ -137,7 +137,7 @@ var removedFishes = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
 // removedFishes is ['angel', 'clown']
 ```
 
-+ Define a function `removeElementFromArray` that take an array of dishes as a paramet. The function should remove the third and fourth item from the array, and adds "Roast Chicken" to the end, using the `splice` function. The function should return the updated array.
++ Define a function `removeElementFromArray` that take an array of dishes as a parameter. The function should remove the third and fourth item from the array, and adds "Roast Chicken" to the end, using the `splice` function. The function should return the updated array.
 
 ## Iteration
 
@@ -218,3 +218,5 @@ if/when strange bugs start to appear.
 * [Codecademy - Arrays](http://www.codecademy.com/glossary/javascript)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-arrays.js' title='JavaScript Arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-arrays.js'>Intro To Arrays in JS</a> on Learn.co and start learning to code for free.</p>
