@@ -1,27 +1,29 @@
 # JavaScript Arrays
 
 ## Objectives
-+ Explain what an array is and why we use it
-+ Create an array
-+ Add an element to an array
-+ Access an element in an array
-+ Replace an element in an array
-+ Delete an element from an array
-+ Iterate over an array
+- Explain what an array is and why we use it
+- Create an array
+- Add an element to an array
+- Access an element in an array
+- Replace an element in an array
+- Delete an element from an array
+- Iterate over an array
 
 
 ## Instructions
 
-You'll be coding along in `array.js`. There are tests to run to make sure you're on the right track.
+You'll be coding along in `arrays.js`. There are tests to run to make sure you're on the right track.
+
+## Introduction
+
+Arrays look like this: `[1, 2, 3]`.
 
 ## Creation
 
-JavaScript arrays can contain any types of values and they can be of mixed types, just like in Ruby. You can create arrays in two different ways, the most common of which is to list values in a pair of square brackets. These are called array literals.
-
-Syntax:
+JavaScript arrays can contain any types of values and they can be of mixed types. You can create arrays in two different ways, the most common of which is to list values in a pair of square brackets. These are called **array literals**.
 
 ```javascript
-var arrayName = [element0, element1, ..., elementN];
+var myArray = [element0, element1, ..., elementN];
 ```
 
 Examples:
@@ -36,17 +38,19 @@ var weirdGreeting = [ "he", 110, "w", 0, "r", {"1":"d"} ];
 var empty = [];
 ```
 
-The Array constructor is another approach to making a new JavaScript array.
+The Array constructor is another approach to making a new array.
 
 ```javascript
 var evenNumbers = new Array();
 ```
 
-+ Define a function called `createArray`. The function does not need to accept an argument, but should return an array of the strings `snickers`, `hundred grand`, `kitkat`, and `skittles`.
+Arrays are _ordered_, meaning that the elements in them will always appear in the same order. The array `[1, 1, 2]`, is different from the array `[1, 2, 1]`.
+
+**TODO**: In `arrays.js`, define a function called `chocolateBars`. The function does not need to accept an argument, but should return an array of the strings `snickers`, `hundred grand`, `kitkat`, and `skittles`.
 
 ## Adding an Element
 
-Ruby has two ways to add elements to the end of the array, `push` and `<<`. You're probably more familiar with the latter which is also known as the shovel method. JavaScript doesn't have the shovel method, but like Ruby, it does feature a push method. Take a look at the code below:
+JavaScript allows us to `push` elements onto the end of an array:
 
 ```javascript
 var superheroines = ["catwoman", "she-hulk", "mystique"];
@@ -55,28 +59,62 @@ superheroines.push("wonder woman");
 // superheroines is now ["catwoman", "she-hulk", "mystique", "wonder woman"]
 ```
 
-To add elements to an array at specific indexes, you use the bracket equals notation. This notation will also work for replacing values.
+We can also `unshift` elements onto the beginning of an array:
 
-Let's add three elements to our empty `evenNumbers` array. First, decide what index you want your element to have (remember the first element in an array has an index of 0). Then you wrap this desired index in brackets, place the array's variable name directly to the left. Remember to place an equal sign to the right of the closing square bracket, and put the value that you want your element to have after the equal sign.
+``` javascript
+var cities = ["New York", "San Francisco"]
 
-```javascript
-var evenNumbers = new Array();
+cities.unshift("Philadelphia")
 
-evenNumbers[0] = 2;
-evenNumbers[1] = 4;
-evenNumbers[3] = 8;
-
-// evenNumbers is now [ 2, 4, undefined, 8 ]
+// cities is now ["Philadelphia", "New York", "San Francisco"]
 ```
 
-Notice that since we didn't tell JavaScript what value we wanted the third element to have, it defaulted to `undefined`.
+These actions _change_ the underlying array — in other words, they **mutate** its value.
 
+Most modern browsers (Chrome, FireFox, and Safari) support what is called the **spread operator** — it's three dots in a row: `...`. When used with an array, it _spreads out_ the arrays contents.
 
-+ Define a function `addElementToArray`, that accepts an array as a parameter. The function should  add `"A Christmas Story"` to the end of the array. The function should return the entire array.
+We can use the spread operator to create a new array in place, rather than modifying the original one. Let's try it!
+
+``` javascript
+var cities = ["New York", "San Francisco"]
+
+["Philadelphia", ...cities] // ["Philadelphia", "New York", "San Francisco"]
+
+cities // ["New York", "San Francisco"]
+```
+
+Whoa! Did you see that? Our cities array was untouched when we used the spread operator: `...cities`. We can do the same at the end of the array:
+
+``` javascript
+var cities = ["New York", "San Francisco"]
+
+[...cities, "Philadelphia"] // ["New York", "San Francisco", "Philadelphia"]
+```
+
+To preserve the new array, we need to assign it to a variable:
+
+``` javascript
+var cities = ["New York", "San Francisco"]
+
+// we can assign it to the existing `cities` variable
+cities = ["Philadelphia", ...cities]
+
+// but if we have a const
+const cats = ["Milo", "Garfield"]
+
+// we need a new variable:
+const moreCates = ["Felix", ...cats]
+```
+
+While we _can_ use bracket notation to add elements to an array at specific indexes, it's best not to. We should treat arrays as ordered lists of information that can be **any length**, so updating a specific index should feel like a weird thing to do.
+
+**TODO**: In `arrays.js`, define two functions, `addElementToBeginningOfArray` and `destructivelyAddElementToBeginningOfArray`. Both functions take two parameters, an array and an element to add to the beginning of the array, and both functions should add the element to the beginning of the array and then return the whole array. The destructive function, `descructivelyAddElementToBeginningOfArray`, should alter the original array that's passed in; `addElementToBeginningOfArray`, on the other hand, should return a new array **and not modify the original**.
+
+**TODO**: Define two more functions, `addElementToEndOfArray` and `destructivelyAddElementToEndOfArray`. These functions also take two arguments, an array and an element to add to the end of the array. `addElementToEndOfArray` **should not** alter the original array; `destructivelyAddElementToEndOfArray` **should** alter the original array.
 
 ## Accessing an Element
 
-You can get elements out of arrays if you know their index. Just like in Ruby, array elements' indexes start at 0 and increment by 1, so the first element's index is 0, the second element's index is 1, the third element's is 2, etc.
+You can get elements out of arrays if you know their index. Array elements' indexes start at 0 and increment by 1, so the first element's index is `0`, the second element's index is `1`, the third element's is `2`, etc.
 
 ```javascript
 var entrepreneurs = ["Elizabeth Holmes", "Laurene Powell Jobs", "Arianna Huffington"];
@@ -92,106 +130,170 @@ console.log(entrepreneurs[2] + bio);
 entrepreneurs[9];
 ```
 
-+ Define a function `accessElementFromArray`. The function should accept an array of states as an argument and return the third item in the array.
+**TODO**: Define a function in `arrays.js` called `accessElementFromArray`. The function should accept an array and an index and return the element at that index.
 
-## Replacing an Element
+**NOTE**: If you had to guess, would you say that array indexes are *numbers* or *strings*? Think about it for a second, then read on.
 
-Replacing the value of an element in a JavaScript array is very similar to the equivalent in Ruby. Say you have an array of author names, and you would like to replace the second element, J. D. Salinger, with the string "Harper Lee". Since the second element has an index of 1, you simply reassign using the index number:
-
-```javascript
-var authors = ["ray bradbury", "j. d. salinger", "maya angelou"];
-
-authors[1] = "harper lee";
-// authors is now ["ray bradbury", "harper lee", "maya angelou"];
-```
-
-+ Define a function `replaceElementInArray` which should accept an array of names as an argument. The function should replace the second item in the array with `"Carter"`. The function should return the replaced item from the array.
+Array indexes are actually _strings_, even though we commonly refer to them as numbers. But you don't have to take my word for it: try typing `Object.keys([1, 2, ,3])` in your console and see what comes back.
 
 ## Removing an Element
 
-To remove an element in JavaScript, you can call on the `splice()` function. This function takes two required arguments and some optional arguments:
+### From the Beginning of an Array
 
-1. index to start at (required)
-2. number of elements to remove (required)
-3. an element to add to the array (optional)
-4. an element to add to the array (optional)
-5. etc.
+To remove an element from the beginning of an array, we can use the `shift` method:
 
-```javascript
-var myFish = ['angel', 'clown', 'drum', 'mandarin', 'surgeon'];
+``` javascript
+const days = ["Monday", "Tuesday", "Wednesday"]
 
-// removes 1 element from index 3
-var firstRemovedFish = myFish.splice(3, 1);
+days.shift() // returns the removed element, in this case "Monday"
 
-// myFish is now ['angel', 'clown', 'drum', 'surgeon']
-// firstRemovedFish is ['mandarin']
-
-// removes 1 element from index 2, and inserts 'trumpet'
-var secondRemovedFish = myFish.splice(2, 1, 'trumpet');
-// myFish is ['angel', 'clown', 'trumpet', 'surgeon']
-// secondRemovedFish is ['drum']
-
-// removes 2 elements from index 0, and inserts 'parrot', 'anemone' and 'blue'
-var removedFishes = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
-// myFish is ['parrot', 'anemone', 'blue', 'trumpet', 'surgeon']
-// removedFishes is ['angel', 'clown']
+days // ["Tuesday", "Wednesday"]
 ```
 
-+ Define a function `removeElementFromArray` that take an array of dishes as a parameter. The function should remove the third and fourth item from the array, and adds "Roast Chicken" to the end, using the `splice` function. The function should return the updated array.
+As with `unshift`, this method is _destructive_; it **mutates** the underlying array.
 
-## Iteration
+**TODO**: Define a function in `arrays.js` called `destructivelyRemoveElementFromBeginningOfArray` that takes an array as its only argument and removes the first element. Your function should then return the entire array, and it **should** mutate the array.
 
-JavaScript's `forEach` function will help you to iterate through an array. The forEach method executes a provided function once per array element. The first argument that this provided function needs is the variable name for currentValue. In Ruby, this value is typically seen inside of the double pipes (ex. `letters.each do |letter|`).
+Because we tend to want to avoid destruction, there is also a way to remove the first element from an array without changing the underlying array: we can use the `slice` method.
 
-```javascript
-var letters = ["z", "y", "x", "w", "v", "u", "t", "s"];
+[`slice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) does just what its name implies: it takes a slice from its array. The first argument specifies where the slice starts, and the second argument specifies where it ends. If there is no second argument, the slice goes from the first argument (the start) to the end of the array. This means removing the first element is as simple as `slice(1)`.
 
-letters.forEach(function(letter) {
-  console.log("♫ " + letter + " ♬");
-});
-// this will print the following to the console:
-// ♫ z ♬
-// ♫ y ♬
-// ♫ x ♬
-// ♫ w ♬
-// ♫ v ♬
-// ♫ u ♬
-// ♫ t ♬
-// ♫ s ♬
+``` javascript
+var cats = ["Milo", "Garfield", "Otis"]
+
+cats.slice(1) // ["Garfield", "Otis"]
+
+cats // ["Milo", "Garfield", "Otis"]
 ```
 
-Like Ruby's `.each_with_index` method, you can also instruct JavaScript to keep track of the index number of the element it is currently on. To do this, pass the provided function a second argument:
+As with other non-destructive methods, we need to assign the results to a new variable to save our changes:
 
-```javascript
-var letters = ["z", "y", "x", "w", "v", "u", "t", "s"];
+``` javascript
+var cats = ["Milo, "Garfield", "Otis"]
 
-letters.forEach(function(letter, index) {
-  var number = index + 1;
-  console.log(number + ". " + letter);
-});
-// this will print the following to the console:
-// 1. z
-// 2. y
-// 3. x
-// 4. w
-// 5. v
-// 6. u
-// 7. t
-// 8. s
+cats = cats.slice(1) // ["Garfield", "Otis"]
+
+cats // ["Garfield", "Otis"]
 ```
 
-+ Write a function `iterateArray` that accepts an array of numbers as a parameter. The body should also contain an empty array, stored in the variable `newNums`. You should iterate over the array of numbers, add 5 to each number, and store the larger number in the array `newNums`. The function should return the `newNums` array.
+`slice` is also handy if we know we want the last `n` elements of an array: simply pass it an negative index.
+
+``` javascript
+var cats = ["Milo", "Garfield", "Otis"]
+
+// get the last 2 cats
+cats.slice(-2) // ["Garfield", "Otis"]
+
+// get the last 1 cat
+cats.slice(-1) // ["Otis"]
+```
+
+**TODO**: Define a function in `arrays.js` called `removeElementFromBeginningOfArray` that takes an array as its only argument and removes the first element. Your function should then return the entire array, and it **should not** mutate the underlying array.
+
+### From the End of an Array
+
+To remove an element from the end of of an array, we can use the `pop` method:
+
+``` javascript
+var iceCreams = ["chocolate", "vanilla", "raspberry"]
+
+iceCreams.pop() // returns the removed element, in this case "raspberry"
+
+iceCreams // ["chocolate", "vanilla"]
+```
+
+As with `push`, this method is _destructive_; it **mutates** the underlying array.
+
+**TODO**: Define a function in `arrays.js` called `destructivelyRemoveElementFromEndOfArray` that takes an array as its only argument and removes the last element. Your function should return the entire array, and it **should** mutate the array.
+
+We can use `slice` to perform the above action without changing the underlying array. It takes a bit more work than removing the first element, since we want the slice from index `0` (remember, the first element is at index `0`!) to the end. Hmmmm — what property do arrays have that can help us? `length`!
+
+``` javascript
+var iceCreams = ["chocolate", "vanilla", "raspberry"]
+
+iceCreams.slice(0, iceCreams.length - 1) // ["chocolate", "vanilla"]
+
+iceCreams // ["chocolate", "vanilla", "raspberry"]
+```
+
+**TODO**: Define a function in `arrays.js` called `removeElementFromEndOfArray` that takes an array as its only argument and removes the last element. Your function should return the entire array, and it **should not** mutate the array.
+
+### From the Middle of an Array
+
+Removing an element from the middle of an array in JavaScript is a bit trickier than removing an element from the beginning or end. We have the `splice` method, which takes an index in the array as its first argument, the number of elements to remove as its second argument, and any number of elements to add as any arguments after the second. All arguments are optional, but with no arguments, `splice()` returns an empty array and does nothing to the target array.
+
+It might be helpful to refer to [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) to check out their examples, in addition to our examples here.
+
+``` javascript
+let items = [1, 2, 3, 4]
+
+// this will remove everything after index 1 (inclusive)
+// it returns the removed items: [2, 3, 4]
+items.splice(1)
+
+items // [1]
+
+items = [1, 2, 3, 4]
+
+ // "at index 1, remove 1 item"
+ // it returns the removed item(s): [2]
+items.splice(1, 1)
+
+items // [1, 3, 4]
+
+items = [1, 2, 3, 4]
+
+// "at index 1, remove 1 item and add 6 and add 7"
+// it returns the removed items: [2]
+// and adds the items to add starting at the removal index
+items.splice(1, 1, 6, 7)
+
+items // [1, 6, 7, 3 4]
+```
+
+As we noted above, adding elements at specific indexes in the middle of an array _feels_ weird — it's intentionally difficult to do, as doing so with objects (where we have keys instead of sequential indexes) is much more natural.
+
+**BONUS**
+
+We can use `slice`, combined with the spread operator, to make removing from the middle of an array much easier.
+
+``` javascript
+var items = [1, 2, 3, 4, 5]
+
+// let's remove the third element
+
+// a slice from the start up to but not including index 2 (the third element)
+// and a slice from index 3 to the end
+[...items.slice(0, 2), ...items.slice(3)] // [1, 2, 4, 5]
+```
+
+Play around with this a bit until it makes sense. It's the trickiest thing that you've encountered so far, so don't sweat it if it takes a little bit to sink in!
 
 ## Array Wackiness
 
-It's important to remember that arrays in JavaScript are kind of wonky. You can
-assign properties to them:
+### Arrays Are Kinda Sorta Fancy Objects
+
+It might be helpful to think of arrays in JavaScript as fancy objects. Like objects, arrays can store bits of information, and we can retrieve that information later. Arrays differ from objects on two chief points:
+
+1. We don't give arrays `key-value` pairs. Instead, we just add elements to an array, and the array **indexes** each element, starting at `0` and going up to the `[number of elements in the array] - 1`. But the indexes are, for all intents and purposes, just keys in an object.
+2. Arrays keep track of how many elements they have in them via the `length` property: `[1, 2, 3].length // 3`. `length` doesn't work like other keys/indexes in objects/arrays — it updates automatically, and if we change it, we change the whole array.
+
+``` javascript
+var myArray = [1, 2, 3]
+
+myArray.length // 3
+
+myArray.length = 1
+
+myArray // [1] (!!!)
+```
+
+It's important to remember that arrays in JavaScript are kind of wonky. You can assign properties to them:
 
 ```js
 var array = [1, 2, 3];
 
 array.myProperty = "I'm a property!";
-
 ```
 
 Which can lead to weird behavior:
@@ -208,9 +310,7 @@ array.length;
 // 3 - Would you have expected 3 or 4?
 ```
 
-We don't tend to do these kinds of things on purpose, but it's important to be
-aware that they can happen so that you have a good sense of where to look
-if/when strange bugs start to appear.
+We don't tend to do these kinds of things on purpose, but it's important to be aware that they can happen so that you have a good sense of where to look if/when strange bugs start to appear.
 
 ## Resources
 
@@ -218,5 +318,3 @@ if/when strange bugs start to appear.
 * [Codecademy - Arrays](http://www.codecademy.com/glossary/javascript)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-arrays.js' title='JavaScript Arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-arrays.js'>Intro To Arrays in JS</a> on Learn.co and start learning to code for free.</p>
