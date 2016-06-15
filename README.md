@@ -14,7 +14,47 @@ You'll be coding along in `arrays.js`. There are tests to run to make sure you'r
 
 ## Introduction
 
+Let's say that we have a list of ingredients for a kickin' grilled cheese (code along in console):
+
+``` javascript
+var ingredient1 = "bread"
+var ingredient2 = "mild cheese"
+var ingredient3 = "sharp cheese"
+var ingredient4 = "butter"
+var ingredient5 = "tomato"
+var ingredient6 = "garlic"
+```
+
+But now what if we want to make a tomato sauce? Well, we already have garlic and tomato — but we have no idea what recipe they belong to. Pretty soon, we'll have a had time keeping our ingredients safe, and we'd end up with bread in our tomato sauce.
+
+![noooooooo](http://i.giphy.com/fIyBQtxwwZYhq.gif)
+
+This is an admittedly contrived example, but it goes to show that we can't just put everything in a variable and hope to remember what order things should go in. It also shows that sometimes it would be helpful to be able to group like items together.
+
+In JavaScript, we can group like items in an object (well, everything in JavaScript is an object — but more on that some other time) called an _array_. And array is an ordered list of items (called "elements" of the array) separated by commas.
+
 Arrays look like this: `[1, 2, 3]`.
+
+Or like this:
+
+``` javascript
+var grilledCheeseIngredients = [
+  'bread',
+  'mild cheese',
+  'sharp cheese',
+  'butter',
+  'tomato',
+  'garlic'
+]
+
+var tomatoSauceIngredients = [
+  'tomato',
+  'garlic',
+  'olive oil',
+  'basil',
+  'oregano'
+]
+```
 
 ## Creation
 
@@ -281,7 +321,7 @@ Play around with this a bit until it makes sense. It's the trickiest thing that 
 
 ### We can add properties to arrays
 
-In JavaScript, everything is ultimately an object. We'll explore more about what that means when we cover objects, but for now, know that this means that we can add _properties_ to just about anything, including arrays. 
+In JavaScript, everything is ultimately an object. We'll explore more about what that means when we cover objects, but for now, know that this means that we can add _properties_ to just about anything, including arrays.
 
 A property is a named piece of information. They're _kind of_ like variables (don't go too far with that analogy) but we can only get that information with reference to the property owner.
 
