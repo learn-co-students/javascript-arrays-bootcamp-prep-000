@@ -178,7 +178,7 @@ console.log(entrepreneurs[2] + bio);
 entrepreneurs[9];
 ```
 
-**TODO**: Define a function in `arrays.js` called `accessElementFromArray`. The function should accept an array and an index and return the element at that index.
+**TODO**: Define a function in `arrays.js` called `accessElementInArray`. The function should accept an array and an index and return the element at that index.
 
 **NOTE**: If you had to guess, would you say that array indexes are *numbers* or *strings*? Think about it for a second, then read on.
 
@@ -367,3 +367,5 @@ We don't tend to do these kinds of things on purpose, but it's important to be a
 * [Codecademy - Arrays](http://www.codecademy.com/glossary/javascript)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-arrays.js' title='JavaScript Arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
