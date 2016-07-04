@@ -166,11 +166,11 @@ cats // ["Milo", "Garfield", "Otis"]
 As with other non-destructive methods, we need to assign the results to a new variable to save our changes:
 
 ``` javascript
-var cats = ["Milo, "Garfield", "Otis"]
+var cats = ["Milo", "Garfield", "Otis"]
 
-cats = cats.slice(1) // ["Garfield", "Otis"]
+fewer_cats = cats.slice(1) // ["Garfield", "Otis"]
 
-cats // ["Garfield", "Otis"]
+fewer_cats // ["Garfield", "Otis"]
 ```
 
 `slice` is also handy if we know we want the last `n` elements of an array: simply pass it an negative index.
