@@ -30,15 +30,15 @@ describe('arrays', () => {
     })
   })
 
-  describe('descructivelyAddElementToBeginningOfArray(array, element)', () => {
+  describe('destructivelyAddElementToBeginningOfArray(array, element)', () => {
     it('adds an `element` to the beginning of an `array`', () => {
-      expect(descructivelyAddElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
+      expect(destructivelyAddElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
     })
 
     it('alters `array`', () => {
       const array = [1]
 
-      descructivelyAddElementToBeginningOfArray(array, 'foo')
+      destructivelyAddElementToBeginningOfArray(array, 'foo')
 
       expect(array).to.eql(['foo', 1])
     })
