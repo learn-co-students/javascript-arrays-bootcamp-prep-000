@@ -141,7 +141,7 @@ cities = ["Philadelphia", ...cities]
 const cats = ["Milo", "Garfield"]
 
 // we need a new variable:
-const moreCates = ["Felix", ...cats]
+const moreCats = ["Felix", ...cats]
 ```
 
 While we _can_ add elements to an array directly at specific indexes
