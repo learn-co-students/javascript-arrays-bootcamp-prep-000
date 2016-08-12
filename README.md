@@ -296,7 +296,7 @@ items = [1, 2, 3, 4]
 // and adds the items to add starting at the removal index
 items.splice(1, 1, 6, 7)
 
-items // [1, 6, 7, 3 4]
+items // [1, 6, 7, 3, 4]
 ```
 
 As we noted above, adding elements at specific indexes in the middle of an array _feels_ weird — it's intentionally difficult to do, as doing so with objects (where we have keys instead of sequential indexes) is much more natural.
