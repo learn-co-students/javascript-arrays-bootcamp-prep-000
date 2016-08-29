@@ -1,6 +1,40 @@
-var ingredient = "bread"
-var ingredient = "mild cheese"
-var ingredient = "sharp cheese"
-var ingredient = "butter"
-var ingredient = "tomato"
-var ingredient = "garlic"
+var chocolateBars = [
+  'snickers',
+  'hundred grand',
+  'kitkat',
+  'skittles'
+]
+
+function addElementToBeginningOfArray(array, element) {
+  newArray = [element, ...array]
+  return newArray
+}
+
+function addElementToEndOfArray(array, element) {
+  newArray = [...array, element]
+  return newArray
+}
+
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array.unshift(element)
+  return array
+}
+
+function destructivelyAddElementToEndOfArray(array, element) {
+array.push(element)
+return array
+}
+
+function accessElementInArray(array, index) {
+  return array[index]
+}
+
+function removeElementFromBeginningOfArray(array) {
+  array.shift()
+  return array
+}
+
+function removeElementFromEndOfArray(array) {
+  array.pop()
+  return array
+}
