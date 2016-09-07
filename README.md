@@ -109,7 +109,7 @@ cities.unshift("Philadelphia")
 
 These actions _change_ the underlying array — in other words, they **mutate** its value.
 
-Most modern browsers (Chrome, FireFox, and Safari) support what is called the **spread operator** — it's three dots in a row: `...`. When used with an array, it _spreads out_ the arrays contents.
+Most modern browsers (Chrome, FireFox, and Safari) support what is called the **spread operator** — it's three dots in a row: `...`. When used with an array, it _spreads out_ the array's contents.
 
 We can use the spread operator to create a new array in place, rather than modifying the original one. Let's try it!
 
