@@ -11,3 +11,15 @@ function destructivelyAddElementToEndOfArray(array, element) {
 array.push(element)
 return array
 }
+
+var array = new Array
+function addElementToBeginningOfArray(array, element) {
+["element", ...array]
+return array
+}
+
+var array = new Array
+function addElementToEndOfArray(array, element) {
+[...array, "element"]
+return array
+}
