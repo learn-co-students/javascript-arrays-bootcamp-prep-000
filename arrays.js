@@ -14,13 +14,13 @@ return array
 
 var array = new Array
 function addElementToBeginningOfArray(array, element) {
-["element", ...array]
+array.unshift(element)
 return array
 }
 
 var array = new Array
 function addElementToEndOfArray(array, element) {
-[...array, "element"]
+array.push(element)
 return array
 }
 
