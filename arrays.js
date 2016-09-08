@@ -23,3 +23,8 @@ function addElementToEndOfArray(array, element) {
 [...array, "element"]
 return array
 }
+
+var array = new Array
+function accessElementInArray(array, index) {
+return array[index]
+}
