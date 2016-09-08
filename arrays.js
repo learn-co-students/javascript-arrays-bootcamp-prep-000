@@ -28,3 +28,15 @@ var array = new Array
 function accessElementInArray(array, index) {
 return array[index]
 }
+
+var array = new Array
+function removeElementFromBeginningOfArray(array) {
+  array.shift(0)
+  return array
+}
+
+var array = new Array
+function removeElementFromEndOfArray(array) {
+  array.pop()
+  return array
+}
