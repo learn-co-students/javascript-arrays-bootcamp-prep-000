@@ -27,13 +27,13 @@ function accessElementInArray(chocolateBars,index)
   return chocolateBars[2];
 }
 
-function removeElementFromBeginningOfArray(chocolateBars)
+function destructivelyRemoveElementFromEndOfArray(chocolateBars)
 {
   chocolateBars.shift()
   return chocolateBars
 }
 
-function removeElementFromEndOfArray(chocolateBars)
+function destructivelyRemoveElementFromEndOfArray(chocolateBars)
 {
   chocolateBars.pop()
   return chocolateBars
