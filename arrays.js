@@ -7,45 +7,41 @@ function addElementToBeginningOfArray(chocolateBars, bounty)
 
 function destructivelyAddElementToBeginningOfArray(chocolateBars, bounty)
 {
-chocolateBars.unshift(bounty);
-return chocolateBars;
+  chocolateBars.unshift(bounty);
+  return chocolateBars;
 }
 
 function addElementToEndOfArray(chocolateBars, dairymilk)
 {
-return [...chocolateBars, dairymilk];
+  return [...chocolateBars, dairymilk];
 }
-
 function destructivelyAddElementToEndOfArray(chocolateBars, dairymilk)
 {
-chocolateBars.push(dairymilk);
-return chocolateBars;
+  chocolateBars.push(dairymilk);
+  return chocolateBars;
 }
 
-function accessElementInArray(chocolateBars,index)
+function accessElementInArray(chocolateBars, index)
 {
-  return chocolateBars[2];
-}
+  return chocolateBars[index];
+  }
 
-function destructivelyRemoveElementFromEndOfArray(chocolateBars)
-{
-  chocolateBars.shift()
-  return chocolateBars
-}
-
-function destructivelyRemoveElementFromEndOfArray(chocolateBars)
-{
-  chocolateBars.pop()
-  return chocolateBars
-}
+function destructivelyRemoveElementFromBeginningOfArray(chocolateBars)
+{chocolateBars.shift()
+return chocolateBars}
 
 function removeElementFromBeginningOfArray(chocolateBars)
 {
-  return chocolateBars.slice(1)
+  return chocolateBars.slice(1) // Since we need the 1st element to be removed - we put 1 in bracs
 }
+
+function destructivelyRemoveElementFromEndOfArray(chocolateBars)
+{chocolateBars.pop()
+return chocolateBars}
 
 
 function removeElementFromEndOfArray(chocolateBars)
 {
   return chocolateBars.slice(0, chocolateBars.length-1)
+  // argument 1 - index of 1st element(0) argument 2 - index of last element (array length-1)
 }
