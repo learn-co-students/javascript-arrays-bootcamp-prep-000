@@ -240,7 +240,7 @@ cats.slice(-1) // ["Otis"]
 
 ### From the End of an Array
 
-To remove an element from the end of of an array, we can use the `pop` method:
+To remove an element from the end of an array, we can use the `pop` method:
 
 ``` javascript
 var iceCreams = ["chocolate", "vanilla", "raspberry"]
