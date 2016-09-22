@@ -109,7 +109,7 @@ cities.unshift("Philadelphia")
 
 These actions _change_ the underlying array — in other words, they **mutate** its value.
 
-Most modern browsers (Chrome, FireFox, and Safari) support what is called the **spread operator** — it's three dots in a row: `...`. When used with an array, it _spreads out_ the arrays contents.
+Most modern browsers (Chrome, FireFox, and Safari) support what is called the **spread operator** — it's three dots in a row: `...`. When used with an array, it _spreads out_ the array's contents.
 
 We can use the spread operator to create a new array in place, rather than modifying the original one. Let's try it!
 
@@ -240,7 +240,7 @@ cats.slice(-1) // ["Otis"]
 
 ### From the End of an Array
 
-To remove an element from the end of of an array, we can use the `pop` method:
+To remove an element from the end of an array, we can use the `pop` method:
 
 ``` javascript
 var iceCreams = ["chocolate", "vanilla", "raspberry"]
@@ -296,7 +296,7 @@ items = [1, 2, 3, 4]
 // and adds the items to add starting at the removal index
 items.splice(1, 1, 6, 7)
 
-items // [1, 6, 7, 3 4]
+items // [1, 6, 7, 3, 4]
 ```
 
 As we noted above, adding elements at specific indexes in the middle of an array _feels_ weird — it's intentionally difficult to do, as doing so with objects (where we have keys instead of sequential indexes) is much more natural.
