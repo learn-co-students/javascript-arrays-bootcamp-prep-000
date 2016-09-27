@@ -31,7 +31,7 @@ But now what if we want to make a tomato sauce? Well, we already have garlic and
 
 This is an admittedly contrived example, but it goes to show that we can't just put everything in a variable and hope to remember what order things should go in. It also shows that sometimes it would be helpful to be able to group like items together.
 
-In JavaScript, we can group like items in an object (well, everything in JavaScript is an object — but more on that some other time) called an _array_. And array is an ordered list of items (called "elements" of the array) separated by commas.
+In JavaScript, we can group like items in an object (well, everything in JavaScript is an object — but more on that some other time) called an _array_. An array is an ordered list of items (called "elements" of the array) separated by commas.
 
 Arrays look like this: `[1, 2, 3]`.
 
