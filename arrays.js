@@ -30,6 +30,6 @@ function removeElementFromEndOfArray (array,element){
 }
 
 function removeElementFromBeginningOfArray (array){
-array.shift(array)
-return array;
+return array.slice(1)
+
 }
