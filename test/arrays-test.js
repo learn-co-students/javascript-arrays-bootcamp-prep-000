@@ -90,3 +90,10 @@ describe('arrays', () => {
     })
   })
 })
+
+describe('removeMiddleElementFromFiveItemArray(array)', () => {
+  it('removes the middle element from a five item `array`', () => {
+    expect(removeElementFromEndOfArray([1, 2, 3, 4, 5])).to.eql([1, 2, 4, 5])
+  })
+})
+})
