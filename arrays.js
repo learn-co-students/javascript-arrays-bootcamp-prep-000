@@ -22,3 +22,23 @@ function addElementToBeginningOfArray(array, element) {
   NewArray = [element, ...array];
   return NewArray;
 }
+
+function accessElementInArray(array, index) {
+  return array[index];
+}
+
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+  return array.shift();
+}
+
+function removeElementFromBeginningOfArray(array) {
+  var mutatedArray;
+  mutatedArray = array.slice(1);
+  return mutatedArray;
+}
+
+function removeElementFromEndOfArray(array) {
+  var mutatedArray;
+  mutatedArray = array.slice(0, array.length -1);
+  return mutatedArray;
+}
