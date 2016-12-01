@@ -33,8 +33,7 @@ function removeElementFromEndOfArray(array){
 }
 
 function removeElementFromBeginningOfArray(array){
- array.shift()
- return array
+ return array.slice(1)
 }
 
 function removeElementFromEndOfArray(array){
