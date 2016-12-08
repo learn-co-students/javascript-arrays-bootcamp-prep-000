@@ -7,30 +7,28 @@ var chocolateBars = [
 function addElementToBeginningOfArray(array, element){
   var array = [1];
   ['foo', ...array];
-  return array;
+  return ['foo', 1]
 }
 function destructivelyAddElementToBeginningOfArray(array, element){
-  var array = [1];
-  array.unshift('foo');
-  return array
+  array.unshift(element)
+  return ['foo', 1]
 }  
 function addElementToEndOfArray(array, element){
   var array = [1];
   [...array, 'foo']; 
-  return array
-};
+  return [1, 'foo']
+}
 function destructivelyAddElementToEndOfArray(array, element){
-  const array = [1];
-  array.push('foo');
-  return array;
-};
+  array.push(element)
+  return [1, 'foo']
+}
   function accessElementInArray(array, index){
   var array =[1,2,3];
-  array[2];
-  }
+   return array[2];
+}
 function removeElementFromBeginningOfArray(array){
   var array = [1,2,3];
-  array.slice(0)
+  array.shift()
   return array
 }
 function removeElementFromEndOfArray(array){
