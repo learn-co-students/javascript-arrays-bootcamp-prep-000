@@ -1,0 +1,206 @@
+
+> javascript-arrays@0.1.0 test /home/gportela-41622/code/labs/javascript-arrays-bootcamp-prep-000
+> mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
+
+ 0
+ 0
+ 0
+
+[4A[5C-
+[5C-
+[5C-
+[5C-
+[4A[6C_,------,
+[6C_|   /\_/\ 
+[6C^|__( - .-) 
+[6C  ""  "" 
+[4A 1
+ 0
+ 0
+
+[4A[5C-_
+[5C-_
+[5C-_
+[5C-_
+[4A[7C_,------,
+[7C_|  /\_/\ 
+[7C~|_( ^ .^) 
+[7C ""  "" 
+[4A 1
+ 1
+ 0
+
+[4A[5C-_-
+[5C-_-
+[5C-_-
+[5C-_-
+[4A[8C_,------,
+[8C_|   /\_/\ 
+[8C^|__( x .x) 
+[8C  ""  "" 
+[4A 2
+ 1
+ 0
+
+[4A[5C-_-_
+[5C-_-_
+[5C-_-_
+[5C-_-_
+[4A[9C_,------,
+[9C_|  /\_/\ 
+[9C~|_( x .x) 
+[9C ""  "" 
+[4A 2
+ 2
+ 0
+
+[4A[5C-_-_-
+[5C-_-_-
+[5C-_-_-
+[5C-_-_-
+[4A[10C_,------,
+[10C_|   /\_/\ 
+[10C^|__( x .x) 
+[10C  ""  "" 
+[4A 3
+ 2
+ 0
+
+[4A[5C-_-_-_
+[5C-_-_-_
+[5C-_-_-_
+[5C-_-_-_
+[4A[11C_,------,
+[11C_|  /\_/\ 
+[11C~|_( x .x) 
+[11C ""  "" 
+[4A 3
+ 3
+ 0
+
+[4A[5C-_-_-_-
+[5C-_-_-_-
+[5C-_-_-_-
+[5C-_-_-_-
+[4A[12C_,------,
+[12C_|   /\_/\ 
+[12C^|__( x .x) 
+[12C  ""  "" 
+[4A 3
+ 4
+ 0
+
+[4A[5C-_-_-_-_
+[5C-_-_-_-_
+[5C-_-_-_-_
+[5C-_-_-_-_
+[4A[13C_,------,
+[13C_|  /\_/\ 
+[13C~|_( x .x) 
+[13C ""  "" 
+[4A 3
+ 5
+ 0
+
+[4A[5C-_-_-_-_-
+[5C-_-_-_-_-
+[5C-_-_-_-_-
+[5C-_-_-_-_-
+[4A[14C_,------,
+[14C_|   /\_/\ 
+[14C^|__( x .x) 
+[14C  ""  "" 
+[4A 3
+ 6
+ 0
+
+[4A[5C-_-_-_-_-_
+[5C-_-_-_-_-_
+[5C-_-_-_-_-_
+[5C-_-_-_-_-_
+[4A[15C_,------,
+[15C_|  /\_/\ 
+[15C~|_( x .x) 
+[15C ""  "" 
+[4A 3
+ 7
+ 0
+
+[4A[5C-_-_-_-_-_-
+[5C-_-_-_-_-_-
+[5C-_-_-_-_-_-
+[5C-_-_-_-_-_-
+[4A[16C_,------,
+[16C_|   /\_/\ 
+[16C^|__( x .x) 
+[16C  ""  "" 
+[4A 3
+ 8
+ 0
+
+[4A[5C-_-_-_-_-_-_
+[5C-_-_-_-_-_-_
+[5C-_-_-_-_-_-_
+[5C-_-_-_-_-_-_
+[4A[17C_,------,
+[17C_|  /\_/\ 
+[17C~|_( x .x) 
+[17C ""  "" 
+[4A 3
+ 9
+ 0
+
+[4A[5C-_-_-_-_-_-_-
+[5C-_-_-_-_-_-_-
+[5C-_-_-_-_-_-_-
+[5C-_-_-_-_-_-_-
+[4A[18C_,------,
+[18C_|   /\_/\ 
+[18C^|__( x .x) 
+[18C  ""  "" 
+[4A
+
+
+
+
+  3 passing (2s)
+  9 failing
+
+  1) arrays addElementToBeginningOfArray(array, element) adds an `element` to the beginning of an `array`:
+     AssertionError: expected undefined to deeply equal [ 'foo', 1 ]
+      at Context.it (test/arrays-test.js:21:59)
+
+  2) arrays destructivelyAddElementToBeginningOfArray(array, element) adds an `element` to the beginning of an `array`:
+     AssertionError: expected 2 to deeply equal [ 'foo', 1 ]
+      at Context.it (test/arrays-test.js:35:72)
+
+  3) arrays addElementToEndOfArray(array, element) adds an `element` to the end of an `array`:
+     ReferenceError: addElementToEndOfArray is not defined
+      at Context.it (test/arrays-test.js:49:14)
+
+  4) arrays addElementToEndOfArray(array, element) does not alter `array`:
+     ReferenceError: addElementToEndOfArray is not defined
+      at Context.it (test/arrays-test.js:55:7)
+
+  5) arrays destructivelyAddElementToEndOfArray(array, element) adds an `element` to the end of an `array`:
+     ReferenceError: destructivelyAddElementToEndOfArray is not defined
+      at Context.it (test/arrays-test.js:63:14)
+
+  6) arrays destructivelyAddElementToEndOfArray(array, element) alters `array`:
+     ReferenceError: destructivelyAddElementToEndOfArray is not defined
+      at Context.it (test/arrays-test.js:69:7)
+
+  7) arrays accessElementInArray(array, index) accesses the element in `array` at the given `index`:
+     ReferenceError: accessElementInArray is not defined
+      at Context.it (test/arrays-test.js:77:14)
+
+  8) arrays removeElementFromBeginningOfArray(array) removes the first element from the `array`:
+     ReferenceError: removeElementFromBeginningOfArray is not defined
+      at Context.it (test/arrays-test.js:83:14)
+
+  9) arrays removeElementFromEndOfArray(array) removes the last element from the `array`:
+     ReferenceError: removeElementFromEndOfArray is not defined
+      at Context.it (test/arrays-test.js:89:14)
+
+
+
