@@ -29,9 +29,11 @@ function accessElementInArray (a, i) {
 }
 
 function destructivelyAddElementToBeginningOfArray (a, e) {
-  return a.unshift(e);
+  a.unshift(e);
+  return a;
 }
 
 function destructivelyAddElementToEndOfArray (a, e) {
-  return a.push(e);
+  a.push(e);
+  return a;
 }
