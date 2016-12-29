@@ -13,25 +13,35 @@ function addElementToBeginningOfArray(myarray, foo) { //  var foo; var myarray =
 }
 addElementToBeginningOfArray(myarray, 1);
 function destructivelyAddElementToBeginningOfArray(myarray, foo) {
-  myarray = ["foo", ...myarray];
+//  var holdfoo = foo;
+  myarray.unshift(foo);
   return myarray;
-}
-destructivelyAddElementToBeginningOfArray("testarray", 1);
-/*
-function destructivelyAddElementToEndOfArray(myarray, foo) {
-  myarray.push(`foo`);
-  myarray.unshift(`foo`);
-  myarray;
-  }
-destructivelyAddElementToEndOfArray(myarray, 1);
+ }
+destructivelyAddElementToBeginningOfArray(myarray, 1);
+
 function addElementToEndOfArray(myarray, foo) {
-  myarray = [...myarray, `foo`];
-  var mynewarray = myarray;
-  mynewarray;
+  var mynewarray = [...myarray, `foo`];
+  return mynewarray;
 }
 addElementToEndOfArray(myarray, 1);
-function accessElementInArray() {
+function destructivelyAddElementToEndOfArray(myarray, foo) {
+  myarray.push(`foo`);
+  return myarray;
+}
+destructivelyAddElementToEndOfArray(myarray, 1);
+function accessElementInArray(myarray, myidx) {
+  myidx = parseInt(myidx);
+  var mytmparray = myarray[myidx];
+  return mytmparray;
+}
+accessElementInArray(myarray, 1);
+}
+accessElementInArray(myarray, 1);
+function removeElementFromBeginningOfArray(myarray) {
 
 }
-accessElementInArray();
-*/
+removeElementFromBeginningOfArray(myarray);
+function removeElementFromEndOfArray(array) {
+
+}
+removeElementFromEndOfArray(myarray);
