@@ -35,17 +35,19 @@ function accessElementInArray(myarray, myindex) {
   return mytmparray;
 }
 accessElementInArray(myarray, 1);
-function removeElementFromBeginningOfArray(myarray) {
+function removeElementFromBeginningOfArray(myarray) { // answer was using .shift()
   myarray.shift();
   return myarray;
 }
 removeElementFromBeginningOfArray(myarray);
 function removeElementFromEndOfArray(myarray) {
-
+  var mynewarray = myarray;
+  mynewarray.pop();
+  return mynewarray;
 }
 removeElementFromEndOfArray(myarray);
-function destructivelyRemoveElementFromBeginningOfArray(myarray){
-  myarray.pop(`myarray.length`);
-  return myarray;
+function destructivelyRemoveElementFromBeginningOfArray(myarray) {
+  // var mynumb = parseInt(`myarray.length`);
+
 }
 destructivelyRemoveElementFromBeginningOfArray(myarray);
