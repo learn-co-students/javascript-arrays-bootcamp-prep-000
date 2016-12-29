@@ -13,11 +13,10 @@ function addElementToBeginningOfArray(myarray, foo) { //  var foo; var myarray =
 }
 addElementToBeginningOfArray(myarray, 1);
 function destructivelyAddElementToBeginningOfArray(myarray, foo) {
-  myarray = [`foo`, ...myarray];
-  var mynewarray = myarray;
+  myarray = ["foo", ...myarray];
   return myarray;
 }
-destructivelyAddElementToBeginningOfArray(myarray, 1);
+destructivelyAddElementToBeginningOfArray("testarray", 1);
 /*
 function destructivelyAddElementToEndOfArray(myarray, foo) {
   myarray.push(`foo`);
