@@ -29,19 +29,23 @@ function destructivelyAddElementToEndOfArray(myarray, foo) {
   return myarray;
 }
 destructivelyAddElementToEndOfArray(myarray, 1);
-function accessElementInArray(myarray, myidx) {
-  myidx = parseInt(myidx);
-  var mytmparray = myarray[myidx];
+function accessElementInArray(myarray, myindex) {
+  myindex = parseInt(myindex);
+  var mytmparray = myarray[myindex];
   return mytmparray;
 }
 accessElementInArray(myarray, 1);
-}
-accessElementInArray(myarray, 1);
 function removeElementFromBeginningOfArray(myarray) {
-
+  myarray.shift();
+  return myarray;
 }
 removeElementFromBeginningOfArray(myarray);
-function removeElementFromEndOfArray(array) {
+function removeElementFromEndOfArray(myarray) {
 
 }
 removeElementFromEndOfArray(myarray);
+function destructivelyRemoveElementFromBeginningOfArray(myarray){
+  myarray.pop(`myarray.length`);
+  return myarray;
+}
+destructivelyRemoveElementFromBeginningOfArray(myarray);
