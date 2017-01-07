@@ -182,7 +182,7 @@ entrepreneurs[9];
 
 **NOTE**: If you had to guess, would you say that array indexes are *numbers* or *strings*? Think about it for a second, then read on.
 
-Array indexes are actually _strings_, even though we commonly refer to them as numbers. But you don't have to take my word for it: try typing `Object.keys([1, 2, ,3])` in your console and see what comes back.
+Array indexes are actually _strings_, even though we commonly refer to them as numbers. But you don't have to take my word for it: try typing `Object.keys([1, 2, 3])` in your console and see what comes back.
 
 ## Removing an Element
 
