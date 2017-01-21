@@ -1,11 +1,10 @@
 # JavaScript Arrays
 
-## Objectives
+## Objectives 
 
 - Explain what an array is and why we use it
 - Create an array
 - Add an element to an array
-- Access an element in an array
 - Delete an element from an array
 
 ## Instructions
@@ -178,13 +177,13 @@ console.log(entrepreneurs[2] + bio);
 entrepreneurs[9];
 ```
 
-**TODO**: Define a function in `arrays.js` called `accessElementInArray`. The function should accept an array and an index and return the element at that index.
+**TODO**: Define a function in `arrays.js` called `accessElementInArray`. The function should accept an and return the element at that index.
 
 **NOTE**: If you had to guess, would you say that array indexes are *numbers* or *strings*? Think about it for a second, then read on.
 
 Array indexes are actually _strings_, even though we commonly refer to them as numbers. But you don't have to take my word for it: try typing `Object.keys([1, 2, ,3])` in your console and see what comes back.
 
-## Removing an Element
+## Removing an Element  
 
 ### From the Beginning of an Array
 
