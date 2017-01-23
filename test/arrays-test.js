@@ -14,10 +14,10 @@ describe('arrays', () => {
     it('is an array containing "snickers", "hundred grand", "kitkat", and "skittles"', () => {
       expect(chocolateBars).to.eql['snickers', 'hundred grand', 'kitkat', 'skittles']
     })
-  })
 
   describe('addElementToBeginningOfArray(array, element)', () => {
     it('adds an `element` to the beginning of an `array`', () => {
+    })
       expect(addElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
     })
 
