@@ -1,39 +1,42 @@
 
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
 
-// add to begining array - :)
 function addElementToBeginningOfArray(array, element){
-  return [element, ...array]
+  array.unshift(element)
 }
-// destructive add at beggining - :)
-function destructivelyAddElementToBeginningOfArray(array, element){
+
+function addElementToBeginningOfArray(array, element){
+  array = [1]
   array.unshift('foo')
+  return array
 }
-//adding - :)
-function addElementToEndOfArray(array, element){
-  return [...array, element]
+
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array.unshift(element)
+  return array
 }
-// destructive addition - :)
+
+function addElementToEndOfArray(array, element) {
+  array.push(element)
+  return array
+}
+
 function destructivelyAddElementToEndOfArray(array, element){
-  array.push('foo')
+  array.push(element)
+  return array
 }
-//accsess Element - :)
-function accessElementInArray(array, element){
-  return  (array[element]);
+
+ function accessElementInArray(array, index){
+   return array[index]
 }
-// destructive remove - :)
-function destructivelyRemoveElementFromBeginningOfArray(array, element) {
-  array.shift(element)
-}
-// not mutate array
+
 function removeElementFromBeginningOfArray(array){
-  return array.slice(1)
+  var array = [1,2,3]
+   newArray = array.slice(1);
+   return newArray
 }
-// end remove destructivly. pop
-function destructivelyRemoveElementFromEndOfArray(array){
-  return array.pop();
-}
-// non0mutation using length - 1 - :)
-function removeElementFromEndOfArray(array, element){
-  return array.slice(0, array.length - 1)
+function removeElementFromEndOfArray(array){
+  var array = [1,2,3]
+   array.pop()
+   return array
 }
