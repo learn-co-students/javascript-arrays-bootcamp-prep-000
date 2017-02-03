@@ -35,6 +35,6 @@ var removeElementFromBeginningOfArray = array => {
 }
 
 var removeElementFromEndOfArray = array => {
-  var front = array.slice(0,-1)
-  return front
+  array.pop()
+  return array
 }
