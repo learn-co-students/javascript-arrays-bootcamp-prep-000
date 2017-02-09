@@ -11,30 +11,30 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 }
 
 function addElementToEndOfArray(array, element) {
-    return [...array, element]; 
+    return [...array, element]; //uses spread operator to add element to end of array
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
-    array.push(element);
+    array.push(element);//perm adds element to end of array
     return array;
 }
 
 function accessElementInArray(array, index) {
-    return array[index];
+    return array[index];//returns element at index
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array) {
-    array.shift();
+    array.shift();//perm remove first element
     return array;
 }
 
 function removeElementFromBeginningOfArray(array) {
-    return array.slice(1);
+    return array.slice(1);//remove element from position 0 (implied) to 1
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
-    return array.pop();
+    return array.pop();//pops last element off, permanently
 }
 function removeElementFromEndOfArray(array) {
-    return array.slice(0, array.length - 1)
+    return array.slice(0, array.length - 1)//removes last element, starting at position 0 and selecting element whose position is length-1
 }
