@@ -9,9 +9,6 @@ var destructivelyAddElementToBeginningOfArray = function(array, element) {
 var addElementToEndOfArray = function(array, element) {
   return [...array, element]
 }
-  array.push(element)
-  return array
-}
 var accessElementInArray = function(array, index) {
   return array[index]
 }
@@ -26,4 +23,8 @@ var destructivelyRemoveElementFromEndOfArray = function(array) {
 }
 var removeElementFromEndOfArray = function(array) {
   return array.slice(0, array.length - 1)
+}
+var destructivelyAddElementToEndOfArray = function(array, element) {
+  array.push(element);
+  return array
 }
