@@ -200,6 +200,7 @@ days // ["Tuesday", "Wednesday"]
 
 As with `unshift`, this method is _destructive_; it **mutates** the underlying array.
 
+**
 **TODO**: Define a function in `arrays.js` called `destructivelyRemoveElementFromBeginningOfArray` that takes an array as its only argument and removes the first element. Your function should then return the entire array, and it **should** mutate the array.
 
 Because we tend to want to avoid destruction, there is also a way to remove the first element from an array without changing the underlying array: we can use the `slice` method.
