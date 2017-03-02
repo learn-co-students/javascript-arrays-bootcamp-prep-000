@@ -1,6 +1,7 @@
 # JavaScript Arrays
 
 ## Objectives
+
 - Explain what an array is and why we use it
 - Create an array
 - Add an element to an array
@@ -13,7 +14,47 @@ You'll be coding along in `arrays.js`. There are tests to run to make sure you'r
 
 ## Introduction
 
+Let's say that we have a list of ingredients for a kickin' grilled cheese (code along in console):
+
+``` javascript
+var ingredient1 = "bread"
+var ingredient2 = "mild cheese"
+var ingredient3 = "sharp cheese"
+var ingredient4 = "butter"
+var ingredient5 = "tomato"
+var ingredient6 = "garlic"
+```
+
+But now what if we want to make a tomato sauce? Well, we already have garlic and tomato — but we have no idea what recipe they belong to. Pretty soon, we'll have a hard time keeping our ingredients safe, and we'd end up with bread in our tomato sauce.
+
+![noooooooo](http://i.giphy.com/fIyBQtxwwZYhq.gif)
+
+This is an admittedly contrived example, but it goes to show that we can't just put everything in a variable and hope to remember what order things should go in. It also shows that sometimes it would be helpful to be able to group like items together.
+
+In JavaScript, we can group like items in an object (well, everything in JavaScript is an object — but more on that some other time) called an _array_. And array is an ordered list of items (called "elements" of the array) separated by commas.
+
 Arrays look like this: `[1, 2, 3]`.
+
+Or like this:
+
+``` javascript
+var grilledCheeseIngredients = [
+  'bread',
+  'mild cheese',
+  'sharp cheese',
+  'butter',
+  'tomato',
+  'garlic'
+]
+
+var tomatoSauceIngredients = [
+  'tomato',
+  'garlic',
+  'olive oil',
+  'basil',
+  'oregano'
+]
+```
 
 ## Creation
 
@@ -30,7 +71,7 @@ var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37];
 
 var tvShows = ["game of thrones", "true detective", "the good wife", "empire"];
 
-var weirdGreeting = [ "he", 110, "w", 0, "r", {"1":"d"} ];
+var weirdGreeting = [ "he", 110, "w", 0, "r", 1, "d" ];
 
 var empty = [];
 ```
@@ -43,7 +84,7 @@ var evenNumbers = new Array();
 
 Arrays are _ordered_, meaning that the elements in them will always appear in the same order. The array `[1, 1, 2]`, is different from the array `[1, 2, 1]`.
 
-**TODO**: In `arrays.js`, define a function called `chocolateBars`. The function does not need to accept an argument, but should return an array of the strings `snickers`, `hundred grand`, `kitkat`, and `skittles`.
+**TODO**: In `arrays.js`, define a variable called `chocolateBars`. Its value should be an array of the strings `snickers`, `hundred grand`, `kitkat`, and `skittles`.
 
 ## Adding an Element
 
@@ -68,7 +109,7 @@ cities.unshift("Philadelphia")
 
 These actions _change_ the underlying array — in other words, they **mutate** its value.
 
-Most modern browsers (Chrome, FireFox, and Safari) support what is called the **spread operator** — it's three dots in a row: `...`. When used with an array, it _spreads out_ the arrays contents.
+Most modern browsers (Chrome, FireFox, and Safari) support what is called the **spread operator** — it's three dots in a row: `...`. When used with an array, it _spreads out_ the array's contents.
 
 We can use the spread operator to create a new array in place, rather than modifying the original one. Let's try it!
 
@@ -100,12 +141,22 @@ cities = ["Philadelphia", ...cities]
 const cats = ["Milo", "Garfield"]
 
 // we need a new variable:
-const moreCates = ["Felix", ...cats]
+const moreCats = ["Felix", ...cats]
 ```
 
-While we _can_ use bracket notation to add elements to an array at specific indexes, it's best not to. We should treat arrays as ordered lists of information that can be **any length**, so updating a specific index should feel like a weird thing to do.
+While we _can_ add elements to an array directly at specific indexes
 
-**TODO**: In `arrays.js`, define two functions, `addElementToBeginningOfArray` and `destructivelyAddElementToBeginningOfArray`. Both functions take two parameters, an array and an element to add to the beginning of the array, and both functions should add the element to the beginning of the array and then return the whole array. The destructive function, `descructivelyAddElementToBeginningOfArray`, should alter the original array that's passed in; `addElementToBeginningOfArray`, on the other hand, should return a new array **and not modify the original**.
+``` javascript
+var myArray = [1, 2, 3]
+
+myArray[5] = 5
+
+myArray // [1, 2, 3, undefined, undefined, 5]
+```
+
+it's best not to. We should treat arrays as ordered lists of information that can be **any length**, so updating a specific index should feel like a weird thing to do. Moreover, adding elements directly inserts `undefined` (as demonstrated above) if we also need to increase the array's length, which can lead to unexpected behavior.
+
+**TODO**: In `arrays.js`, define two functions, `addElementToBeginningOfArray` and `destructivelyAddElementToBeginningOfArray`. Both functions take two parameters, an array and an element to add to the beginning of the array, and both functions should add the element to the beginning of the array and then return the whole array. The destructive function, `destructivelyAddElementToBeginningOfArray`, should alter the original array that's passed in; `addElementToBeginningOfArray`, on the other hand, should return a new array **and not modify the original**.
 
 **TODO**: Define two more functions, `addElementToEndOfArray` and `destructivelyAddElementToEndOfArray`. These functions also take two arguments, an array and an element to add to the end of the array. `addElementToEndOfArray` **should not** alter the original array; `destructivelyAddElementToEndOfArray` **should** alter the original array.
 
@@ -127,7 +178,7 @@ console.log(entrepreneurs[2] + bio);
 entrepreneurs[9];
 ```
 
-**TODO**: Define a function in `arrays.js` called `accessElementFromArray`. The function should accept an array and an index and return the element at that index.
+**TODO**: Define a function in `arrays.js` called `accessElementInArray`. The function should accept an array and an index and return the element at that index.
 
 **NOTE**: If you had to guess, would you say that array indexes are *numbers* or *strings*? Think about it for a second, then read on.
 
@@ -189,7 +240,7 @@ cats.slice(-1) // ["Otis"]
 
 ### From the End of an Array
 
-To remove an element from the end of of an array, we can use the `pop` method:
+To remove an element from the end of an array, we can use the `pop` method:
 
 ``` javascript
 var iceCreams = ["chocolate", "vanilla", "raspberry"]
@@ -245,7 +296,7 @@ items = [1, 2, 3, 4]
 // and adds the items to add starting at the removal index
 items.splice(1, 1, 6, 7)
 
-items // [1, 6, 7, 3 4]
+items // [1, 6, 7, 3, 4]
 ```
 
 As we noted above, adding elements at specific indexes in the middle of an array _feels_ weird — it's intentionally difficult to do, as doing so with objects (where we have keys instead of sequential indexes) is much more natural.
@@ -268,12 +319,13 @@ Play around with this a bit until it makes sense. It's the trickiest thing that 
 
 ## Array Wackiness
 
-### Arrays Are Kinda Sorta Fancy Objects
+### We can add properties to arrays
 
-It might be helpful to think of arrays in JavaScript as fancy objects. Like objects, arrays can store bits of information, and we can retrieve that information later. Arrays differ from objects on two chief points:
+In JavaScript, everything is ultimately an object. We'll explore more about what that means when we cover objects, but for now, know that this means that we can add _properties_ to just about anything, including arrays.
 
-1. We don't give arrays `key-value` pairs. Instead, we just add elements to an array, and the array **indexes** each element, starting at `0` and going up to the `[number of elements in the array] - 1`. But the indexes are, for all intents and purposes, just keys in an object.
-2. Arrays keep track of how many elements they have in them via the `length` property: `[1, 2, 3].length // 3`. `length` doesn't work like other keys/indexes in objects/arrays — it updates automatically, and if we change it, we change the whole array.
+A property is a named piece of information. They're _kind of_ like variables (don't go too far with that analogy) but we can only get that information with reference to the property owner.
+
+What makes arrays special, then? Arrays keep track of how many elements they have in them via the `length` property: `[1, 2, 3].length // 3`. `length` doesn't work like other keys/indexes in objects/arrays — it updates automatically, and if we change it, we change the whole array.
 
 ``` javascript
 var myArray = [1, 2, 3]
@@ -315,3 +367,5 @@ We don't tend to do these kinds of things on purpose, but it's important to be a
 * [Codecademy - Arrays](http://www.codecademy.com/glossary/javascript)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-arrays.js' title='JavaScript Arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
