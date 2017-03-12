@@ -1,28 +1,39 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 
-
-function addElementToBeginningOfArray(, ) {
-  var chocolateBars.unshift("")
-  ["", ...chocolateBars]
-  }
-  chocolateBars
+function addElementToBeginningOfArray() {
+        ["mnm" ...chocolateBars]
+}
 
 
-function destructivelyAddElementToBeginningOfArray(, )
+function destructivelyAddElementToBeginningOfArray() {
+
+}
 
 
-function addElementToEndOfArray(, )
+function addElementToEndOfArray() {
+
+}
 
 
-function destructivelyAddElementToEndOfArray(, )
+function destructivelyAddElementToEndOfArray() {
+
+}
 
 
-function accessElementInArray(,)
+function accessElementInArray() {
+
+}
 
 
-function destructivelyRemoveElementFromBeginningOfArray()
+function destructivelyRemoveElementFromBeginningOfArray() {
+
+}
 
 
-function destructivelyRemoveElementFromEndOfArray()
+function destructivelyRemoveElementFromEndOfArray() {
 
-function removeElementFromEndOfArray
+}
+
+function removeElementFromEndOfArray() {
+
+}
