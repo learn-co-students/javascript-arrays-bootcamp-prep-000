@@ -32,8 +32,7 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 }
 
 function removeElementFromBeginningOfArray(array) {
-  var copy = [...array]
-  copy.shift()
+  var copy = array.slice(1)
   return copy
 }
 
@@ -43,7 +42,6 @@ function destructivelyRemoveElementFromEndOfArray(array) {
 }
 
 function removeElementFromEndOfArray(array) {
-  var copy = [...array]
-  copy.pop()
+  var copy = array.slice(0, array.length-1)
   return copy
 }
