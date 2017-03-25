@@ -1,29 +1,42 @@
 var chocolateBars = ['snickers', 'hundred grand,' 'kitkat', 'skittles']
 
-function addElementToBeginningOfArray(var arrayOne = ["old element"], ["new element", ...arrayOne]) {}
-function destructivelyAddElementToBeginningOfArray(var arrayTwo = ["old element"], arrayTwo.unshift("new element")) {}
-function addElementToEndOfArray(var arrayThree = ["old element"], [...arrayThree, "new element"]) {}
-function destructivelyAddElementToEndOfArray(var arrayFour = ["old element"], [arrayFour.push("new element")]) {}
-
-function accessElementInArray(var arrayFive = ["one", "two","three"]) {
-  return [1];
+function addElementToBeginningOfArray(array, element) {
+return [element, ...array];
+}
+function destructivelyAddElementToBeginningOfArray(array, element) {
+array.unshift(element);
+return array;
 }
 
-function destructivelyRemoveElementFromBeginningOfArray(arraySix = ["one", "two", "three"]) {
-  destructivelyRemoveElementFromBeginningOfArray.shift();
+function addElementToEndOfArray(array, element) {
+return [...array, element];
 }
 
-function removeElementFromBeginningOfArray(arraySeven = ["one", "two", "three"]) {
-  removeElementFromBeginningOfArray(0,1);
-  return removeElementFromBeginningOfArray;
+function destructivelyAddElementToEndOfArray(array, element) {
+  array.push(element);
+  return array;
 }
 
-function destructivelyRemoveElementFromEndOfArray(arrayEight = ["one", "two", "three"]) {
-  destructivelyRemoveElementFromEndOfArray.pop()
-  return destructivelyRemoveElementFromEndOfArray;
+function accessElementInArray(array, index) {
+  return array[index];
 }
 
-function removeElementFromEndOfArray(arrayNine = ["one", "two", "three"]) {
-  removeElementFromEndOfArray.slice(0, removeElementFromEndOfArray.length - 1);
-  return removeElementFromEndOfArray;
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+  array.shift();
+  return array;
+}
+
+function removeElementFromBeginningOfArray(array) {
+  array.slice(1);
+  return array;
+}
+
+function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop()
+  return array;
+}
+
+function removeElementFromEndOfArray(array) {
+  array.slice(0, array.length - 1);
+  return array;
 }
