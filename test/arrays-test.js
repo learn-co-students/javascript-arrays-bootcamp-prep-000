@@ -19,7 +19,14 @@ describe('arrays', () => {
   describe('addElementToBeginningOfArray(array, element)', () => {
     it('adds an `element` to the beginning of an `array`', () => {
       expect(addElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
+      expect(addElementToBeginningOfArray([1,2,3], 0)).to.eql([0,1,2,3])
     })
+
+      it('hello test', () => {
+        expect(hello('nick')).to.eql('Hello, nick')
+        expect(hello('rick')).to.eql('Hello, rick')
+      })
+
 
     it('does not alter `array`', () => {
       const array = [1]
@@ -77,12 +84,12 @@ describe('arrays', () => {
       expect(accessElementInArray([1, 2, 3], 2)).to.equal(3)
     })
   })
-  
+
   describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
     it('returns the `array` with the first element removed', () => {
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
     })
-    
+
     it('did not make a copy of the array when removing the first element', ()=>{
       const array = [1, 2, 3];
       destructivelyRemoveElementFromBeginningOfArray(array);
@@ -100,14 +107,14 @@ describe('arrays', () => {
     it('returns the `array` with the last element removed', () => {
       expect(destructivelyRemoveElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
-    
+
     it('did not make a copy of the array when removing the last element', ()=>{
       const array = [1, 2, 3];
       destructivelyRemoveElementFromEndOfArray(array);
       expect(array).to.eql([1, 2]);
     })
   })
-  
+
   describe('removeElementFromEndOfArray(array)', () => {
     it('removes the last element from the `array`', () => {
       expect(removeElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
