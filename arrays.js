@@ -18,24 +18,21 @@ function addElementToEndOfArray(array, element) {
   return new_array;
 }
 
-function removeElementFromBeginningOfArray(array) {
-  
-}
-
-function destructivelyAddElementToEndOfArray() {
-  
+function destructivelyAddElementToEndOfArray(array, element) {
+  array.pop.push(element);
+  return array;
 }
 
 function accessElementInArray() {
-  
+
 }
 
 function destructivelyRemoveElementFromBeginningOfArray() {
-  
+
 }
 
 function destructivelyRemoveElementFromEndOfArray() {
-  
+
 }
 
 function removeElementFromEndOfArray(array) {
