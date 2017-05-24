@@ -1,51 +1,45 @@
-var chocolateBars = ["snickers",
-"hundred grand",
-"kitkat",
-"skittles"];
+var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles']
 
-//add element to the beginning,return a new array *not modified original*
-function addElementToBeginningOfArray(array, element){
-  array1 = [element,...array];
-  return array1;
+
+function addElementToBeginningOfArray(array, element) {
+  return [element, ...array]
 }
 
-//should alter the original array it's passed in
 function destructivelyAddElementToBeginningOfArray(array, element){
-  array.unshift(element);
-  console.log(array);
+  array.unshift(element)
+  return array
 }
 
-//**should not** alter the original array
-function addElementToEndOfArray(array, element){
-  array2 = [...array, element];
-  console.log(array2);
-
-}
-//should alter the origianl array
-function destructivelyAddElementToEndOfArray(array, element){
-  array.push(element);
-  console.log(array);
+function addElementToEndOfArray(array, element) {
+  return [...array, element]
 }
 
-//return element at the index
-function accessElementInArray(array,index){
-  console.log(array[index]);
+function destructivelyAddElementToEndOfArray(array, element) {
+  array.push(element)
+
+  return array
 }
 
-//return entire array and **should** mutate the array
-function destructivelyRemoveElementFromBeginningOfArray(array){
-  array.shift();
-  console.log(array);
+function accessElementInArray(array, index) {
+  return array[index]
 }
 
-//removes first element,and **should not** mutate the underlying array
-function removeElementFromBeginningOfArray(array){
-  array3 = array.slice(1);
-  console.log(array3);
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+  array.shift()
+
+  return array
 }
 
-//remove last element,**should** mutate the array
-function destructivelyRemoveElementFromEndOfArray(array){
-  array.pop();
-  console.log(array);
+function removeElementFromBeginningOfArray(array) {
+  return array.slice(1)
+}
+
+function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop()
+
+  return array
+}
+
+function removeElementFromEndOfArray(array) {
+  return array.slice(0, array.length - 1)
 }
