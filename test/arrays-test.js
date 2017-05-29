@@ -18,8 +18,11 @@ describe('arrays', () => {
 
   describe('addElementToBeginningOfArray(array, element)', () => {
     it('adds an `element` to the beginning of an `array`', () => {
-      expect(addElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
-    })
+      const array = [1]
+      expect(addElementToBeginningOfArray(array, 'foo')).to.eql(['foo', 1])
+      expect(array).to.eql([1])
+
+})
 
     it('does not alter `array`', () => {
       const array = [1]
@@ -74,15 +77,17 @@ describe('arrays', () => {
 
   describe('accessElementInArray(array, index)', () => {
     it('accesses the element in `array` at the given `index`', () => {
+/// here the [123], is the array and the 2 is the index of where you access the last digit in the array.  0=1 1=2 2=3 in the array sequence.
       expect(accessElementInArray([1, 2, 3], 2)).to.equal(3)
     })
   })
-  
-  describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
+
+  describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{/// here (array) = 1,2,3 so no need to use the element array terms in the last few tests..
+    ///here down
     it('returns the `array` with the first element removed', () => {
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
-    })
-    
+    }) ///  destructively and .shift / e.g. array.shift mutates/alters the array. eg. 1,2,3 = 2,3   /// 1 is the element in the beg. of the array.
+
     it('did not make a copy of the array when removing the first element', ()=>{
       const array = [1, 2, 3];
       destructivelyRemoveElementFromBeginningOfArray(array);
@@ -100,14 +105,14 @@ describe('arrays', () => {
     it('returns the `array` with the last element removed', () => {
       expect(destructivelyRemoveElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
-    
+
     it('did not make a copy of the array when removing the last element', ()=>{
       const array = [1, 2, 3];
       destructivelyRemoveElementFromEndOfArray(array);
       expect(array).to.eql([1, 2]);
     })
   })
-  
+
   describe('removeElementFromEndOfArray(array)', () => {
     it('removes the last element from the `array`', () => {
       expect(removeElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
