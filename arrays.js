@@ -17,23 +17,23 @@ function destructivelyAddElementToEndOfArray(array, element) {
 }
 
 function accessElementInArray(array, index) {
-  return element = array[index]
+  return array[index]
 }
 
-function destructivelyRemoveElementFromBeginningOfArray(array, element) {
-  array.shift(element)
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+  array.shift()
   return array
 }
 
 function removeElementFromBeginningOfArray(array) {
-  return array = array.slice(1)
+  return array.slice(1)
 }
 
-function destructivelyRemoveElementFromEndOfArray(array, element) {
-  array.pop(element)
+function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop()
   return array
 }
 
 function removeElementFromEndOfArray(array) {
-  return array = array.slice(0, array.length - 1)
+  return array.slice(0, array.length - 1)
 }
