@@ -7,7 +7,7 @@ const path = require('path')
 
 describe('arrays', () => {
   jsdom({
-    src: fs.readFileSync(path.resolve(__dirname, '/../', 'arrys.js'), 'utf-8')
+    src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
   })
 
   describe('chocolateBars', () => {
