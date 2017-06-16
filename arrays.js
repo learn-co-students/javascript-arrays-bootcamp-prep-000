@@ -41,7 +41,7 @@ function removeElementFromEndOfArray(array,element) {
   }
 
 function removeElementFromWithinArray(array,index,amount) {
-  array.splice(index,amount)
+  array.slice(index,amount)
   return array
 }
 
