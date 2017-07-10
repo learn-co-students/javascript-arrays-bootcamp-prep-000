@@ -1,6 +1,6 @@
 
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
-var elementData = []
+var elementData
 var arrayName = []
 var newArray = []
 
