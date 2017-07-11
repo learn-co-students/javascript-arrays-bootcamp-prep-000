@@ -20,9 +20,3 @@ function addElementToEndOfArray(array, element){
 function destructivelyAddElementToEndOfArray(array, element){
   array.push(element);
 }
-
-
-function accessElementInArray(array, index){
-  var array = ["1","2", "3"];
-  console.log(array[2]);
-}
