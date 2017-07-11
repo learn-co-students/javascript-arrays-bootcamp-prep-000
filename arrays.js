@@ -16,24 +16,35 @@ function addElementToEndOfArray(array, element){
 }
 
 function destructivelyAddElementToEndOfArray(array, element){
- return  array.push(element);
+  array.push(element);
+  return array
 }
 
+/*
 function accessElementInArray(array,index){
- return  array[index];
+ return  array[index]
+}
+
+
+function destructivelyRemoveElementFromBeginningOfArray(array){
+   array.shift();
+   array;
+
 }
 /*
-function destructivelyRemoveElementFromBeginningOfArray(array){
-  return array.shift()
-}
-
 function removeElementFromBeginningOfArray(array){
    array.slice(1)
+   return array
 
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array){
-  array.pop()
+  array.pop();
+  return array
+}
 
+function removeElementFromEndOfArray(array){
+array.slice(0, array.length -1);
+return array
 }
 */
