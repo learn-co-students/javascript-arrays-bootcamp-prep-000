@@ -16,24 +16,24 @@ function addElementToEndOfArray(array, element){
 }
 
 function destructivelyAddElementToEndOfArray(array, element){
-  array.push(element);
-}
-/*
-function accessElementInArray(array,index){
- return  array[index]
+ return  array.push(element);
 }
 
+function accessElementInArray(array,index){
+ return  array[index];
+}
+/*
 function destructivelyRemoveElementFromBeginningOfArray(array){
   return array.shift()
 }
 
 function removeElementFromBeginningOfArray(array){
    array.slice(1)
- array
+
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array){
   array.pop()
-  array
+
 }
 */
