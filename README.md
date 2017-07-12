@@ -367,5 +367,3 @@ We don't tend to do these kinds of things on purpose, but it's important to be a
 * [Codecademy - Arrays](http://www.codecademy.com/glossary/javascript)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-arrays.js' title='JavaScript Arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
