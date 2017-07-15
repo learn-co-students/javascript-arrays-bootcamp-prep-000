@@ -3,16 +3,19 @@ var chocolateBars=["snickers", "hundred grand", "kitkat", "skittles"]
 ///this function add an element at the beginning an erray
 function addElementToBeginningOfArray(array, element){
 
-  var newArray = array.unshift(element)
+  var newArray = array
+  array.unshift(element)
   return newArray
 }
 //this function removes an element at the beginning of an array
 function destructivelyAddElementToBeginningOfArray(array, element){
-  return array.unshift(element)
+  array.unshift(element)
+  return array
 }
 //this function adds an element at the end of and array
 function addElementToEndOfArray (array, element){
-  var newArray = array.push(element)
+  var newArray = array
+  newArray.push(element)
   return newArray
 }
 //this function removes an element at the end of a array
