@@ -1,29 +1,25 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
 
-const array = [1, 2, 3, 4, 5]
+function addElementToBeginningOfArray(array, element) {
+  return [element, ...array]
+  }
 
-function addElementToBeginningOfArray(array,'foo') {
-  ['foo', ...array]
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array.unshift(element)
   return array
 }
 
-function destructivelyAddElementToBeginningOfArray(array,'foo') {
-  array.unshift('foo')
+function addElementToEndOfArray(array, element) {
+  return [...array, element]
+  }
+
+function destructivelyAddElementToEndOfArray(array, element) {
+  array.push(element)
   return array
 }
 
-function addElementToEndOfArray(array,'foo') {
-  [...array, 'foo']
-  return array
-}
-
-function destructivelyAddElementToEndOfArray(array,'foo') {
-  array.push('foo')
-  return array
-}
-
-function accessElementInArray(array,[0]) {
-  return array[0]
+function accessElementInArray(array, index) {
+  return array[index]
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array) {
