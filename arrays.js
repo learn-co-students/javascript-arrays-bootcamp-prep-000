@@ -1,30 +1,26 @@
 var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles']
 
-function addElementToBeginningOfArray() {
-  var addElementToBeginningOfArray = [1]
-  var addElementToBeginningOfArray = ['foo', ...addElementToBeginningOfArray]
-    return addElementToBeginningOfArray
+function addElementToBeginningOfArray(array, element){
+  var arrayConst = [element, ...array]
+  return arrayConst
 }
 
-function destructivelyAddElementToBeginningOfArray() {
-  var destructivelyAddElementToBeginningOfArray = [1]
-    destructivelyAddElementToBeginningOfArray.unshift("foo")
-    return destructivelyAddElementToBeginningOfArray
+function destructivelyAddElementToBeginningOfArray(array, element){
+  array.unshift(element)
+  return array
 }
 
-function addElementToEndOfArray() {
-  var addElementToEndOfArray = [1]
-  var addElementToEndOfArray = [...addElementToEndOfArray, 'foo']
-    return addElementToEndOfArray
+function addElementToEndOfArray(array, element){
+  var arrayEnd = [...array, element]
+  return arrayEnd
 }
 
-function destructivelyAddElementToEndOfArray() {
-  var destructivelyAddElementToEndOfArray = [1]
-    destructivelyAddElementToEndOfArray.push("foo")
-    return destructivelyAddElementToEndOfArray
+function destructivelyAddElementToEndOfArray(array, element){
+  array.push(element)
+  return array
 }
 
-function accessElementInArray() {
-  var array = [1, 2, 3]
-  console.log(array[2])
+function accessElementInArray(array, index){
+  var arrayIndex = array[index]
+  return arrayIndex
 }
