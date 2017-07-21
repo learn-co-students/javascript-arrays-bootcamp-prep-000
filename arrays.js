@@ -1,49 +1,42 @@
 var chocolateBars = [`snickers`, `hundred grand`, `kitkat`, `skittles`];
 
-function addElementToBeginningOfArray(chocolateBars, "payday") {
-  return chocolateBars.unshift("payday")
+function addElementToBeginningOfArray(array, element) {
+  return [element, ...array]
 }
 
-addElementToBeginningOfArray()
-
-function destructivelyAddElementToBeginningOfArray(chocolateBars, "payday") {
-  return ["payday", ...chocolateBars]
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array.unshift(element)
+  return array
 }
 
-destructivelyAddElementToBeginningOfArray()
-
-function addElementToEndOfArray(chocolateBars, "payday") {
-  return chocolateBars.push("payday")
+function addElementToEndOfArray(array, element) {
+  return [...array, element]
 }
 
-addElementToEndOfArray()
-
-function destructivelyAddElementToEndOfArray(chocolateBars, "payday") {
-  return [...chocolateBars, "payday"]
+function destructivelyAddElementToEndOfArray(array, element) {
+  array.push(element)
+  return array
 }
 
-destructivelyAddElementToEndOfArray()
-
-function accessElementInArray() {
-  console.log(chocolateBars[2])
+function accessElementInArray(array, index) {
+  return array[index]
 }
 
-function destructivelyRemoveElementFromBeginningOfArray() {
-  chocolateBars.shift()
-  return chocolateBars
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+  array.shift()
+  return array
 }
 
-function destructivelyRemoveElementFromBeginningOfArray() {
-  chocolateBars.slice(1)
-  return chocolateBars
+function removeElementFromBeginningOfArray(array) {
+  return array.slice(1)
+
 }
 
-function destructivelyRemoveElementFromEndOfArray() {
-  chocolateBars.pop
-  return chocolateBars
+function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop()
+  return array
 }
 
-function removeElementFromBeginningOfArray() {
-  chocolateBars.slice(0, chocolateBars.length - 1)
-  return chocolateBars
+function removeElementFromEndOfArray(array) {
+  return array.slice(0, array.length - 1)
 }
