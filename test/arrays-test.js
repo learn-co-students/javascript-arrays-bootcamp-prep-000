@@ -94,6 +94,12 @@ describe('arrays', () => {
     it('removes the first element from the `array`', () => {
       expect(removeElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
     })
+
+    it('does not alter the array', () => {
+      var array = [1,2,3]
+      removeElementFromBeginningOfArray(array)
+      expect(array).to.eql([1,2,3])
+    })
   })
 
   describe('destructivelyRemoveElementFromEndOfArray(array)', () => {
