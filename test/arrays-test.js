@@ -2,13 +2,26 @@
 
 const expect = require('chai').expect
 const fs = require('fs')
-const jsdom = require('mocha-jsdom')
+const jsdom = require('jsdom')
 const path = require('path')
 
 describe('arrays', () => {
-  jsdom({
-    src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
+  before(done => {
+    const src = path.resolve(__dirname, '..', 'arrays.js')
+
+    jsdom.env('<div></div>', [src], (err, window) => {
+      if (err) {
+        return done(err)
+      }
+
+      Object.keys(window).forEach(key => {
+        global[key] = window[key]
+      })
+
+      return done()
+    })
   })
+
 
   describe('chocolateBars', () => {
     it('is an array containing "snickers", "hundred grand", "kitkat", and "skittles"', () => {
@@ -77,12 +90,12 @@ describe('arrays', () => {
       expect(accessElementInArray([1, 2, 3], 2)).to.equal(3)
     })
   })
-  
+
   describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
     it('returns the `array` with the first element removed', () => {
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
     })
-    
+
     it('did not make a copy of the array when removing the first element', ()=>{
       const array = [1, 2, 3];
       destructivelyRemoveElementFromBeginningOfArray(array);
@@ -100,14 +113,14 @@ describe('arrays', () => {
     it('returns the `array` with the last element removed', () => {
       expect(destructivelyRemoveElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
-    
+
     it('did not make a copy of the array when removing the last element', ()=>{
       const array = [1, 2, 3];
       destructivelyRemoveElementFromEndOfArray(array);
       expect(array).to.eql([1, 2]);
     })
   })
-  
+
   describe('removeElementFromEndOfArray(array)', () => {
     it('removes the last element from the `array`', () => {
       expect(removeElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
