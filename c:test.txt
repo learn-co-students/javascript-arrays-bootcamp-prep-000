@@ -1,0 +1,45 @@
+
+> javascript-arrays@0.1.0 test /home/mariahrndz14-107760/code/labs/javascript-arrays-bootcamp-prep-000
+> mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
+
+ 0
+ 0
+ 0
+
+[4A[5C-
+[5C-
+[5C-
+[5C-
+[4A[6C_,------,
+[6C_|   /\_/\ 
+[6C^|__( - .-) 
+[6C  ""  "" 
+[4A 0
+ 1
+ 0
+
+[4A[5C-_
+[5C-_
+[5C-_
+[5C-_
+[4A[7C_,------,
+[7C_|  /\_/\ 
+[7C~|_( x .x) 
+[7C ""  "" 
+[4A
+
+
+
+
+  0 passing (2s)
+  1 failing
+
+  1) arrays "before all" hook:
+     Error: timeout of 2000ms exceeded. Ensure the done() callback is being called in this test.
+      at Object.done (node_modules/mocha-jsdom/index.js:70:7)
+      at process.nextTick (node_modules/jsdom/lib/jsdom.js:325:18)
+      at _combinedTickCallback (internal/process/next_tick.js:73:7)
+      at process._tickCallback (internal/process/next_tick.js:104:9)
+
+
+
