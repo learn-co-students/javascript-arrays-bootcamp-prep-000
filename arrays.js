@@ -6,7 +6,21 @@ function addElementToBeginningOfArray (array, element){
  return chocolateBars
 }
 
+function destructivelyAddElementToEndOfArray (array, element){
+array.push(element)
+return array
+}
+
+function addElementToEndOfArray (array, element){
+var chocolateBars= [...array, element]
+return chocolateBars
+}
+
 function destructivelyAddElementToBeginningOfArray (array, element){
   array.unshift(element)
   return array
+}
+
+function accessElementInArray (array, index){
+return array[index]
 }
