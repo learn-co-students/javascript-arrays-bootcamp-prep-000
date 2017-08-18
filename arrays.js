@@ -1,12 +1,12 @@
-chocolateBars = ["snickers", "hundred grand", "kitkat", and "skittles"]
+chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
 
 function addElementToBeginningOfArray(array, element) {
   return [element, ...array];
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  array = [element, ...array];
-  return array
+  array.unshift(element);
+  return array;
 }
 
 function addElementToEndOfArray(array, element) {
@@ -14,7 +14,8 @@ function addElementToEndOfArray(array, element) {
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
-  array = [...array, element];
+  array.push(element);
+  return array;
 }
 
 
