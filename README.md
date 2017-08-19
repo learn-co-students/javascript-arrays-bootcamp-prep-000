@@ -332,9 +332,9 @@ arr[02]; // 02 the number *is* 2, so you get "hood"
 arr['02']: // '02' the string is *not* 2, so you get undefined
 ```
 
-This little tidbit might come in handy if you ever try to assign a value to an array index by using a string unintentionally.  Like, say, by getting your array positions from a zero-filled formatted list of numbers which you store as strings, then using those strings to access array elements.  
+This little tidbit might come in handy if you ever try to assign a value to an array index by using a string unintentionally.  Like, say, by getting your array positions from a zero-filled formatted list of numbers which you store as strings, then using those strings to access array elements.
 
-Or by indexing an array with a variable whose contents don't in any way represent a number--like typing `myArray['bonobo monkey'] = 27`.  
+Or by indexing an array with a variable whose contents don't in any way represent a number--like typing `myArray['bonobo monkey'] = 27`.
 
 You'll get no complaints, because rather than adding an index to the array, you're adding a *property*.  Speaking of which...
 
@@ -384,7 +384,5 @@ We don't tend to do these kinds of things on purpose, but it's important to be a
 
 * [MDN - Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 * [Codecademy - Arrays](http://www.codecademy.com/glossary/javascript)
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-arrays.js' title='JavaScript Arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/javascript-arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
