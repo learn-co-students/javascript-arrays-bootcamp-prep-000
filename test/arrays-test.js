@@ -26,7 +26,7 @@ describe('arrays', () => {
 
       addElementToBeginningOfArray(array, 'foo')
 
-      expect(array).to.eql(array)
+      expect(array).to.eql([1])
     })
   })
 
