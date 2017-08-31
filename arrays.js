@@ -23,9 +23,7 @@ function accessElementInArray(arr, index) {
 }
 
 function removeElementFromBeginningOfArray(arr) {
-  let copy = [...arr]
-  copy.shift()
-  return copy
+  return arr.slice(1)
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(arr) {
@@ -39,7 +37,5 @@ function destructivelyRemoveElementFromEndOfArray(arr) {
 }
 
 function removeElementFromEndOfArray(arr) {
-  let copy = [...arr]
-  copy.pop()
-  return copy
+  return arr.slice(0, -1)
 }
