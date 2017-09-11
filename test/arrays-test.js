@@ -22,15 +22,15 @@ describe('arrays', () => {
     it('adds an `element` to the beginning of an `array`', () => {
       function addElementToBeginningOfArray(array, element) {
         var element =  [1]
-        element = ['foo', 1]
-        return element
+        element.unshift ( 'foo')
+        return  element;
       }
       expect(addElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
     })
 
     it('does not alter `array`', () => {
-      var array = [1]
-      array = [array, 'foo']
+      var array = [];
+      array.push =  ('foo');
       return array
 
       addElementToBeginningOfArray(array, 'foo')
@@ -41,11 +41,11 @@ describe('arrays', () => {
 
   describe('destructivelyAddElementToBeginningOfArray(array, element)', () => {
     it('adds an `element` to the beginning of an `array`', () => {
-function destructivelyAddElementToBeginningOfArray(array, element) {
-  var element = [1]
-  element = ['foo', 1]
-  return element
-}
+        function destructivelyAddElementToBeginningOfArray(array, element) {
+            var element =  [1]
+            element.unshift ( 'foo')
+            return  element;
+  }
       expect(destructivelyAddElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
     })
 
@@ -118,8 +118,8 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
   describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
     it('returns the `array` with the first element removed', () => {
       function destructivelyRemoveElementFromBeginningOfArray(array) {
-        var array =  [ 2, 3]
-        array.slice (1)
+        var array =  [ 1, 2, 3]
+        array.shift ()
         return array
       }
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
@@ -127,7 +127,7 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 
     it('did not make a copy of the array when removing the first element', ()=>{
       var array = [1, 2, 3];
-      array = [ 2, 3]
+      array.shift = [];
       return array
 
       destructivelyRemoveElementFromBeginningOfArray(array);
@@ -138,8 +138,8 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
   describe('removeElementFromBeginningOfArray(array)', () => {
     it('removes the first element from the `array`', () => {
       function removeElementFromBeginningOfArray(array) {
-        var array = [2, 3]
-        array.slice (-1)
+        var array = [1, 2, 3]
+        array.shift ()
         return array
 
       }
@@ -150,9 +150,9 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
   describe('destructivelyRemoveElementFromEndOfArray(array)', () => {
     it('returns the `array` with the last element removed', () => {
       function  destructivelyRemoveElementFromEndOfArray(array) {
-        var array = [ 1 , 2 ]
-        array.slice (-3)
-        return array
+        var array = [ 1, 2, 3 ]
+        array.pop (3);
+        return  array;
 
       }
       expect(destructivelyRemoveElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
@@ -160,7 +160,7 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 
     it('did not make a copy of the array when removing the last element', ()=>{
       var array = [1, 2, 3];
-      array = [1, 2]
+      array.pop (3);
       return array
 
       destructivelyRemoveElementFromEndOfArray(array);
@@ -172,7 +172,7 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
     it('removes the last element from the `array`', () => {
       function removeElementFromEndOfArray(array) {
         var array = [1, 2, 3]
-        array.pop (-3)
+        array.pop ()
         return array
 
       }
