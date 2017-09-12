@@ -260,7 +260,7 @@ iceCreams.slice(0, iceCreams.length - 1) // ["chocolate", "vanilla"]
 iceCreams // ["chocolate", "vanilla", "raspberry"]
 ```
 
-**TODO**: Define a function in `arrays.js` called `removeElementFromEndOfArray` that takes an array as its only argument and removes the last element. Your function should return the entire array, and it **should not** mutate the array.
+**TODO**: Define a function in `arrays.js` called `removeElementFromEndOfArray` that takes an array as its only argument and removes the last element. Your function should return the array without the last element, and it **should not** mutate the original array.
 
 ### From the Middle of an Array
 
