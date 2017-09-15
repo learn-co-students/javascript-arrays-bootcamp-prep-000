@@ -5,6 +5,7 @@ const fs = require('fs')
 const jsdom = require('mocha-jsdom')
 const path = require('path')
 
+
 describe('arrays', () => {
   jsdom({
     src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
@@ -77,12 +78,12 @@ describe('arrays', () => {
       expect(accessElementInArray([1, 2, 3], 2)).to.equal(3)
     })
   })
-  
+
   describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
     it('returns the array with the first element removed', () => {
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
     })
-    
+
     it('alters the original array', ()=>{
       const array = [1, 2, 3];
       destructivelyRemoveElementFromBeginningOfArray(array);
@@ -108,19 +109,19 @@ describe('arrays', () => {
     it('returns the array with the last element removed', () => {
       expect(destructivelyRemoveElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
-    
+
     it('alters the original array', ()=>{
       const array = [1, 2, 3];
       destructivelyRemoveElementFromEndOfArray(array);
       expect(array).to.eql([1, 2]);
     })
   })
-  
+
   describe('removeElementFromEndOfArray(array)', () => {
     it('removes the last element from the array', () => {
       expect(removeElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
-    
+
     it('does not alter the original array', () => {
       const array = [1, 2, 3];
       removeElementFromEndOfArray(array);
