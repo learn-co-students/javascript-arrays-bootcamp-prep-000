@@ -40,5 +40,5 @@ function destructivelyAddElementToEndOfArray(array, element) {
 
 function accessElementInArray(array, index) {
   array.splice(0, 2,);
-  return array;
+  return array[array.length-1];
 }
