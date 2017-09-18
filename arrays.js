@@ -51,18 +51,22 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 
 function removeElementFromBeginningOfArray(array) {
   // const a1 = array;
+  var a1 = array;
+
   try {
-    var a = array;
     array = [1];
+
   } catch (e) {
     return array;
+    // console.log(array);
   }
 
 
-  a1 = array;
-  a1.splice(0, 1);
-  return a1;  //!!!!!
+      return a1.slice(1);  //!!!!!
+
+
 }
+
 
 function destructivelyRemoveElementFromEndOfArray(array){
   var a = array;
