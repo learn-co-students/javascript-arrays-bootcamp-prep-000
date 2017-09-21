@@ -4,10 +4,10 @@
   "description": "Introduction to arrays in JavaScript in Learn",
   "main": "array.js",
   "directories": {
-    "test": "test"
+    "test": "mocha--timeout 10000"
   },
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options nyan=-,json=.results.json"
   },
   "repository": {
     "type": "git",
