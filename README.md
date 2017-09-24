@@ -111,7 +111,7 @@ These actions _change_ the underlying array — in other words, they **mutate** 
 
 Most modern browsers (Chrome, FireFox, and Safari) support what is called the **spread operator** — it's three dots in a row: `...`. When used with an array, it _spreads out_ the array's contents.
 
-We can use the spread operator to create a new array in place, rather than modifying the original one. Let's try it!
+  We can use the spread operator to create a new array in place, rather than modifying the original one. Let's try it!
 
 ``` javascript
 var cities = ["New York", "San Francisco"]
