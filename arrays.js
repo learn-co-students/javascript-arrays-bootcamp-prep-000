@@ -7,9 +7,9 @@ function addElementToBeginningOfArray(a,e) {
 }
 
 function destructivelyAddElementToBeginningOfArray(a,e) {
-  var arr = [1]
-  arr = [e,...arr]
-  return arr
+  var a = [1]
+  a = [e,...a]
+  return a
 }
 
 function addElementToEndOfArray(a,e) {
