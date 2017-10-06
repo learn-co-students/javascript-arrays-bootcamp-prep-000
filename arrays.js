@@ -14,10 +14,20 @@ function destructivelyAddElementToEndOfArray(array, element) {
   return array;
 }
 function accessElementInArray(array, index) {
-  array.slice(index);
-  return array[0];
+  var num = array.slice(index);
+  return num[0];
 }
 function destructivelyRemoveElementFromBeginningOfArray(array) {
-  array.unshift;
+  array.shift();
   return array;
+}
+function removeElementFromBeginningOfArray(array) {
+  return array.slice(1, array.length);
+}
+function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop();
+  return array;
+}
+function removeElementFromEndOfArray(array) {
+  return array.slice(0, array.length-1);
 }
