@@ -39,6 +39,5 @@ function destructivelyRemoveElementFromEndOfArray(array){
 }
 //Define a function in `arrays.js` called `removeElementFromEndOfArray` that takes an array as its only argument and removes the last element. Your function should return the array without the last element, and it **should not** mutate the original array.
 function removeElementFromEndOfArray(array){
-  var copyarray = array.slice(0, 2)
-  return copyarray
+  return array.slice(0, 2)
 }
