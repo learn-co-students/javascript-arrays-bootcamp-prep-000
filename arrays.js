@@ -1,11 +1,4 @@
-var chocolateBars = ['is an array containing "snickers", "hundred grand", "kitkat", "skittles" ']
-var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
-var addElementToBeginningOfArray = ["bar one", ...chocolateBars]
-var destructivelyAddElementToBeginningOfArray = chocolateBars.unshift("bar one")
-var addElementToEndOfArray = [...chocolateBars, "bar one"]
-var destructivelyAddElementToEndOfArray = chocolateBars.push("bar one")
-var accessElementInArray = console.log(chocolateBars[0]);
-var destructivelyRemoveElementFromBeginningOfArray = destructivelyAddElementToBeginningOfArray,shift()
-var removeElementFromBeginningOfArray = addElementToBeginningOfArray,slice(0)
-var destructivelyRemoveElementFromEndOfArray = destructivelyAddElementToEndOfArray.pop()
-var removeElementFromEndOfArray = addElementToEndOfArray.slice(0, addElementToEndOfArray.length-1)
+function chocolateBars (){
+  var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
+  return chocolateBars
+}
