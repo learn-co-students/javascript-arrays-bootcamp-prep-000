@@ -5,19 +5,16 @@ var chocolateBars = [
     'skittles'
 ];
 
-var addElementToBeginningOfArray = [
-    'cat',
-    'dog',
-    'horse'
-];
-addElementToBeginningOfArray.push("wonder woman");
+function addElementToBeginningOfArray (array, element) {
 
-
-var destructivelyAddElementToBeginningOfArray = [
+            return array.unshift(element);
+}
 
 
 
-]
+function destructivelyAddElementToBeginningOfArray() {
+
+}
 
 var addElementToEndOfArray = [
 
