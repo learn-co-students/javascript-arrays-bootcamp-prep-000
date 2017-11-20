@@ -22,7 +22,7 @@ describe('arrays', () => {
     })
 
     it('does not alter the original array', () => {
-      const array = [1]
+      var array = [1]
 
       addElementToBeginningOfArray(array, 'foo')
 
@@ -36,7 +36,7 @@ describe('arrays', () => {
     })
 
     it('alters the original array', () => {
-      const array = [1]
+      var array = [1]
 
       destructivelyAddElementToBeginningOfArray(array, 'foo')
 
