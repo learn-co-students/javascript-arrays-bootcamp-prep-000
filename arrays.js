@@ -17,7 +17,8 @@ function addElementToEndOfArray(numbas, n) {
 }
 
 function destructivelyAddElementToEndOfArray(numbas, n) {
-  return [numbas.push(n)]
+  numbas.push(n)
+  return numbas
 }
 
 function accessElementInArray(numbas, i) {
@@ -25,7 +26,8 @@ function accessElementInArray(numbas, i) {
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(numbas) {
-  return numbas.shift() 
+  numbas.shift()
+  return numbas
 }
 
 function removeElementFromBeginningOfArray(numbas) {
@@ -33,7 +35,8 @@ function removeElementFromBeginningOfArray(numbas) {
 }
 
 function destructivelyRemoveElementFromEndOfArray(numbas) {
-  return numbas.pop()
+  numbas.pop()
+  return numbas
 }
 
 function removeElementFromEndOfArray(numbas) {
@@ -44,3 +47,7 @@ function removeElementFromEndOfArray(numbas) {
   return numbas.slice(0, numbas.length - 1)
 }
 
+function destructivelyAddElementToBeginningOfArray(numbas, n) {
+    numbas.unshift(n)
+    return numbas
+}
