@@ -51,3 +51,5 @@ function destructivelyAddElementToBeginningOfArray(numbas, n) {
     numbas.unshift(n)
     return numbas
 }
+
+////On that last one, numbas and n in the function both create the variables numbas and n. then we operate on numbas by typing numbas.unshift(n). Now that we've operated on it, we can return the new numbas array.  
