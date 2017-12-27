@@ -1,42 +1,36 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
-function addElementToBeginningOfArray(array, element) {
-  var cities = ["New York", "San Francisco"]
-  cities = ["Philadelphia", ...cities]
-  return cities
+function addElementToBeginningOfArray(myArray, element) {
+  var newArray = [element, ...myArray]
+  return newArray
 }
-function destructivelyAddElementToBeginningOfArray(array, element) {
-  cities.unshift("Brooklyn")
-  return cities
-} 
-function addElementEndOfArray(array, element) {
-  var cities = ["New York", "San Francisco", "Philadelphia" ]
-  cities = [...cities, "Houston"]
-  return cities
+function destructivelyAddElementToBeginningOfArray(myArray, element) {
+  myArray.unshift(element);
+  return myArray
 }
-function destructivelyAddElementToEndOfArray(array, element) {
-  cities.push("Los Angeles")
-  return cities
+function addElementToEndOfArray(myArray, element) {
+  var newArray = [...myArray, element]
+  return newArray
 }
-function accessElementInArray(array, element) {
-  console.log(chocolateBars[1]);
+function destructivelyAddElementToEndOfArray(myArray, element) {
+ myArray.push(element)
+ return myArray
 }
-function destructivelyRemoveElementFromBeginningOfArray(array, element) {
-   var cities = ["New York", "Denver", "Philadelphia"]
-   cities.lshift("New York")
-   return cities
+function accessElementInArray(array, index) {
+  return array[index]
 }
-function removeElementFromBeginningOfArray(array, element) { 
-  var cats = ["Milo", "Garfield", "Otis"]
-  cats.slice(-2)
-  return cats
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+  array.shift()
+  return array
 }
-function destructivelyRemoveElementFromEndOfArray(array, element) {
-  var iceCreams = ["Chocolate", "Vanilla", "Raspberry"]
-  iceCreams.push("Raspberry")
-  return iceCreams
+function removeElementFromBeginningOfArray(array) {
+  array = array.slice(1)
+  return array
 }
-function removeElementFromEndOfArray(array, element) {
-  var iceCreams = ["chocolate", "vanilla", "raspberry"]
-  iceCreams.slice(2)
-  return iceCreams
+function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop();
+  return array
+}
+function removeElementFromEndOfArray(array) {
+  newArray = array.slice(0, array.length - 1)
+  return newArray
 }
