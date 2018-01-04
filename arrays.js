@@ -7,28 +7,34 @@ function destructivelyAddElementToBeginningOfArray(array, element){
 }
 function destructivelyAddElementToBeginningOfArray(array,element){
   array.unshift(element)
-  return (array)
+  return array
 }
 function addElementToEndOfArray(array,element){
-  array.push(element)
-  return (array)
+  return [...array,element];
 }
 function destructivelyAddElementToEndOfArray(array,element){
-  return[...array,element]
+  array.push(element);
+  return array;
+}
+function accessElementInArray(array,index){
+  return array[index];
 }
 function destructivelyRemoveElementFromBeginningOfArray(array){
-  array.splice(0,1);
+  array.shift();
+  return array;
 }
 function destructivelyRemoveElementFromEndOfArray(array){
   array.slice(-1);
 }
 function removeElementFromBeginningOfArray(array){
-  array.slice(0);
+  arr=array.slice(1);
+  return arr;
 }
 function destructivelyRemoveElementFromEndOfArray(array){
   array.pop();
   return array
 }
 function removeElementFromEndOfArray(array){
-  array.slice(-1);
+  const arr=array.slice(0,array.length-1);
+  return arr;
 }
