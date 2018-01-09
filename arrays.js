@@ -6,9 +6,14 @@ function addElementToBeginningOfArray(array, element) {
   return ["foo", ...array] ;
 }
 
+/*function destructivelyAddElementToBeginningOfArray(array, element) {
+  array.unshift("foo") ;
+  return array*/
+
+// OR:
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  chocolateBars = array
-  return array = ["foo", ...array] ;
+  array.unshift(element) ;
+  return array
 }
 
 function addElementToEndOfArray(array, element) {
@@ -17,7 +22,8 @@ function addElementToEndOfArray(array, element) {
 }
 
 function destructivelyAddElementToEndOfArray(array, element){
-  return chocolateBars = [...chocolateBars, "foo"] ;
+  array.push(element) ;
+  return array ;
 }
 
 function accessElementInArray(array, index){
@@ -45,5 +51,5 @@ function destructivelyRemoveElementFromEndOfArray(array){
 
 function removeElementFromEndOfArray(array){
   chocolateBars = array
-  return array ;
+  return array.slice(0, array.length - 1) ;
 }
