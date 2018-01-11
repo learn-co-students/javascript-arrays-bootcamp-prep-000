@@ -1,4 +1,11 @@
-# JavaScript Arrays
+ AssertionError: expected [ 3 ] to deeply equal[ 1, 2 ]
+      + expected - actual
+
+       [
+      -  3
+      +  1
+      +  2
+       ].s # JavaScript Arrays
 
 ## Objectives
 
