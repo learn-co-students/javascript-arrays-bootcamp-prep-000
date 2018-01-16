@@ -4,7 +4,7 @@ var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 // I wish they'd tell us to alter array-test.js.
 function addElementToBeginningOfArray(chocolateBars, lollipop) {
     return ['foo', ...chocolateBars]; // element..., array(does not alter)
-  }
+}
 
 function destructivelyAddElementToBeginningOfArray(chocolateBars, lollipop) {
   chocolateBars.unshift('foo'); //array-->method-->(element-to-be-"unshifted")
