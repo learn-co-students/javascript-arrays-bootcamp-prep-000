@@ -1,4 +1,4 @@
-/*global describe, it */
+///*global describe, it */
 
 //  'chocolateBars'
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
@@ -7,63 +7,36 @@ var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
 
 //describe('addElementToBeginningOfArray(array, element)', () => {
 function addElementToBeginningOfArray(array, element) {
-    var newArr = [element, ...array]
-    return newArr
+    return [element, ...array]
     
 }
 
   //describe('destructivelyAddElementToBeginningOfArray(array, element)', () => {
 function destructivelyAddElementToBeginningOfArray(array, element) {
     array.unshift(element)
+    return array
 }
 
-it('alters the original array', () => {
-      const array = [1]
+//describe('addElementToEndOfArray(array, element)', () => {
+function addElementToEndOfArray(array, element) {
+     return [array, ...element]
+    }
 
-      destructivelyAddElementToBeginningOfArray(array, 'foo')
+//describe('destructivelyAddElementToEndOfArray(array, element)', () => {
+function destructivelyAddElementToEndOfArray(array, element) {
+    array.push(element)
+    return array
+    }
 
-      expect(array).to.eql(['foo', 1])
-    })
-  })
-
-  describe('addElementToEndOfArray(array, element)', () => {
-    it('adds an element to the end of an array', () => {
-      expect(addElementToEndOfArray([1], 'foo')).to.eql([1, 'foo'])
-    })
-
-    it('does not alter the original array', () => {
-      const array = [1]
-
-      addElementToEndOfArray(array, 'foo')
-
-      expect(array).to.eql([1])
-    })
-  })
-
-  describe('destructivelyAddElementToEndOfArray(array, element)', () => {
-    it('adds an element to the end of an array', () => {
-      expect(destructivelyAddElementToEndOfArray([1], 'foo')).to.eql([1, 'foo'])
-    })
-
-    it('alters the original array', () => {
-      const array = [1]
-
-      destructivelyAddElementToEndOfArray(array, 'foo')
-
-      expect(array).to.eql([1, 'foo'])
-    })
-  })
-
-  describe('accessElementInArray(array, index)', () => {
-    it('accesses the element in array at the given index', () => {
-      expect(accessElementInArray([1, 2, 3], 2)).to.equal(3)
-    })
-  })
+//describe('accessElementInArray(array, index)', () => {
+function accessElementInArray(array, index) {
+      return array[index]
+    }
   
-  describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
-    it('returns the array with the first element removed', () => {
+//describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
+function destructivelyRemoveElementFromBeginningOfArray(array) {'returns the array with the first element removed', () => {
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
-    })
+    }
     
     it('alters the original array', ()=>{
       const array = [1, 2, 3];
@@ -110,4 +83,3 @@ it('alters the original array', () => {
     })
   })
 })
-    
