@@ -5,66 +5,55 @@ var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
   
 
 
-//describe('addElementToBeginningOfArray(array, element)', () => {
+//describe('addElementToBeginningOfArray(array, element)
 function addElementToBeginningOfArray(array, element) {
     return [element, ...array]
     
 }
 
-  //describe('destructivelyAddElementToBeginningOfArray(array, element)', () => {
+  //describe('destructivelyAddElementToBeginningOfArray(array, element)
 function destructivelyAddElementToBeginningOfArray(array, element) {
     array.unshift(element)
     return array
 }
 
-//describe('addElementToEndOfArray(array, element)', () => {
+//describe('addElementToEndOfArray(array, element)
 function addElementToEndOfArray(array, element) {
-     return [array, ...element]
+     return [...array, element]
     }
 
-//describe('destructivelyAddElementToEndOfArray(array, element)', () => {
+//describe('destructivelyAddElementToEndOfArray(array, element)
 function destructivelyAddElementToEndOfArray(array, element) {
     array.push(element)
     return array
     }
 
-//describe('accessElementInArray(array, index)', () => {
+//describe('accessElementInArray(array, index)
 function accessElementInArray(array, index) {
       return array[index]
     }
   
-//describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
+//describe('destructivelyRemoveElementFromBeginningOfArray(array)
 function destructivelyRemoveElementFromBeginningOfArray(array) {
       array.shift()
+      return array
   }
 
-//describe('removeElementFromBeginningOfArray(array)', () => {
+//describe('removeElementFromBeginningOfArray(array)
 function removeElementFromBeginningOfArray(array) {
-  array.slice(1)
-  return array
+  var newArr = array.slice(1)
+  return newArr
     }
     
 //  describe('destructivelyRemoveElementFromEndOfArray(array)', () => {
     function destructivelyRemoveElementFromEndOfArray(array) {
-      array.slice()
-    )
-    
-    it('alters the original array', ()=>{
-      const array = [1, 2, 3];
-      destructivelyRemoveElementFromEndOfArray(array);
-      expect(array).to.eql([1, 2]);
-    })
-  })
-  
-  describe('removeElementFromEndOfArray(array)', () => {
-    it('removes the last element from the array', () => {
-      expect(removeElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
-    })
-    
-    it('does not alter the original array', () => {
-      const array = [1, 2, 3];
-      removeElementFromEndOfArray(array);
-      expect(array).to.eql([1, 2, 3]);
-    })
-  })
-})
+      array.pop()
+      return array 
+    }
+
+//  describe('removeElementFromEndOfArray(array)', () => {
+function removeElementFromEndOfArray(array) {
+    var newArr = array.slice(0, array.length - 1)
+     return newArr
+}
+
