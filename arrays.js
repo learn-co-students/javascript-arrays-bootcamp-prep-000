@@ -1,12 +1,16 @@
 /*global describe, it */
 
-//  'chocolateBars', () => {
-var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
-    
+//  'chocolateBars'
+var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
+  
+
+
 //describe('addElementToBeginningOfArray(array, element)', () => {
-functionit('adds an element to the beginning of an array', () => {
-      expect(addElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
-    })
+function addElementToBeginningOfArray(array, element) {
+    var newArr = [element, ...array]
+    return newArr
+    
+}
 
     it('does not alter the original array', () => {
       const array = [1]
@@ -17,8 +21,8 @@ functionit('adds an element to the beginning of an array', () => {
     })
   })
 
-  describe('destructivelyAddElementToBeginningOfArray(array, element)', () => {
-    it('adds an element to the beginning of an array', () => {
+  //describe('destructivelyAddElementToBeginningOfArray(array, element)', () => {
+function destructivelyAddElementToBeginningOfArray() {
       expect(destructivelyAddElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
     })
 
