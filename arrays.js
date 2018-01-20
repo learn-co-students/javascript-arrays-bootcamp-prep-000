@@ -40,15 +40,14 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 
 //describe('removeElementFromBeginningOfArray(array)', () => {
 function removeElementFromBeginningOfArray(array) {
-  array.slice(0, array.length - 1 )
+  array.slice(1)
   return array
     }
     
-
-  describe('destructivelyRemoveElementFromEndOfArray(array)', () => {
-    it('returns the array with the last element removed', () => {
-      expect(destructivelyRemoveElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
-    })
+//  describe('destructivelyRemoveElementFromEndOfArray(array)', () => {
+    function destructivelyRemoveElementFromEndOfArray(array) {
+      array.slice()
+    )
     
     it('alters the original array', ()=>{
       const array = [1, 2, 3];
