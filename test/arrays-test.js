@@ -52,7 +52,7 @@ describe('arrays', () => {
     it('does not alter the original array', () => {
       const array = [1]
 
-      addElementToEndOfArray(array, 'foo')
+      addElementToEndOfArray(array)
 
       expect(array).to.eql([1])
     })
