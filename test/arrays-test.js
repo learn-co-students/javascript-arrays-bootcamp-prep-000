@@ -21,41 +21,39 @@ superheroines.push("wonder woman");
 
 var chocolateBars = 
   ["hundred grand", "kitkat", "skittles", "snickers"];
-  function() addElementToBeginningOfArray {
+  
+"addElementToBeginningOfArray" 
+{
     it ('add the element to the beginning of array');
     'returns("the whole array");'
   }
-function() destructivelyAddElementToBeginningOfArray {
+"destructivelyAddElementToBeginningOfArray" ; {
   it ('add the elementto  to the beginning of array, alters the original array')
  'returns(the new array and not modifiy the original);'
 }
-function() addElementToEndOfArray {
+"addElementToEndOfArray" ; {
   it ('takes two arguments, an array and an element to add to the end of the array, without altering the original');
   'returns (without altering the original array);'
-}
-function() accessElementInArray {
+"accessElementInArray" ; {
   it ('accepts an array and an index') 
   returns('the element at that index');
 }
-function() destructivelyRemoveElementFromBeginningOfArray {
+"destructivelyRemoveElementFromBeginningOfArray" ; {
   it ('takes an array as an argument and removes the first element');
   'returns(the entire array and mutates the array);'
-}
-function() removeElementFromBeginningOfArray {
+"removeElementFromBeginningOfArray" ; {
   it ('takes an array as the only argument and removes the first element');
   'returns(the entire array and should not mutate underlying array);'
-}
-function() destructivelyRemoveElementFromEndOfArray {
+} 
+"destructivelyRemoveElementFromEndOfArray" 
+; {
   it ('takes an array as its only argument and removes the last element');
   'returns(the entire array, and mutate the array);'
 }
-function() removeElementFromEndOfArray {
+"removeElementFromEndOfArray" ; {
   it ('takes an array as its only argument and removes the last elementy')
   'returns(the array without the last element and should not mutate the original array);'
 }
-
-}
-
 }
 var cities = ["New York", "San Fransisco", "...cities", "Philidelphia"]
  
@@ -69,10 +67,9 @@ describe('arrays', () => {
 
   describe('chocolateBars', () => {
     it('is an array containing "snickers", "hundred grand", "kitkat", and "skittles"', () => {
-      expect(chocolateBars).to.eql["hundred grand", "kitkat", "skittles", "snickerslearn"]
+      expect(chocolateBars).to.eql["hundred grand", "kitkat", "skittles",  "snickerslearn"];
     })
   })
-
   describe('addElementToBeginningOfArray(array, element)', () => {
     it('adds an element to the beginning of an array', () => {
       expect(addElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
@@ -97,20 +94,18 @@ describe('arrays', () => {
 
       destructivelyAddElementToBeginningOfArray(array, 'foo')
 
-      expect(array).to.eql(['foo', 1])
-    })
+      expect(array).to.eql(['foo', 1]);
   })
-
+  })
+  
   describe('addElementToEndOfArray(array, element)', () => {
     it('adds an element to the end of an array', () => {
-      expect(addElementToEndOfArray([1], 'foo')).to.eql([1, 'foo'])
-    })
-
+      expect(addElementToEndOfArray([1], 'foo')).to.eql([1, 'foo']) ;
+  });
     it('does not alter the original array', () => {
       const array = [1]
 
-      addElementToEndOfArray(array, 'foo')
-
+      addElementToEndOfArray(array, 'foo') ; 
       expect(array).to.eql([1])
     })
   })
