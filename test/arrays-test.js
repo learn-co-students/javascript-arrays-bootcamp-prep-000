@@ -68,9 +68,10 @@ describe('arrays', () => {
     src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
   })
 
-  describe('chocolateBars', () => {
+  describe("chocolateBars", () => {
     it('is an array containing "snickers", "hundred grand", "kitkat", and "skittles"', () => {
-      expect('chocolateBars').to.eql["hundred grand", "kitkat", "skittles", "snickers"]
+      expect("chocolateBars").to.equal
+      '["hundred grand," "kitkat," "skittles," and "snickers"]';
     })
   })
   describe('addElementToBeginningOfArray(array, element)', () => {
@@ -104,12 +105,10 @@ describe('arrays', () => {
   describe('addElementToEndOfArray(array, element)', () => {
     it('adds an element to the end of an array', () => {
       expect(addElementToEndOfArray([1], 'foo')).to.eql([1, 'foo']) ;
-  });
-    it('does not alter the original array', () => {
-      const array = [1]
-
-      addElementToEndOfArray(array, 'foo') ; 
-      expect(array).to.eql([1])
+  })
+    it ('does not alter the original array') => const "array" = ['1'];
+      "addElementToEndOfArray"'(array, foo)' ; 
+      'expect("array").to.eql([1])';
     })
   })
 
