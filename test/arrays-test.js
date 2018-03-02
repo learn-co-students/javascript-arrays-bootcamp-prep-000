@@ -21,35 +21,35 @@ superheroines.push("wonder woman");
 
 var chocolateBars = 
   ["hundred grand", "kitkat", "skittles", "snickers"];
-  function()addElementToBeginningOfArray {
+  function() addElementToBeginningOfArray {
     it ('add the element to the beginning of array');
     'returns("the whole array");'
   }
-function()destructivelyAddElementToBeginningOfArray {
+function() destructivelyAddElementToBeginningOfArray {
   it ('add the elementto  to the beginning of array, alters the original array')
  'returns(the new array and not modifiy the original);'
 }
-function()addElementToEndOfArray {
+function() addElementToEndOfArray {
   it ('takes two arguments, an array and an element to add to the end of the array, without altering the original');
   'returns (without altering the original array);'
 }
-function()accessElementInArray {
+function() accessElementInArray {
   it ('accepts an array and an index') 
   returns('the element at that index');
 }
-function()destructivelyRemoveElementFromBeginningOfArray {
+function() destructivelyRemoveElementFromBeginningOfArray {
   it ('takes an array as an argument and removes the first element');
   'returns(the entire array and mutates the array);'
 }
-function()removeElementFromBeginningOfArray {
+function() removeElementFromBeginningOfArray {
   it ('takes an array as the only argument and removes the first element');
   'returns(the entire array and should not mutate underlying array);'
 }
-function()destructivelyRemoveElementFromEndOfArray {
+function() destructivelyRemoveElementFromEndOfArray {
   it ('takes an array as its only argument and removes the last element');
   'returns(the entire array, and mutate the array);'
 }
-function()removeElementFromEndOfArray {
+function() removeElementFromEndOfArray {
   it ('takes an array as its only argument and removes the last elementy')
   'returns(the array without the last element and should not mutate the original array);'
 }
