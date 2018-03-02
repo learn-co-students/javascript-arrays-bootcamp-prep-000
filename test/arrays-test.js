@@ -1,13 +1,12 @@
 /*global describe, it */
+const fs = require('fs')
+const jsdom = require('mocha-jsdom')
+const path = require('path')
 describe('arrays', () => {
   jsdom({
     src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
   })
-})
-const expect = require('chai').expect
-const fs = require('fs')
-const jsdom = require('mocha-jsdom')
-const path = require('path');
+const expect = require('chai').expect ;
 var grilledCheeseIngridents = ['bread', 'mild cheese', 'sharp cheese', 'butter', 'tomato', 'garlic' ]
 var tomatoSauceIngridents = ['tomato', 'garlic', 'olive oil', 'basil', 'oreagno']
 var myArray = ['element 0', 'element 1', 'element 2, ..., elementN'];
@@ -62,16 +61,15 @@ var cities = ["New York", "San Fransisco", "...cities", "Philidelphia"]
  
 var empty = [];
 
-
 describe('arrays', () => {
   jsdom({
     src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
   })
 
-  describe("chocolateBars", () => {
+  describe('chocolateBars', () => {
     it('is an array containing "snickers", "hundred grand", "kitkat", and "skittles"', () => {
-      expect("chocolateBars").to.equal
-      '["hundred grand," "kitkat," "skittles," and "snickers"]';
+      expect(chocolateBars).to.equal
+      '["hundred grand", "kitkat", "skittles",  "snickers"]' ;
     })
   })
   describe('addElementToBeginningOfArray(array, element)', () => {
@@ -102,82 +100,22 @@ describe('arrays', () => {
   })
   })
   
-  describe('addElementToEndOfArray(array, element)', () => {
+  ('addElementToEndOfArray(array, element)', () => {
     it('adds an element to the end of an array', () => {
       expect(addElementToEndOfArray([1], 'foo')).to.eql([1, 'foo']) ;
-  })
-    it ('does not alter the original array') => const "array" = ['1'];
-      "addElementToEndOfArray"'(array, foo)' ; 
-      'expect("array").to.eql([1])';
-    })
-  })
-
+  });
+    it("does not alter the original array", () => {
+      const array = ['1'] ;
+      addElementToEndOfArray('array', 'foo') ;
+      'expect(array).to.eql([1])' ; 
   describe('destructivelyAddElementToEndOfArray(array, element)', () => {
     it('adds an element to the end of an array', () => {
-      expect(destructivelyAddElementToEndOfArray([1], 'foo')).to.eql([1, 'foo'])
-    })
-
+      expect(destructivelyAddElementToEndOfArray([1], 'foo')).to.eql([1, 'foo']) ;
     it('alters the original array', () => {
-      const array = [1]
-
-      destructivelyAddElementToEndOfArray(array, 'foo')
-
-      expect(array).to.eql([1, 'foo'])
+      const array = [1] ; 
     })
-  })
-
   describe('accessElementInArray(array, index)', () => {
     it('accesses the element in array at the given index', () => {
-      expect(accessElementInArray([1, 2, 3], 2)).to.equal(3)
-    })
-  })
-  
-  describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
-    it('returns the array with the first element removed', () => {
-      expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
-    })
-    
-    it('alters the original array', ()=>{
-      const array = [1, 2, 3];
-      destructivelyRemoveElementFromBeginningOfArray(array);
-      expect(array).to.eql([2, 3]);
-    })
-  })
-
-  describe('removeElementFromBeginningOfArray(array)', () => {
-    it('removes the first element from the array', () => {
-      expect(removeElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
-    })
-
-    it('does not alter the original array', () => {
-      const array = [1, 2, 3];
-
-      removeElementFromBeginningOfArray(array);
-
-      expect(array).to.eql([1, 2, 3]);
-    })
-  })
-
-  describe('destructivelyRemoveElementFromEndOfArray(array)', () => {
-    it('returns the array with the last element removed', () => {
-      expect(destructivelyRemoveElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
-    })
-    
-    it('alters the original array', ()=>{
-      const array = [1, 2, 3];
-      destructivelyRemoveElementFromEndOfArray(array);
-      expect(array).to.eql([1, 2]);
-    })
-  })
-  
-  describe('removeElementFromEndOfArray(array)', () => {
-    it('removes the last element from the array', () => {
-      expect(removeElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
-    })
-    
-    it('does not alter the original array', () => {
-      const array = [1, 2, 3];
-      removeElementFromEndOfArray(array);
-      expect(array).to.eql([1, 2, 3]);
+      expect(accessElementInArray(['1, 2, 3'], '2')).to.equal('3')
     })
   })
