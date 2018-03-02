@@ -1,7 +1,4 @@
 /*global describe, it */
-const fs = require('fs');
-const jsdom = require('mocha-jsdom');
-const path = require('path');
 describe('arrays', () => {
   jsdom({
     src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
@@ -63,11 +60,6 @@ var cities = ["New York", "San Fransisco", "...cities", "Philidelphia"];
  
 var empty = [];
 
-describe('arrays', () => {
-  jsdom({
-    src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
-  });
-});
   describe('chocolateBars', () => {
     it('is an array containing "snickers", "hundred grand", "kitkat", and "skittles"', () => {
 expect(chocolateBars).to.equal;
@@ -118,7 +110,7 @@ expect(chocolateBars).to.equal;
     });
   });
     it('alters the original array', () => {
-      const array = [1] ;
+      const array = [1]; 
     });
  ("accessElementInArray(array, index)", () => {
     it("accesses the element in array at the given index", () => {
@@ -126,7 +118,8 @@ expect(chocolateBars).to.equal;
       ("accessElementInArray(['1, 2, 3'], '2')").to.equal('3') ;
     });
  });
- 
-      
-      
+/*Sidenote;
+"VM434:1 Uncaught SyntaxError: Identifier"('expect') has already been declared' (at <anonymous>:1:1)) (anonymous) @ VM434:1";*/
 
+
+  
