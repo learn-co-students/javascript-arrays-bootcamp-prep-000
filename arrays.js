@@ -1,23 +1,54 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 
-//var rockTypes = ['igneous', 'basalt', 'granite'];
 
 function addElementToBeginningOfArray(array, element) {
   const newArray = [element, ...array];
   return newArray;
 }
 
-//addElementToBeginningOfArray(rockTypes, 'sedimentary'};
-
-//var rockTypes = ['igneous', 'basalt', 'granite'];
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
   array.unshift(element);
   return array;
 }
 
-function accessElementInArray(array, indexNo) {
-  return array[indexNo];
+
+function addElementToEndOfArray(array, element) {
+  const newArray = [...array, element];
+  return newArray;
 }
 
-//destructivelyAddElementToBeginningOfArray(rockTypes, 'sedimentary'}
+
+function destructivelyAddElementToEndOfArray(array, element) {
+  array.push(element);
+  return array;
+}
+
+
+function accessElementInArray(array, indexNumber) {
+  return array[indexNumber];
+}
+
+
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+  array.shift();
+  return array;
+}
+
+
+function removeElementFromBeginningOfArray(array) {
+  array = array.slice(1);
+  return array;
+}
+
+
+function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop();
+  return array;
+}
+
+
+function removeElementFromEndOfArray(array) {
+  const newArray = array.slice(0, array.length - 1);
+  return newArray;
+}
