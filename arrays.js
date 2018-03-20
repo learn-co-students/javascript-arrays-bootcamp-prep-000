@@ -1,22 +1,23 @@
+var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 
-let chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
-
-
-var rockTypes = ['igneous', 'basalt', 'granite']
+//var rockTypes = ['igneous', 'basalt', 'granite'];
 
 function addElementToBeginningOfArray(array, element) {
-  array.unshift(${element});
-  return array;
+  const newArray = [element, ...array];
+  return newArray;
 }
-addElementToBeginningOfArray(rockTypes, 'sedimentary'}
 
+//addElementToBeginningOfArray(rockTypes, 'sedimentary'};
+
+//var rockTypes = ['igneous', 'basalt', 'granite'];
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  ${array}.unshift(${element});
+  array.unshift(element);
   return array;
 }
-destructivelyAddElementToBeginningOfArray(rockTypes, 'sedimentary'}
 
-function accessElementInArray(array, indexNumber) {
-  console.log(array[indexNumber])
+function accessElementInArray(array, indexNo) {
+  return array[indexNo];
 }
+
+//destructivelyAddElementToBeginningOfArray(rockTypes, 'sedimentary'}
