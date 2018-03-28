@@ -15,15 +15,15 @@ function accessElementInArray(array, element) {
   return array[element];
 }
 function destructivelyRemoveElementFromBeginningOfArray(array) {
-  return array.shift(0);
+  return array.shift(1);
 }
 function removeElementFromBeginningOfArray(array) {
-  return array.slice(0);
+  return array.slice(1);
 }
-function destructivelyRemoveElementFromEndOfArray(array, element) {
+function destructivelyRemoveElementFromEndOfArray(array) {
   return array.pop();
 }
-function removeElementFromEndOfArray(array, element) {
+function removeElementFromEndOfArray(array) {
   return array.slice(0, array.length-1);
 }
 
