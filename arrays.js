@@ -42,6 +42,6 @@ function destructivelyRemoveElementFromEndOfArray(array){
 }
 
 function removeElementFromEndOfArray(array){
-  //in javascript this must mean length is the last index, not the total number of elements.
+  //slice goes up the second index, but NOT INCLUDING IT!!!
   return array.slice(0, array.length - 1)
 }
