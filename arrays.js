@@ -43,12 +43,13 @@ function removeElementFromEndOfArray(array){
    var newarray4 = array.slice(0,array.length - 1);
    return newarray4;
 }
-// ["snickers", "hundred grand", "kitkat", "skittles"];
-console.log(1, addElementToBeginningOfArray(chocolateBars, "nhinh"));
-console.log(2, destructivelyAddElementToBeginningOfArray(chocolateBars, "nhinh"));
-console.log(3, addElementToEndOfArray(chocolateBars, "nhinh"));
-console.log(4, destructivelyAddElementToEndOfArray(chocolateBars, "nhinh"));
-console.log(5, removeElementFromBeginningOfArray(chocolateBars));
-console.log(6, destructivelyRemoveElementFromBeginningOfArray(chocolateBars));
-console.log(7, removeElementFromBeginningOfArray(chocolateBars));
-console.log(8, destructivelyRemoveElementFromEndOfArray(chocolateBars));
+
+// // ["snickers", "hundred grand", "kitkat", "skittles"];
+// console.log(1, addElementToBeginningOfArray(chocolateBars, "nhinh"));
+// console.log(2, destructivelyAddElementToBeginningOfArray(chocolateBars, "nhinh"));
+// console.log(3, addElementToEndOfArray(chocolateBars, "nhinh"));
+// console.log(4, destructivelyAddElementToEndOfArray(chocolateBars, "nhinh"));
+// console.log(5, removeElementFromBeginningOfArray(chocolateBars));
+// console.log(6, destructivelyRemoveElementFromBeginningOfArray(chocolateBars));
+// console.log(7, removeElementFromBeginningOfArray(chocolateBars));
+// console.log(8, destructivelyRemoveElementFromEndOfArray(chocolateBars));
