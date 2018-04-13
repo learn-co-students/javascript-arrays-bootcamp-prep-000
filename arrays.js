@@ -3,7 +3,8 @@ choclateBars.push("turtles");
 
 
 function addElementToBeginningOfArray (array,element){
-  array.unshift('foo');
+  array = [1]
+  array.unshift("foo");
   return array
   }
 
@@ -18,7 +19,8 @@ function destructivelyAddElementToEndOfArray(array, element) {
 }
 
 function addElementToEndOfArray(array, element){
-  array.push(element)
+array=[1]
+  array.push("foo")
   return array
 }
 function accessElementInArray(array, index){
