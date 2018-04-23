@@ -1,2 +1,6 @@
-var ingredient1 = "bread"
-var ingredient2 = "mild cheese"
+var  chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
+//  addElementToBeginningOfArray 
+chocolateBars.push ("godiva")
+//  desctructivelyAddElementToBeginningOfArray 
+chocolateBars.unshift ("hershey")
+function accesssElementInArray
