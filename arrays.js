@@ -6,10 +6,12 @@ function addElementToBeginningOfArray (array, element) {
   /*This alters "array":
   array.unshift(element);
   var myArray = array; */
+  /* The code below won't work, because an Array is an Object. And just like Objects, the "value" of the Array that is passed to functions and stored in variables, is its reference/address (rather than a string, number, undefined, etc). Changing the new variable, or changing the local array in the function, changes the original array. These two websites help explain it: http://www.dyn-web.com/javascript/arrays/value-vs-reference.php AND https://stackoverflow.com/questions/6605640/javascript-by-reference-vs-by-value */
+  /*var myArray = array;
+  myArray.unshift(element);*/
+  
   //This works:
-  //var myArray = [element, ...array];
-  var myArray = array;
-  myArray.unshift(element);
+  var myArray = [element, ...array];
   return myArray;
 }
 
