@@ -6,7 +6,7 @@ addElementToBeginningOfArray(arr,reeses){
 }
 
 destructivelyAddElementToBeginningOfArray(arr,reeses){
-  arr.unshift(reeses) 
+  arr.unshift(reeses); 
   return arr
 }
 
@@ -16,6 +16,6 @@ addElementToEndOfArray(arr,reeses){
 }
 
 destructivelyAddElementToEndOfArray(arr,reeses){
-  arr.push(reeses)
+  arr.push(reeses);
   return arr
 }
