@@ -1,6 +1,6 @@
 var chocolateBars = ["hundred grand", "snickers", "skittles", "kitkat"];
 /* Note: The test for chocolateBars doesn't care about the order of its elements. That is, the above array, for some reason, is just as valid as ["snickers", "hundred grand", "kitkat", "skittles"] */
-//Another note: "const" variables and arrays cannot point to any other values once defined. However, it is still possible to change the elements in the array with push, unshift, and other functions.
+//Another note: "const" variables and arrays cannot point to any other values once defined. However, it is still possible to change the elements in the array with push, unshift, shift, pop, and other functions.
 /*Also, I can make a new array without defining its elements like this:
   var newArray = new Array(# of elements); */
 
@@ -50,13 +50,15 @@ function destructivelyRemoveElementFromBeginningOfArray(arrayToMutate) {
   return arrayToMutate;
 }
 
-// A note about the slice method below: like ALL methods, it only accepts arguments enclosed in parentheses. If I use brackets (var dog = cat.slice[1] instead of var dog = cat.slice(1) ), it returns "undefined".
+// A note about the slice method below: like ALL methods, it only accepts arguments enclosed in parentheses. If I use brackets (var dog = cat.slice[1] instead of var dog = cat.slice(1) ), it returns "undefined". ALSO: a command like cat.slice(-3) returns the last three elements of the cat array.
 function removeElementFromBeginningOfArray(doNotMutate) {
   // I could do this, or I could write var newArray = doNotMutate.slice(1) and return newArray:
   doNotMutate = doNotMutate.slice(1);
   return doNotMutate;
 } 
 
-
-
+function destructivelyRemoveElementFromEndOfArray (arrayToTruncate) {
+  arrayToTruncate.pop();
+  return arrayToTruncate;
 }
+
