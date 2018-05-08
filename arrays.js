@@ -1,8 +1,8 @@
-arr; chocolateBars = ["snickers", "hundredgrand", "kitkat", "skittles"];
+var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 
-addElementToBeginningOfArray(arr,reeses){
-  arr.unshift("reeses");
-  return arr;
+addElementToBeginningOfArray(chocholateBars,reeses){
+  chocolateBars.unshift("reeses");
+  return chocolateBars;
 }
 
 destructivelyAddElementToBeginningOfArray(arr,reeses){
