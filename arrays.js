@@ -62,3 +62,4 @@ function destructivelyRemoveElementFromEndOfArray (arrayToTruncate) {
   return arrayToTruncate;
 }
 
+//Another note about slice(): if I write newArray.slice(1,4), then it slices off...what, exactly?
