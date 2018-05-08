@@ -50,7 +50,7 @@ function destructivelyRemoveElementFromBeginningOfArray(arrayToMutate) {
   return arrayToMutate;
 }
 
-// A note about the slice method below: like ALL methods, it only accepts arguments enclosed in parentheses. If I use brackets (var dog = cat.slice[1] instead of var dog = cat.slice(1) ), it returns "undefined". ALSO: a command like cat.slice(-3) returns the last three elements of the cat array.
+// A note about the slice method below: like ALL methods, it only accepts arguments enclosed in parentheses. If I use brackets (var dog = cat.slice[1] instead of var dog = cat.slice(1) ), it returns "undefined". ALSO: a command like cat.slice(3) slices off the first three elements of the cat array, whereas cat.slice(-3) returns the last three elements. Note also that cat.slice(0) returns slices off nothing and returns the whole array, whereas cat.slice(cat.length) and any number greater than the length of the cat array cuts off everything and returns []. Finally, cat.slice(1.7) = cat.slice(1), and cat.slice("string") = cat.slice() = cat.slice(0) = cat (i.e. the whole cat array).
 function removeElementFromBeginningOfArray(doNotMutate) {
   // I could do this, or I could write var newArray = doNotMutate.slice(1) and return newArray:
   doNotMutate = doNotMutate.slice(1);
@@ -62,4 +62,25 @@ function destructivelyRemoveElementFromEndOfArray (arrayToTruncate) {
   return arrayToTruncate;
 }
 
-//Another note about slice(): if I write newArray.slice(1,4), then it slices off...what, exactly?
+// Another note about slice(): as it is a function, it accepts variables for arguments.
+/* A final note about slice() is that for any array.slice(a,b):
+If "a" is a decimal, it gets truncated. If "a" is a string, it's the same as   a = 0. If "a" is undefined, there's a SyntaxError.
+If "b" is not an integer, array.slice(a,b) returns []. If "b" is undefined, then array.slice(a,b) returns array.slice(b).
+Now, if "a" and "b" are integers:
+  if a < 0, array.slice(a,b) returns []
+  if a > 0, array.slice(a,b) slices off the first "a" elements
+  if a === 0, array.slice(a,b) slices off none of the first elements
+  if b === 0, array.slice(a,b) returns []
+  if b < 0, array.slice(a,b) slices off the last "b" elements
+  if b > 0, array.slice(a,b) slices off array[b] and everything after it. Note that if a === 0 and b > 0, array.slice(a,b) returns the first "b" elements
+  if a === b, array.slice(a,b) returns []. The reason: We know that if a and b are negative or zero, array.slice(a,b) returns []. And if a and b are positive integers, then a === b === n. So, we are slicing off array[n] and everything before it and after it. 
+  MOST IMPORTANTLY!!! If "a" and "b" are both positive, then our "slice" of the array starts with array[1] and ends with array[b-1]. */
+  
+function removeElementFromEndOfArray (theirArray) {
+  // Note that if the second argument to slice() is array.length - n (n being a positive integer), this cuts off n elements from the end of the array.
+  // Also, array.slice(array.length - n) === array.slice(-n).
+  
+  // The code below is also the same as var myArray = theirArray.slice(0,-1);
+  var myArray = theirArray.slice(0, theirArray.length - 1);
+  return myArray;
+}  
