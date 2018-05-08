@@ -1,8 +1,13 @@
 var chocolateBars = ["hundred grand", "snickers", "skittles", "kitkat"];
-/* Note: The test for chocolateBars doesn't care about the order of its elements. 
-That is, the above array, for some reason, is just as valid as ["snickers", "hundred grand", "kitkat", "skittles"], unless of course the test isn't executing properly. */
+/* Note: The test for chocolateBars doesn't care about the order of its elements. That is, the above array, for some reason, is just as valid as ["snickers", "hundred grand", "kitkat", "skittles"] */
+//Another note: "const" variables and arrays cannot point to any other values once defined. However, it is still possible to change the elements in the array with push, unshift, and other functions.
+/*Also, I can make a new array without defining its elements like this:
+  var newArray = new Array(# of elements); */
 
 function addElementToBeginningOfArray (array, element) {
+  //This works:
+  var myArray = [element, ...array];
+  return myArray;
   /*This alters "array":
   array.unshift(element);
   var myArray = array; */
@@ -12,11 +17,7 @@ function addElementToBeginningOfArray (array, element) {
   // function change(array){ array[0] = "two"; array = ["three"]; }, then call change(ar1); ...that will make ar1 and ar2 = ["two"], but not ["three"]. Note, however, that if I switch the order of the statements in change, then neither ar1 nor ar2 is affected.
   /*var myArray = array;
   myArray.unshift(element);*/
-  
-  //This works:
-  var myArray = [element, ...array];
-  return myArray;
-}
+  }
 
 function destructivelyAddElementToBeginningOfArray (Array, Element) {
   //This works:
@@ -47,4 +48,15 @@ function accessElementInArray(array, index){
 function destructivelyRemoveElementFromBeginningOfArray(arrayToMutate) {
   arrayToMutate.shift();
   return arrayToMutate;
+}
+
+// A note about the slice method below: like ALL methods, it only accepts arguments enclosed in parentheses. If I use brackets (var dog = cat.slice[1] instead of var dog = cat.slice(1) ), it returns "undefined".
+function removeElementFromBeginningOfArray(doNotMutate) {
+  // I could do this, or I could write var newArray = doNotMutate.slice(1) and return newArray:
+  doNotMutate = doNotMutate.slice(1);
+  return doNotMutate;
+} 
+
+
+
 }
