@@ -16,7 +16,7 @@ function addElementToBeginningOfArray (array, element) {
   // Example: var ar1 = ["one"]; var ar2 = ar1; Changing ar1[0] changes ar2[0] and vice-versa. BUT if I make ar2 = ["two"], that will not change ar1, and vice-versa. Likewise, if I write this function:
   // function change(array){ array[0] = "two"; array = ["three"]; }, then call change(ar1); ...that will make ar1 and ar2 = ["two"], but not ["three"]. Note, however, that if I switch the order of the statements in change, then neither ar1 nor ar2 is affected.
   /*var myArray = array;
-  myArray.unshift(element);*/
+  myArray.unshift(element);*/ //That code won't work, as described above.
   }
 
 function destructivelyAddElementToBeginningOfArray (Array, Element) {
