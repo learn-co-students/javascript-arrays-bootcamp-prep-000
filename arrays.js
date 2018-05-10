@@ -26,3 +26,14 @@ function removeElementFromBeginningOfArray(array){
 	newArray = (array.slice(1));
 	return newArray
 }
+function destructivelyRemoveElementFromEndOfArray(array){
+	array.pop()
+	return array
+}
+function removeElementFromEndOfArray(array){
+	chocolateBars.slice(0, chocolateBars.length-1)
+	newArray=chocolateBars.slice(0, chocolateBars.length-1)
+	return chocolateBars
+}
+
+
