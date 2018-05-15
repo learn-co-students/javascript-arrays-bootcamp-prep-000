@@ -6,8 +6,13 @@ var addElementToBeginningOfArray = function(array,value){
 };
 
 var destructivelyAddElementToBeginningOfArray = function(array,value){
+  if(!value){
+    return;
+  }
+  else{
   array[0]=value;
   return array;
+  }
 };
 
 var addElementToEndOfArray = function(array,value){
