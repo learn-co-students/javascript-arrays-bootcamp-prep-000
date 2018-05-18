@@ -13,10 +13,11 @@ function addElementToBeginningOfArray(array, element) {
   let  newArray = [element, ...array];
   return newArray;
 }
+// destructively means mutating or changing the original array
 
-/* 1  */
 function destructivelyAddElementToBeginningOfArray(array, element) {
-    return array.unshift(element);
+    array.unshift(element);
+    return array;
 }   
 /*
 console.log(destructivelyAddElementToBeginningOfArray(chocolateBars, 'Mounds'));
@@ -25,9 +26,10 @@ console.log(destructivelyAddElementToBeginningOfArray(chocolateBars, 'Mounds'));
 function addElementToEndOfArray(array, element) {
   return [...array, element]
 }
-/* 1  */
+
 function destructivelyAddElementToEndOfArray(array, element) {
-  return array.push(element);
+  array.push(element);
+  return array;
 }
 /*
 console.log(destructivelyAddElementToEndOfArray(chocolateBars, "M \& M\'s"))
@@ -42,10 +44,10 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
   return array;
 }
 
-/* 1 */
+
 function removeElementFromBeginningOfArray(array) {
-   array.slice(1);
-   return array;
+   let newArray = array.slice(1);
+   return newArray;
 } 
 
 function destructivelyRemoveElementFromEndOfArray(array) {
