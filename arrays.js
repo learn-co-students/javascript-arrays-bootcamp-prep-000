@@ -4,56 +4,66 @@ var cities = ["New York", "San Fransico"];
 
 const moreCities = ["Boston", ...cities];
 const towns = ["Shrewsbury", ...cities, "Wilton", "Norfolk"]
-
+/*
 console.log(cities);
 console.log(moreCities);
 console.log(towns)
-
-let addElementToBeginningOfArray = function(array, element) {
-  let  newArray = (array, ...element);
-  return;
+*/
+function addElementToBeginningOfArray(array, element) {
+  let  newArray = [element, ...array];
+  return newArray;
 }
 
+/* 1  */
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  let x = array.unshift(element);
-  return;
-}
+    return array.unshift(element);
+}   
+/*
+console.log(destructivelyAddElementToBeginningOfArray(chocolateBars, 'Mounds'));
+*/
+
 function addElementToEndOfArray(array, element) {
-  let x = [...array, element]
-  return;
+  return [...array, element]
 }
-
+/* 1  */
 function destructivelyAddElementToEndOfArray(array, element) {
-  let x = array.push(element);
-  return;
+  return array.push(element);
+}
+/*
+console.log(destructivelyAddElementToEndOfArray(chocolateBars, "M \& M\'s"))
+*/
+function accessElementInArray(array, index) {
+  return (array[index]);
 }
 
-function accessElementInArray(array, index) {
-  let x = (array[index]);
-  return;
-}
 
 function destructivelyRemoveElementFromBeginningOfArray(array) {
-  let x = array.shift(element);
-  return;
+  array.shift();
+  return array;
 }
 
+/* 1 */
 function removeElementFromBeginningOfArray(array) {
-  let x = array.slice(0);
-  return;
-}
+   array.slice(1);
+   return array;
+} 
+
 function destructivelyRemoveElementFromEndOfArray(array) {
-  let x = array.pop();
-  return x;
+  (array.pop());
+  return array;
+ 
 }
 
 function removeElementFromEndOfArray(array) {
-  let x = array.slice(0, array.length - 1);
-  return x;
+    return (array.slice(0, array.length - 1))
+
 }
-
-removeElementFromBeginningOfArray(chocolateBars);
+/*
+removeElementFromBeginningOfArray(chocolateBars);  
 console.log(chocolateBars);
-
 console.log(Object.keys([1, 2, 3]));
+[chocolateBars].slice(1);
+console.log(chocolateBars);
+*/
+
 
