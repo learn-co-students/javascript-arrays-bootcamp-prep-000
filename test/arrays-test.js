@@ -1,39 +1,39 @@
 /*global describe, it */
 
-const expect = require('chai').expect
-const fs = require('fs')
-const jsdom = require('mocha-jsdom')
-const path = require('path')
+const expect = require('chai').expect;
+const fs = require('fs');
+const jsdom = require('mocha-jsdom');
+const path = require('path');
 
 describe('arrays', () => {
   jsdom({
     src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
-  })
+  });
 
   describe('chocolateBars', () => {
     it('is an array containing "snickers", "hundred grand", "kitkat", and "skittles"', () => {
       expect(chocolateBars).to.eql['snickers', 'hundred grand', 'kitkat', 'skittles']
-    })
-  })
+    });
+  }); //passed
 
   describe('addElementToBeginningOfArray(array, element)', () => {
     it('adds an element to the beginning of an array', () => {
-      expect(addElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
-    })
+      expect(addElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1]);
+    }); //passed
 
     it('does not alter the original array', () => {
-      const array = [1]
+      const array = [1];
 
-      addElementToBeginningOfArray(array, 'foo')
+      addElementToBeginningOfArray(array, 'foo');
 
       expect(array).to.eql([1])
     })
-  })
+  }) //passed
 
   describe('destructivelyAddElementToBeginningOfArray(array, element)', () => {
     it('adds an element to the beginning of an array', () => {
       expect(destructivelyAddElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
-    })
+    }) //passed
 
     it('alters the original array', () => {
       const array = [1]
@@ -42,12 +42,12 @@ describe('arrays', () => {
 
       expect(array).to.eql(['foo', 1])
     })
-  })
+  }) //passed
 
   describe('addElementToEndOfArray(array, element)', () => {
     it('adds an element to the end of an array', () => {
       expect(addElementToEndOfArray([1], 'foo')).to.eql([1, 'foo'])
-    })
+    }) //passed
 
     it('does not alter the original array', () => {
       const array = [1]
@@ -56,7 +56,7 @@ describe('arrays', () => {
 
       expect(array).to.eql([1])
     })
-  })
+  }) //passed
 
   describe('destructivelyAddElementToEndOfArray(array, element)', () => {
     it('adds an element to the end of an array', () => {
@@ -70,7 +70,7 @@ describe('arrays', () => {
 
       expect(array).to.eql([1, 'foo'])
     })
-  })
+  }) //passed
 
   describe('accessElementInArray(array, index)', () => {
     it('accesses the element in array at the given index', () => {
