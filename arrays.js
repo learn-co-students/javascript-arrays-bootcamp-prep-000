@@ -1,18 +1,5 @@
+//arrays chocolateBars is an array containing "snickers", "hundred grand", "kitkat", and "skittles":
 var chocolateBars =['snickers', 'hundred grand', 'kitkat', 'skittles'];
-
-function addElementToBeginningOfArray(array, element) {
-  return [element,...array]
-}
-//Doesnt work the code
-function destructivelyAddElementToBeginningOfArray(array, element){
-  return [element, ...array]
-}
-function destructivelyAddElementToBeginningOfArray(array, element){
-  return array.unshift(element)
-}
-
-function addElementToEndOfArray(array, element){
-   return [...array,element]
 }
 function removeElementFromEndOfArray(array){
   return array.slice(0, array.length - 1)
@@ -28,4 +15,20 @@ function destructivelyRemoveElementFromEndOfArray(array){
 }
 function removeElementFromBeginningOfArray(array){
   return array.slice(1)
+=======
+>>>>>>> e7d529bffb1030eb47327f2270f5cb30ef266174
 }
+function addElementToBeginningOfArray(array, element) {
+  return [element,...array]
+}
+//Doesnt work the code
+function destructivelyAddElementToBeginningOfArray(array, element){
+  return [element, ...array]
+}
+function destructivelyAddElementToBeginningOfArray(array, element){
+  return array.unshift(element)
+}
+
+function addElementToEndOfArray(array, element){
+   return [...array,element]
+<<<<<<< HEAD
