@@ -29,31 +29,33 @@ function addElementToBeginningOfArray(array,element) {
   
 }
 function destructivelyAddElementToBeginningOfArray(array,element){
-   var array = [element,array]
-   return array
+  array.unshift(element)
+  return array
  
 }
 function addElementToEndOfArray(array,element){
-  const  newArray = [...array,element]
-  return newArray
+  const  newArray = [...array,element];
+  return newArray;
 }
-function destructiveAddElementToEndOfArray(array,element){
-  var changedArray = [array.unshift(element)]
-  return changedArray
+function destructivelyAddElementToEndOfArray(array,element){
+  array.push(element);
+  return array;
 }
-function accessElementsInArray(array,index){
-  return array[index]
+function accessElementInArray(array,index){
+  return array[index];
 }
 function destructivelyRemoveElementFromBeginningOfArray(array){
-  return array.shift()
+   array.shift();
+   return array;
 }
 function removeElementFromBeginningOfArray(array){
-  var slicedArray = array.slice(1)
-  return slicedArray
+  var slicedArray = array.slice(1);
+  return slicedArray;
 }
-function destructivelyRemoveElementFromEndofArray(array){
-  return array.pop()
+function destructivelyRemoveElementFromEndOfArray(array){
+   array.pop();
+   return array;
 }
 function removeElementFromEndOfArray(array){
-  return (array.slice(0,array.length - 1))
+  return (array.slice(0,array.length - 1));
 }
