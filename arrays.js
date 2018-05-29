@@ -16,12 +16,10 @@ function addElementToBeginningOfArray(array, element){
 function destructivelyAddElementToBeginningOfArray(array, element){
     array.unshift(element)
     return array
+    return array.unshift(element)
 }    
 
-//5) arrays destructivelyAddElementToBeginningOfArray(array, element) alters the original array:
-function destructivelyAddElementToBeginningOfArray(array, element){
-  return array.unshift(element)
-} 
+
 
 //6) arrays addElementToEndOfArray(array, element) adds an element to the end of an array:
 function addElementToEndOfArray(array, element){
