@@ -6,13 +6,13 @@ function addElementToBeginningOfArray(box,item) {
 addElementToBeginningOfArray([1],"foo");
 
 function destructivelyAddElementToBeginningOfArray(box,item) {
-  box.unshift('foo');
+  box.unshift(item);
   return box;
 }
 destructivelyAddElementToBeginningOfArray([1],"foo");
 
 function addElementToEndOfArray(box,item) {
-  box1 = [...[1],'foo'];
+  box1 = [...box,item];
   return box1;
 }
 addElementToEndOfArray([1],"foo");
