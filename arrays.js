@@ -49,5 +49,19 @@ function removeElementFromEndOfArray(array)
 // 1 param returns the array with the first element removed:
 function destructivelyRemoveElementFromBeginningOfArray(array)
 {
-  
+  array.shift()
+  return array
+}
+
+// 1 param returns the array with the first element removed:
+function destructivelyRemoveElementFromEndOfArray(array)
+{
+  array.pop()
+  return array
+}
+
+// 2 params accesses the element in array at the given index:
+function accessElementInArray(array, index)
+{
+  return array[index]
 }
