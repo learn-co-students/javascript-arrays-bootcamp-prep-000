@@ -37,13 +37,16 @@ function addElementToEndOfArray(array, element)
 // 1 param remove element from beginning of array non destructive
 function removeElementFromBeginningOfArray(array)
 {
-  
+  var retArray = array.slice(1)
+  return retArray
 }
 
 // 1 param remove element from end of array non destructive
 function removeElementFromEndOfArray(array)
 {
-  
+  var retArray = array.slice(0)
+  retArray.pop()
+  return retArray
 }
 
 // 1 param returns the array with the first element removed:
