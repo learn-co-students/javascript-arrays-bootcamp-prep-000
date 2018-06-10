@@ -3,9 +3,6 @@ var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 var array
 var addition
 var index
-var chocolateBars ["snickers", "hundred grand", "kitkat", "skittles"];
-var array
-var addition
 function addElementToBeginningOfArray(array, addition) {
   var temp = [addition,...array]
 return temp
@@ -25,3 +22,12 @@ function destructivelyAddElementToEndOfArray(array, addition) {
 function accessElementInArray(array, index) {
  return array[index]
 }
+function destructivelyRemoveElementFromBeginningOfArray( array) {
+  array.shift()
+  return array
+}
+function removeElementFromBeginningOfArray( array) {
+  array.slice(1)
+  return array
+}
+  
