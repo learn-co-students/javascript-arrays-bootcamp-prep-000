@@ -2,6 +2,7 @@
 
 const expect = require('chai').expect
 const fs = require('fs')
+const jsdom2 = require("jsdom");
 const jsdom = require('mocha-jsdom')
 const path = require('path')
 
