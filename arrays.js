@@ -40,14 +40,14 @@ function destructivelyRemoveElementFromEndOfArray(array) {
 
 function removeElementFromEndOfArray(array) {
   return array.slice(0, array.length - 1)
-=======
-
-function addElementToBeginningOfArray(array, "foo") {
-  return ["foo", ...array]
 }
 
-function destructivelyAddElementToBeginningOfArray(chocolateBars, "foo") {
-  array = ['foo', ...array]
+function addElementToBeginningOfArray(array, element) {
+  return [element, ...array]
+}
+
+function destructivelyAddElementToBeginningOfArray(chocolateBars, element) {
+  array = [element, ...array]
   return array
->>>>>>> e84342d338e1e26017513a478cfecebc29dfd18e
+
 }
