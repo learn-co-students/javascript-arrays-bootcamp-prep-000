@@ -1,20 +1,3 @@
-var grilledCheeseIngredients = [
-  'bread',
-  'mild cheese',
-  'sharp cheese',
-  'butter',
-  'tomato',
-  'garlic'
-]
- 
-var tomatoSauceIngredients = [
-  'tomato',
-  'garlic',
-  'olive oil',
-  'basil',
-  'oregano'
-]
-
 var chocolateBars = [
   'snickers', 
   'hundred grand',
@@ -33,7 +16,7 @@ function addElementToEndOfArray(chocolateBars, lemon) {
   return [...chocolateBars, lemon]
 }
 function destructivelyAddElementToEndOfArray(chocolateBars, lemon) {
-    chocolateBars.push('foo')
+    chocolateBars.push(lemon)
   return chocolateBars
 }
 
@@ -60,10 +43,3 @@ function removeElementFromEndOfArray(chocolateBars) {
   return chocolateBars.slice(0, chocolateBars.length - 1)
   
 }
-
-
-
-
-
-
-
