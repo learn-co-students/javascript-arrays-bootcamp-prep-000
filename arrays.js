@@ -56,7 +56,7 @@ function removeElementFromEndOfArray(array) {
 
 
 
-
+// Continue reading FROM THE MIDDLE OF AN ARRAY
 
 
 
