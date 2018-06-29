@@ -11,3 +11,11 @@ function addElementToEndOfArray(){
 function destructivelyAddElementToEndOfArray(){
 
 }
+
+function accessElementInArray(){
+
+}
+
+function destructivelyRemoveElementFromBeginningOfArray(){
+
+}
