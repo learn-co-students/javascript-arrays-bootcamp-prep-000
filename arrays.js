@@ -4,8 +4,8 @@ function addElementToBeginningOfArray(){
 
 }
 
-function addElementToEndOfArray(){
-
+function addElementToEndOfArray(array,element){
+  array.push(element);
 }
 
 function destructivelyAddElementToEndOfArray(){
