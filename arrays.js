@@ -9,23 +9,22 @@ function addElementToEndOfArray(array,element){
   var new_array = [element, array[3]];
   return new_array;
 }
-function destructivelyAddElementToBeginningOfArray(array){
-
+function destructivelyAddElementToBeginningOfArray(array,element){
+  array.unshift(element);
+  return array;
 }
 
 
 function destructivelyAddElementToEndOfArray(array){
-
+  array.push(element);
 }
 
-function accessElementInArray(array,element){
-
+function accessElementInArray(array,index){
+    return array[2];
 }
 
-function destructivelyRemoveElementFromBeginningOfArray(array){
-
-}
 
 function removeElementFromEndOfArray(array){
-  array.slice(3);
+  array.pop();
+  return array;
 }
