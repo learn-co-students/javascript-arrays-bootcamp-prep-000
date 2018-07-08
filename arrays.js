@@ -1,36 +1,23 @@
-var chocolateBars=
-[
+var chocolateBars=[
   "snickers",
   "hundred grand",
   "kitkat",
-  "skittles"
-  ]
-  function addElementToBeginningOfArray (chocolateBars,y)
-  {
-    chocolateBarsY=[y,...chocolateBars]
-    return chocolateBarsY
-  }
-  function destructivelyAddElementToBeginningOfArray(chocolateBars, y)
-  {
-    chocolateBars.unshift(y);
-    return destructivelyAddElementToBeginningOfArray
-  }
-  function addElementToEndOfArray (chocolateBars, y)
-  {
-    chocolateBarsY=[chocolateBarsY,...y]
-    return chocolateBarsY
-  }
-  function destructivelyAddElementToEndOfArray (chocolateBars, y)
-  {
-    chocolateBars.push(y)
-    return chocolateBars
-  }
-  function accessElementInArray (chocolateBars, index)
-  {
-    return chocolateBars[index]
-  }
-function destructivelyRemoveElementFromBeginningOfArray (chocolateBars)
-{
-  chocolateBars.shift()
+  "skittles"];
+  
+function addElementToBeginningOfArray (array, element){
+    return [element, ...array];
+}
+
+function destructivelyAddElementToBeginningOfArray (array, element){
+  array.unshift(element);
+  return array
+}
+
+function addElementToEndOfArray (array, element){
+  return [...array, element]
+}
+function destructivelyAddElementToEndOfArray (element){
+  chocolateBars.push(element);
   return chocolateBars
 }
+
