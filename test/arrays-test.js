@@ -28,7 +28,7 @@ describe('arrays', () => {
 
       expect(array).to.eql([1])
     })
-  })
+  })  
 
   describe('destructivelyAddElementToBeginningOfArray(array, element)', () => {
     it('adds an element to the beginning of an array', () => {
