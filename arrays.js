@@ -1,26 +1,72 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
-var foo = [2, 3]
+var ele = "foo"
+const myOriginalArray = [1]
+var fruitCandy = ["skittles", "starburst", "gumdrops", "twizzlers"]
+var iceCreams = ["chocolate", "vanilla", "raspberry"]
 
-function addElementToBeginningOfArray (foo) {
+function addElementToBeginningOfArray (myOriginalArray, ele) {
 
-foo.unshift(1)
-  return foo
+myNewArray = [ele, ...myOriginalArray ]
+
+return myNewArray
+
 }
 
-function destructivelyAddElementToBeginningOfArray () {
+
+function destructivelyAddElementToBeginningOfArray (myOriginalArray, ele) {
+
+myOriginalArray.unshift(ele)
+
+return myOriginalArray
+
+}
+
+
+function addElementToEndOfArray (myOriginalArray, ele) {
+  myNewArray2 = [...myOriginalArray, ele]
+
+return myNewArray2
+  
+}
+
+function destructivelyAddElementToEndOfArray (myOriginalArray, ele) {
+  
+  myOriginalArray.push(ele)
+
+return myOriginalArray
+}
+
+
+function accessElementInArray (fruitCandy) {
+  
+  return fruitCandy[2]
   
 }
 
 
-function addElementToEndOfArray () {
-  
+function destructivelyRemoveElementFromBeginningOfArray (fruitCandy) {
+
+  fruitCandy.shift("skittles")
+
+  return fruitCandy
+
 }
 
-function destructivelyAddElementToEndOfArray () {
+function removeElementFromBeginningOfArray (fruitCandy) {
   
+  return fruitCandy.slice(1)
+}
+
+function destructivelyRemoveElementFromEndOfArray (fruitCandy) {
+  fruitCandy.pop()
+  
+  return fruitCandy
 }
 
 
-function accessElementInArray () {
+
+function removeElementFromEndOfArray (iceCreams) {
+  
+ return iceCreams.slice(0, iceCreams.length - 1)
   
 }
