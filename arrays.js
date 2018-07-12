@@ -5,5 +5,7 @@ var chocolateBars = array[
     return (chocolateBars)
   }
   
-
+functon destructivelyAddElementToBeginningOfArray(array){
+  
+}
  
