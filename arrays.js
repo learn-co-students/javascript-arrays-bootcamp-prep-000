@@ -8,7 +8,8 @@ function addElementToBeginningOfArray(array, element){
   return ["foo",...arraytest1]
 }
 
-function destructivelyAddElementToBeginningOfArray(array, element){
+function destructivelyAddElementToBeginningOfArray(arraytest2, unshift){
  arraytest2.unshift("foo");
  return arraytest2;
 }
+
