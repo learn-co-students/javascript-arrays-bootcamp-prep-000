@@ -5,7 +5,7 @@ var arraytest2 = [1];
 var arraytest3 = [1];
 var arraytest4 = [1, 2, 3];
 var arraytest5 = [1, 2, 3];
-
+var arraytest6 = [1, 2, 3];
 
 function addElementToBeginningOfArray(array, element){
   return ["foo",...arraytest1];
@@ -37,4 +37,9 @@ function destructivelyRemoveElementFromBeginningOfArray(arraytest5){
 function removeElementFromBeginningOfArray(array){
   arraytest4 = arraytest4.slice(1);
   return arraytest4;
+}
+
+function destructivelyRemoveElementFromEndOfArray(arraytest6){
+  arraytest6.pop();
+  return arraytest6;
 }
