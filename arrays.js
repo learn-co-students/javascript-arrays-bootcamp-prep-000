@@ -6,6 +6,7 @@ var arraytest3 = [1];
 var arraytest4 = [1, 2, 3];
 var arraytest5 = [1, 2, 3];
 var arraytest6 = [1, 2, 3];
+var arraytest7 = [1, 2, 3];
 
 
 function addElementToBeginningOfArray(array, element){
@@ -46,6 +47,6 @@ function destructivelyRemoveElementFromEndOfArray(arraytest6){
 }
 
 function removeElementFromEndOfArray(array){
-  arraytest4.slice(0, arraytest4.length - 1);
-  return arraytest4;
+  arraytest7 = arraytest7.slice(0, arraytest7.length - 1);
+  return arraytest7;
 }
