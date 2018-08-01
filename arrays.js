@@ -1,10 +1,10 @@
 var chocolateBars = ["snickers", "hundredgrand", "kitkat", "skittles"];
- var a =1;
-function addElementToBeginningOfArray(a, foo){
+ 
+function addElementToBeginningOfArray(chocolateBars, foo){
   
-  const v = ['a', 'foo' ]
+  const v = [ ...chocolateBars, '1' ]
   
-  const c = ['foo', ...v ]
+ return addElementToBeginningOfArray()
   
 }
 
