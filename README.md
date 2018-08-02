@@ -220,7 +220,7 @@ cats = cats.slice(1) // ["Garfield", "Otis"]
 cats // ["Garfield", "Otis"]
 ```
 
-`slice` is also handy if we know we want the last `n` elements of an array: simply pass it an negative index.
+`slice` is also handy if we know we want the last `n` elements of an array: pass it a negative index.
 
 ``` javascript
 var cats = ["Milo", "Garfield", "Otis"]
