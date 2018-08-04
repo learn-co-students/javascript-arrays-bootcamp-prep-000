@@ -6,6 +6,11 @@ var chocolateBars = [
   'skittles'
   ]
 
+ function addElementToBeginningOfArray(array, element) {
+   return array
+ }
  
- 
- 
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  retrun array
+}
+
