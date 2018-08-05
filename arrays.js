@@ -7,10 +7,10 @@ var chocolateBars = [
   ]
  
 function addElementToBeginningOfArray(array, element) {
-  newArray = [element, ...array]
+  var newArray = array.unshift(element)
   return newArray
 }
-
+/*
 // still fails
 function destructivelyAddElementToBeginningOfArray(array, element) {
   return array.unshift(element)
@@ -73,4 +73,5 @@ destructivelyRemoveElementFromEndOfArray(chocolateBars)
 removeElementFromEndOfArray(chocolateBars)
 
 console.log('Finished my JAVASCRIPT ARRAYS Lab.') // DOES NOT DISPLAY
+ */
 // End my arrays.js
