@@ -34,8 +34,7 @@ function destructivelyRemoveElementFromBeginningOfArray(array)
 functionremoveElementFromBeginningOfArray(array) {
   return array.unshift()
 }
-/*
- */
+
 console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
 addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
 console.log(chocolateBars)
