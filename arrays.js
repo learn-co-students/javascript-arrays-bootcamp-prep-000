@@ -20,11 +20,19 @@ function addElementToEndOfArray(array, element) {
   newArray = [...array, element]
   return newArray
 }
-/* 
   
 function destructivelyAddElementToEndOfArray(arrayy, element) {
   return array
 }
+
+function accessElementInArray(array, index) {
+  retun array[index]
+}
+
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+  return array.shift()
+}
+/*
  */
 console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
 addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
