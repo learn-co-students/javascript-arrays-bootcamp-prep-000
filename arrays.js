@@ -10,9 +10,16 @@ function addElementToBeginningOfArray(array, element) {
   newArray = [element, ...array]
   return newArray
 }
+
 // still fails
 function destructivelyAddElementToBeginningOfArray(array, element) {
   return array.unshift(element)
+}
+
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array.unshift = [element]
+  return array
+
 }
 
 function addElementToEndOfArray(array, element) {
