@@ -41,11 +41,11 @@ function removeElementFromBeginningOfArray(array) {
 function destructivelyRemoveElementFromEndOfArray(array) {
   return array //  returns the array with the last element removed:
 }
-
-function removeElementFromEndOfArray(array) {
-  return array
-}
  */
+function removeElementFromEndOfArray(array) {
+  return array.slice(-1)
+}
+
 console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
 
 addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
