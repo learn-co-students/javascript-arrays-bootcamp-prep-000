@@ -33,11 +33,11 @@ function accessElementInArray(array, index) {
 function destructivelyRemoveElementFromBeginningOfArray(array) {
   return array.unshift()
 }
-
+ */
 function removeElementFromBeginningOfArray(array) {
   return array.unshift()
 }
-
+/*
 function destructivelyRemoveElementFromEndOfArray(array) {
   return array //  returns the array with the last element removed:
 }
