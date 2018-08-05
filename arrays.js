@@ -52,5 +52,7 @@ accessElementInArray(chocolateBars, 0)
 
 destructivelyRemoveElementFromBeginningOfArray(chocolateBars)
 
+removeElementFromBeginningOfArrayy(chocolateBars)
+
 console.log('Finished my JAVASCRIPT ARRAYS Lab.') // DOES NOT DISPLAY
 // End my arrays.js
