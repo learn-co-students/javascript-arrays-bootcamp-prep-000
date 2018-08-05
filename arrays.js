@@ -47,11 +47,11 @@ function removeElementFromEndOfArray(array) {
 }
 
 console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
-
+/*
 addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
 
 destructivelyAddElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
-/*
+
 addElementToEndOfArray(chocolateBars, "Dark Chocolate")
 
 destructivelyAddElementToEndOfArray(chocolateBars, "Dark Chocolate")
