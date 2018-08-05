@@ -16,16 +16,14 @@ function destructivelyAddElementToEndOfArray(array, element){
   return array
 }
 function accessElementInArray(array, index){
-  console.log(chocolateBars[0])
-  return 3
+  return array[index]
 }
 function destructivelyRemoveElementFromBeginningOfArray(array){
-  array.shift(0)
+  array.shift()
   return array
 }
 function removeElementFromBeginningOfArray(array){
   return array.slice(1)
-  return array
 }
 function destructivelyRemoveElementFromEndOfArray(array){
   array.pop()
@@ -33,5 +31,4 @@ function destructivelyRemoveElementFromEndOfArray(array){
 }
 function removeElementFromEndOfArray(array){
   return array.slice(0, array.length - 1)
-  return array
 }
