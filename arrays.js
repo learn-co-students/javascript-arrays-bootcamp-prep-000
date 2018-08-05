@@ -32,4 +32,4 @@ console.log(chocolateBars)
 destructivelyAddElementToBeginningOfArray(chocolateBars, "Dark Chocolate")
 console.log(chocolateBars)
 console.log('Finished my JAVASCRIPT ARRAYS Lab.') // DOES NOT DISPLAY
-// eND OF MY ARRAYS.JS
+// End my arrays.js
