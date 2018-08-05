@@ -41,6 +41,10 @@ function destructivelyRemoveElementFromEndOfArray(array) {
   return //  returns the array with the last element removed:
 }
 
+function removeElementFromEndOfArray(array) {
+  return array
+}
+
 console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
 addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
 console.log(chocolateBars)
@@ -59,6 +63,8 @@ destructivelyRemoveElementFromBeginningOfArray(chocolateBars)
 removeElementFromBeginningOfArrayy(chocolateBars)
 
 destructivelyRemoveElementFromEndOfArray(chocolateBars)
+
+removeElementFromEndOfArray(chocolateBars)
 
 console.log('Finished my JAVASCRIPT ARRAYS Lab.') // DOES NOT DISPLAY
 // End my arrays.js
