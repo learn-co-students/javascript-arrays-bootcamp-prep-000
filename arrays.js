@@ -12,13 +12,11 @@ function addElementToBeginningOfArray(array, element) {
 }
 // still fails
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  array.unshift(element)
-  return array
+  return array.unshift(element)
 }
 
 function addElementToEndOfArray(array, element) {
-  array.push(element)
-  return newArray
+  return array.push(element)
 }
   
 function destructivelyAddElementToEndOfArray(array, element) {
@@ -38,7 +36,7 @@ function removeElementFromBeginningOfArray(array) {
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
-  return //  returns the array with the last element removed:
+  return array //  returns the array with the last element removed:
 }
 
 function removeElementFromEndOfArray(array) {
