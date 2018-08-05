@@ -11,13 +11,12 @@ function addElementToBeginningOfArray(array, element) {
   return newArray
 }
 
-// still fails ?
 function destructivelyAddElementToBeginningOfArray(array, element) {
   return array.unshift(element)
 }
 
 function addElementToEndOfArray(array, element) {
-  var newArray = array.push(element)
+  var newArray = [...array, element]
   return newArray
 }
 
