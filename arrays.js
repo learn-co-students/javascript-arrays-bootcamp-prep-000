@@ -6,13 +6,13 @@ var chocolateBars = [
   'skittles'
   ]
  
- function addElementToBeginningOfArray(array, element) {
-   const newArray = [element, ...array]
-   return newArray
- }
+function addElementToBeginningOfArray(array, element) {
+  newArray = [element, ...array]
+  return newArray
+}
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  const sameArray = [element, ...array]
+  array.unshift = [element]
   return array
 }
 /*
