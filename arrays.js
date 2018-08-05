@@ -21,7 +21,7 @@ function addElementToEndOfArray(array, element) {
   return newArray
 }
   
-function destructivelyAddElementToEndOfArray(arrayy, element) {
+function destructivelyAddElementToEndOfArray(array, element) {
   return array
 }
 
@@ -47,7 +47,7 @@ destructivelyAddElementToEndOfArray(chocolateBars, "Dark Chocolate")
 
 accessElementInArray(chocolateBars, 0)
 
-destructivelyRemoveElementFromBeginningOfArray(chocolateBars, "Dark Chocolate")
+destructivelyRemoveElementFromBeginningOfArray(chocolateBars)
 
 console.log('Finished my JAVASCRIPT ARRAYS Lab.') // DOES NOT DISPLAY
 // End my arrays.js
