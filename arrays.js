@@ -26,8 +26,9 @@ function destructivelyAddElementToEndOfArray(arrayy, element) {
   return array
 }
  */
- 
+console.log('Starting my JAVASCRIPT ARRAYS Lab.')
 addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
 console.log(chocolateBars)
 destructivelyAddElementToBeginningOfArray(chocolateBars, "Dark Chocolate")
 console.log(chocolateBars)
+console.log('Finished my JAVASCRIPT ARRAYS Lab.')
