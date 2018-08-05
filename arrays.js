@@ -45,6 +45,9 @@ addElementToEndOfArray(chocolateBars, "Dark Chocolate")
 
 destructivelyAddElementToEndOfArray(chocolateBars, "Dark Chocolate")
 
+accessElementInArray(chocolateBars, 0)
+
+destructivelyRemoveElementFromBeginningOfArray(chocolateBars, "Dark Chocolate")
 
 console.log('Finished my JAVASCRIPT ARRAYS Lab.') // DOES NOT DISPLAY
 // End my arrays.js
