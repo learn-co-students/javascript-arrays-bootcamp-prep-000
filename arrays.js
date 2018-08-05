@@ -26,7 +26,7 @@ function destructivelyAddElementToEndOfArray(arrayy, element) {
 }
  */
  
- addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
- 
+addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
+console.log(chocolateBars)
 destructivelyAddElementToBeginningOfArray(chocolateBars, "Dark Chocolate")
-
+console.log(chocolateBars)
