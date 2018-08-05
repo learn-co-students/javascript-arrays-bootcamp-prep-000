@@ -37,7 +37,14 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
 addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
 console.log(chocolateBars)
+
 destructivelyAddElementToBeginningOfArray(chocolateBars, "Dark Chocolate")
 console.log(chocolateBars)
+
+addElementToEndOfArray(chocolateBars, "Dark Chocolate")
+
+destructivelyAddElementToEndOfArray(chocolateBars, "Dark Chocolate")
+
+
 console.log('Finished my JAVASCRIPT ARRAYS Lab.') // DOES NOT DISPLAY
 // End my arrays.js
