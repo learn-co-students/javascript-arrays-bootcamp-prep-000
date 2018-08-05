@@ -20,11 +20,11 @@ function addElementToEndOfArray(array, element) {
   var newArray = array.push(element)
   return newArray
 }
-/*  
-function destructivelyAddElementToEndOfArray(array, element) {
-  return [...array, element]
-}
 
+function destructivelyAddElementToEndOfArray(array, element) {
+  return array.push(element)
+}
+/*
 function accessElementInArray(array, index) {
   return array[index]
 }
