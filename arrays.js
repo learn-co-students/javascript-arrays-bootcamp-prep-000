@@ -39,11 +39,11 @@ function removeElementFromBeginningOfArray(array) {
 }
 /*
 function destructivelyRemoveElementFromEndOfArray(array) {
-  return array //  returns the array with the last element removed:
+  return array.unshift
 }
  */
 function removeElementFromEndOfArray(array) {
-  return array.slice(-1)
+  return array.slice(0, array.length - 1)
 }
 
 console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
