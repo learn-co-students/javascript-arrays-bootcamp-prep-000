@@ -26,7 +26,7 @@ function destructivelyAddElementToEndOfArray(arrayy, element) {
 }
 
 function accessElementInArray(array, index) {
-  retun array[index]
+  return array[index]
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array) {
