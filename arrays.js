@@ -11,8 +11,8 @@ function addElementToBeginningOfArray(array, element) {
   return newArray
 }
 /*
-function destructivelyAddElementToBeginningOfArray(array, element) {
-  return array.unshift(element)
+function destructivelyAddElementToBeginningOfArray(array) {
+  return array.unshift()
 }
  */
 function addElementToEndOfArray(array, element) {
@@ -45,25 +45,25 @@ function removeElementFromEndOfArray(array) {
 }
 
 console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
-/*
-addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
 
-destructivelyAddElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
+// addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
 
-addElementToEndOfArray(chocolateBars, "Dark Chocolate")
+// destructivelyAddElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
 
-destructivelyAddElementToEndOfArray(chocolateBars, "Dark Chocolate")
+// addElementToEndOfArray(chocolateBars, "Dark Chocolate")
 
-accessElementInArray(chocolateBars, 0)
+// destructivelyAddElementToEndOfArray(chocolateBars, "Dark Chocolate")
 
-destructivelyRemoveElementFromBeginningOfArray(chocolateBars)
+// accessElementInArray(chocolateBars, 0)
 
-removeElementFromBeginningOfArrayy(chocolateBars)
+// destructivelyRemoveElementFromBeginningOfArray(chocolateBars)
 
-destructivelyRemoveElementFromEndOfArray(chocolateBars)
+// removeElementFromBeginningOfArrayy(chocolateBars)
 
-removeElementFromEndOfArray(chocolateBars)
- */
+// destructivelyRemoveElementFromEndOfArray(chocolateBars)
+
+// removeElementFromEndOfArray(chocolateBars)
+
 console.log('Finished my JAVASCRIPT ARRAYS Lab.') // DOES NOT DISPLAY
 
 // End my arrays.js
