@@ -49,7 +49,7 @@ console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
 
 // addElementToBeginningOfArray(chocolateBars, 'Dark Chocolate')
 
-destructivelyAddElementToBeginningOfArray(chocolateBars, "Dark Chocolate")
+console.log(destructivelyAddElementToBeginningOfArray(chocolateBars, "Dark Chocolate"))
 
 // addElementToEndOfArray(chocolateBars, "Dark Chocolate")
 
