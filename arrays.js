@@ -45,7 +45,9 @@ function removeElementFromEndOfArray(array) {
   return array.slice(0, array.length - 1)
 }
 
-console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
+// NO DISPLAY FROM ANY console.log
+
+console.log("Starting my JAVASCRIPT ARRAYS Lab.") 
 
 console.log(chocolateBars)
 
@@ -67,6 +69,6 @@ destructivelyRemoveElementFromEndOfArray(chocolateBars)
 
 removeElementFromEndOfArray(chocolateBars)
 
-console.log('Finished my JAVASCRIPT ARRAYS Lab.') // DOES NOT DISPLAY
+console.log('Finished my JAVASCRIPT ARRAYS Lab.') 
 
 // End my arrays.js
