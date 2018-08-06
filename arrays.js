@@ -8,8 +8,8 @@ var chocolateBars = [
 
 const chocolateBarsOriginal = new array (chocolateBars)
 
-function addElementToBeginningOfArray(array, element) {
-  const newArray = [element, ...array]
+function addElementToBeginningOfArray(inArray, element) {
+  const newArray = [element, ...inArray]
   return newArray
 }
 
@@ -39,7 +39,7 @@ function removeElementFromBeginningOfArray(array) {
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
-  array = new array(array.slice(0, array.length - 1))
+  array = array.slice(0, array.length - 1)
   return array
 }
 
