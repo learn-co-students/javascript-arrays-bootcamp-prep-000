@@ -53,19 +53,19 @@ console.log(addElementToBeginningOfArray(chocolateBars, "Dark Chocolate"))
 
 console.log(destructivelyAddElementToBeginningOfArray(chocolateBars, "Dark Chocolate"))
 
-// addElementToEndOfArray(chocolateBars, "Dark Chocolate")
+console.log(addElementToEndOfArray(chocolateBars, "Dark Chocolate"))
 
-// destructivelyAddElementToEndOfArray(chocolateBars, "Dark Chocolate")
+console.log(destructivelyAddElementToEndOfArray(chocolateBars, "Dark Chocolate"))
 
-// accessElementInArray(chocolateBars, 0)
+console.log(accessElementInArray(chocolateBars, 0))
 
-// destructivelyRemoveElementFromBeginningOfArray(chocolateBars)
+destructivelyRemoveElementFromBeginningOfArray(chocolateBars)
 
-// removeElementFromBeginningOfArrayy(chocolateBars)
+removeElementFromBeginningOfArrayy(chocolateBars)
 
-// destructivelyRemoveElementFromEndOfArray(chocolateBars)
+destructivelyRemoveElementFromEndOfArray(chocolateBars)
 
-// removeElementFromEndOfArray(chocolateBars)
+removeElementFromEndOfArray(chocolateBars)
 
 console.log('Finished my JAVASCRIPT ARRAYS Lab.') // DOES NOT DISPLAY
 
