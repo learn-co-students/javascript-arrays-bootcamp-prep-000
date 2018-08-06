@@ -60,13 +60,13 @@ console.log(destructivelyAddElementToEndOfArray(chocolateBars, "Dark Chocolate")
 
 console.log(accessElementInArray(chocolateBars, 0))
 
-destructivelyRemoveElementFromBeginningOfArray(chocolateBars)
+console.log(destructivelyRemoveElementFromBeginningOfArray(chocolateBars))
 
-removeElementFromBeginningOfArrayy(chocolateBars)
+console.log(removeElementFromBeginningOfArrayy(chocolateBars))
 
-destructivelyRemoveElementFromEndOfArray(chocolateBars)
+console.log(destructivelyRemoveElementFromEndOfArray(chocolateBars))
 
-removeElementFromEndOfArray(chocolateBars)
+console.log(removeElementFromEndOfArray(chocolateBars))
 
 console.log('Finished my JAVASCRIPT ARRAYS Lab.') 
 
