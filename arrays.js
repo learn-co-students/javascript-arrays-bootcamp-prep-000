@@ -1,5 +1,5 @@
 // My arrays.js
-const chocolateBars = [
+var chocolateBars = [
   'snickers',
   'hundred grand',
   'kitkat',
