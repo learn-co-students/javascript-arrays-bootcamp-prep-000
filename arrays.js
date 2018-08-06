@@ -47,6 +47,8 @@ function removeElementFromEndOfArray(array) {
 
 console.log("Starting my JAVASCRIPT ARRAYS Lab.") // DOES NOT DISPLAY
 
+console.log(chocolateBars)
+
 console.log(addElementToBeginningOfArray(chocolateBars, "Dark Chocolate"))
 
 console.log(destructivelyAddElementToBeginningOfArray(chocolateBars, "Dark Chocolate"))
