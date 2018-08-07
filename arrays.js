@@ -6,7 +6,7 @@ var chocolateBars = [
   'skittles'
   ]
 
-const chocolateBarsOriginal = new array (chocolateBars)
+// const chocolateBarsOriginal = new array (chocolateBars)
 
 function addElementToBeginningOfArray(array, element) {
   const newArray = [element, ...array]
@@ -14,9 +14,9 @@ function addElementToBeginningOfArray(array, element) {
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  return array.unshift(element)
+  array = array.unshift(element)
 //  array = [element, ...array]
-//  return array
+  return array
 }
 
 function addElementToEndOfArray(array, element) {
