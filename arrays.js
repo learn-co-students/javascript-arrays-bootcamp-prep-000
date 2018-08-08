@@ -11,12 +11,12 @@ function addElementToBeginningOfArray(array, element) {
   return newArray
 }
  */
-
+/* passed
 function destructivelyAddElementToBeginningOfArray(array, element) {
   array.unshift(element)
   return array
 }
-
+ */
 /*
 function addElementToEndOfArray(array, element) {
   const newArray = [...array, element]
@@ -25,7 +25,8 @@ function addElementToEndOfArray(array, element) {
  */
 
 function destructivelyAddElementToEndOfArray(array, element) {
-  return array.push(element)
+  array.push(element)
+  return array
 } 
 
 /*
