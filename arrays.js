@@ -20,11 +20,13 @@ function addElementToEndOfArray(array, element) {
   const newArray = [...array, element]
   return newArray
 }
+ */
 
 function destructivelyAddElementToEndOfArray(array, element) {
   return array.push(element)
 } 
 
+/*
 function accessElementInArray(array, index) {
   return array[index]
 }
