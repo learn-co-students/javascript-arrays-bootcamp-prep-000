@@ -5,16 +5,16 @@ var chocolateBars = [
   'kitkat',
   'skittles'
   ]
-
+/*
 function addElementToBeginningOfArray(array, element) {
   const newArray = [element, ...array]
   return newArray
 }
-
+ */
 function destructivelyAddElementToBeginningOfArray(array, element) {
   return array.unshift(element)
 }
-
+/*
 function addElementToEndOfArray(array, element) {
   const newArray = [...array, element]
   return newArray
@@ -44,4 +44,5 @@ function destructivelyRemoveElementFromEndOfArray(array) {
 function removeElementFromEndOfArray(array) {
   return array.slice(0, array.length - 1)
 }
+ */
 // End my arrays.js
