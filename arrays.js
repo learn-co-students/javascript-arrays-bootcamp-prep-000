@@ -24,16 +24,22 @@ destructivelyAddElementToBeginningOfArray(chocolateBars, reeses);
 
 
 function addElementToEndOfArray(array, element){
-  return [chocolateBars, plus1];
+  return [element, ...array];
   
 }
+
+addElementToEndOfArray(chocolateBars, reeses);
+
 
 
 function destructivelyAddElementToEndOfArray(array, element){
-  chocolateBars.push(plus1);
-  return chocolateBars;
+  array.push(element);
+  return array;
   
 }
+
+destructivelyAddElementToEndOfArray(chocolateBars, reeses);
+
 
 
 function accessElementInArray(array, element){
