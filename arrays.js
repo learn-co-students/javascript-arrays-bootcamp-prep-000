@@ -42,11 +42,13 @@ destructivelyAddElementToEndOfArray(chocolateBars, reeses);
 
 
 
-function accessElementInArray(array, element){
-  [...chocolateBars];
-  return chocolateBars[3];
+function accessElementInArray(array, index){
+ 
+  return array[index];
   
 }
+
+accessElementInArray(chocolateBars, 1);
 
 
 
