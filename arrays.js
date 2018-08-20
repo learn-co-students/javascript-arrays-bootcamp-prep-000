@@ -53,17 +53,22 @@ accessElementInArray(chocolateBars, 1);
 
 
 function destructivelyRemoveElementFromBeginningOfArray(array){
-  chocolateBars.shift();
+  array.shift();
   return chocolateBars;
   
 }
+
+destructivelyRemoveElementFromBeginningOfArray(chocolateBars);
+
 
 
 function removeElementFromBeginningOfArray(array){
-  chocolateBars.slice(1);
-  return chocolateBars;
+  array.slice(1);
+  return array;
   
 }
+
+removeElementFromBeginningOfArray(chocolateBars);
 
 
 function destructivelyRemoveElementFromEndOfArray(array){
