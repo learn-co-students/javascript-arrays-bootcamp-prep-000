@@ -1,6 +1,6 @@
-// // list
-var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
+// 
 
+var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
 
 // 
 
@@ -19,8 +19,7 @@ console.log(list);
 var list = [30, 40]
 
 function destructivelyAddElementToBeginningOfArray (array, element) {
-  var newArray = array.unshift(element);
-  return newArray;
+  return array.unshift(element);
 }
 
 destructivelyAddElementToBeginningOfArray (list, 'insert to original');
@@ -51,4 +50,37 @@ console.log(destructivelyAddElementToEndOfArray (list, 'update end of original')
 console.log(list);
 
 //
+
+
+function accessElementInArray (array, index) {
+  return;
+}
+
+//
+
+
+function destructivelyRemoveElementFromBeginningOfArray (array) {
+  return;
+}
+
+//
+
+
+function removeElementFromBeginningOfArray (array) {
+  return;
+}
+
+
+//
+
+function destructivelyRemoveElementFromEndOfArray (array) {
+  return;
+}
+
+//
+
+function removeElementFromEndOfArray (array) {
+  return;
+}
+
 
