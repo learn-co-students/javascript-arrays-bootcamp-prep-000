@@ -2,56 +2,46 @@ var chocolateBars =
 ['snickers', 'hundred grand', 'kitkat', 'skittles'];
 
 function addElementToBeginningOfArray(array, element) {
-  var one = [1];
-  return ['foo',...one];
+  return ['foo',...array];
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  var two = [1];
-  two.unshift('foo');
-  return two;
+  array.unshift('foo');
+  return array
 }
 
 function addElementToEndOfArray(array, element) {
-  var three = [1];
-  return [...three, 'foo'];
+  return [...array, 'foo'];
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
-  var four = [1];
-  four.push('foo');
-  return four
+  array.push('foo');
+  return array
 }
-destructivelyAddElementToEndOfArray([1], 'foo')
+
 
 function accessElementInArray(array, index) {
-  var five = [1, 2, 3];
-  return five[2]
+  return array[2]
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array) {
-  var six = [1, 2, 3];
-  six.shift();
-  return six
+  array.shift();
+  return array
 }
 
-
 function removeElementFromBeginningOfArray(array) {
-  var seven = [1, 2 ,3];
-  seven.slice(1);
-  return seven
+  newarray = array.slice(1);
+  return newarray
 }
 
 
 function removeElementFromEndOfArray(array) {
-  var eight = [1, 2, 3];
-  eight.pop(3);
-  return eight
+  newarray = array.slice(0, array.length - 1);
+  return newarray
 }
 
 
 function destructivelyRemoveElementFromEndOfArray(array) {
-  var nine = [1, 2, 3];
-  nine.pop(2);
-  return nine
+  array.pop()
+  return array
 }
