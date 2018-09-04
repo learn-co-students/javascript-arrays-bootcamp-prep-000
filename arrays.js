@@ -6,8 +6,7 @@ console.log(chocolateBars.shift());
 console.log(chocolateBars);
 
 function addElementToBeginningOfArray(array, element) {
-  newArray = [element, ...array];
-  return newArray;
+  return newArray = [element, ...array];
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
@@ -16,8 +15,7 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 }
 
 function addElementToEndOfArray(array, element) {
-  newArray2 = [array, ...element];
-  return newArray2;
+  return newArray2 = [...array, element];
 }
 
 function destructivelyAddElementToEndOfArray (array, element) {
