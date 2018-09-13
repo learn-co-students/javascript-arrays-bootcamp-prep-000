@@ -17,8 +17,8 @@ function destructivelyAddElementToEndOfArray(array, element) {
   return array
 }
 function accessElementInArray(array, index) {
-  console.log(array[1, 2, 3], 2);
-  return 3
+  console.log(array[2]);
+  return (array[2])
 }
 function destructivelyRemoveElementFromBeginningOfArray(array) {
   array.shift()
@@ -35,4 +35,5 @@ function destructivelyRemoveElementFromEndOfArray(array) {
 function removeElementFromEndOfArray(array) {
   array = array.slice(0, array.length -1)
   return array
+  return (array[3])
 }
