@@ -8,13 +8,14 @@ function addElementToBeginningOfArray() {
   return newArray
 }
 
-function destructivelyAddElementToBeginningOfArray() {
-  array = [1]
+function destructivelyAddElementToBeginningOfArray(array) {
   
   array.unshift("foo")
-  
+
   return array
 }
+
+detructivelyAddElementToBeginningOfArray(array)
 
 function addElementToEndOfArray() {
   array = [1]
@@ -24,51 +25,50 @@ function addElementToEndOfArray() {
   return newArray
 }
 
-function destructivelyAddElementToEndOfArray() {
-  const array = [1]
+function destructivelyAddElementToEndOfArray(array) {
   
- var element = "foo"
-  
-  array.push(element)
+  array.push("foo")
   
   return array
  
 }
 
+destructivelyAddElementToEndOfArray(array)
+
 function accessElementInArray() {
   
   array = [1, 2, 3]
-  
+
   return array[2]
 }
 
-function destructivelyRemoveElementFromBeginningOfArray() {
-  array = [1, 2, 3]
+function destructivelyRemoveElementFromBeginningOfArray(array) {
   
   array.shift()
   
-  array = [2, 3]
-  
   return array
 }
+
+destructivelyRemoveElementFromBeginningOfArray(array)
 
 function removeElementFromBeginningOfArray() {
   array = [1, 2, 3]
   
   array.slice(1)
   
+  array = [2, 3]
+  
   return array
 }
 
-function destructivelyRemoveElementFromEndOfArray() {
-  array = [1, 2, 3]
+function destructivelyRemoveElementFromEndOfArray(array) {
   
   array.pop() // returns the removed element, in this case 3
   
-  array = [1, 2]
-  
   return array
 }
+
+destructivelyRemoveElementFromEndOfArray(array)
 
 function removeElementFromEndOfArray() {
   array = [1, 2, 3] 
@@ -78,6 +78,5 @@ function removeElementFromEndOfArray() {
   array = [1, 2]
   
   return array
-  
 }
 
