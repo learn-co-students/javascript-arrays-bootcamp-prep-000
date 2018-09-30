@@ -29,12 +29,13 @@ function accessElementInArray(myArray, elementIndex){
 }
 //problem 7
 function destructivelyRemoveElementFromBeginningOfArray(myArray){
-  myArray.shift
+  myArray.shift()
   return myArray
 }
 //Problem 8
 function removeElementFromBeginningOfArray(myArray){
-  myNewArray= myArray.slice(1)
+  myArray = myArray.slice(1)
+  myArray
 }
 //Problem 9
 function destructivelyRemoveElementFromEndOfArray(myArray){
@@ -43,6 +44,5 @@ function destructivelyRemoveElementFromEndOfArray(myArray){
 }
 //problem 10
 function removeElementFromEndOfArray(myArray){
-  myNewArray.slice(0, myArray.length -1)
-  return myNewArray
+  myarray = myArray.slice(0, myArray.length -1)
 }
