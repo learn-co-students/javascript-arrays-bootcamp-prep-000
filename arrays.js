@@ -23,23 +23,25 @@ function destructivelyAddElementToEndOfArray(myArray, myElement){
   return myArray
 }
 
-//Problem 4
+//Problem 6
 function accessElementInArray(myArray, elementIndex){
   return (myArray[elementIndex])
 }
-//problem 5
+//problem 7
 function destructivelyRemoveElementFromBeginningOfArray(myArray){
   myArray.shift
+  return myArray
 }
-//Problem 6
+//Problem 8
 function removeElementFromBeginningOfArray(myArray){
   myNewArray= myArray.slice(1)
 }
-//Problem 7
+//Problem 9
 function destructivelyRemoveElementFromEndOfArray(myArray){
   myArray.pop()
   return myArray
 }
+//problem 10
 function removeElementFromEndofArray(myArray){
   myNewArray.slice(0, myArray.length -1)
   return myNewArray
