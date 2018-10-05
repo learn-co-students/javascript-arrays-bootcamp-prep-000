@@ -165,9 +165,9 @@ it's best not to. We should treat arrays as ordered lists of information that ca
 You can get elements out of arrays if you know their index. Array elements' indexes start at 0 and increment by 1, so the first element's index is `0`, the second element's index is `1`, the third element's is `2`, etc.
 
 ```javascript
-var entrepreneurs = ["Elizabeth Holmes", "Laurene Powell Jobs", "Arianna Huffington"];
+var entrepreneurs = ["Oprah Winfrey", "Laurene Powell Jobs", "Arianna Huffington"];
 
-// the line below will print the string "Elizabeth Holmes"
+// the line below will print the string "Oprah Winfrey"
 console.log(entrepreneurs[0]);
 
 // the code below will print the string "Arianna Huffington is the co-founder and editress-in-chief of The Huffington Post"
