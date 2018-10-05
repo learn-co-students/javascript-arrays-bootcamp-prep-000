@@ -121,7 +121,7 @@ var cities = ["New York", "San Francisco"]
 cities // ["New York", "San Francisco"]
 ```
 
-Whoa! Did you see that? Our cities array was untouched when we used the spread operator: `...cities`. We can do the same at the end of the array:
+Whoa! Did you see that? Our cities array was untouched when we used the spread operator: `...cities`. We can do the same at the beginning of the array:
 
 ``` javascript
 var cities = ["New York", "San Francisco"]
