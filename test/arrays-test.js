@@ -43,7 +43,7 @@ describe('arrays', () => {
       expect(array).to.eql(['foo', 1])
     })
   })
-
+  
   describe('addElementToEndOfArray(array, element)', () => {
     it('adds an element to the end of an array', () => {
       expect(addElementToEndOfArray([1], 'foo')).to.eql([1, 'foo'])
