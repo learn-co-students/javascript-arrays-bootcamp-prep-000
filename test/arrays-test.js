@@ -5,6 +5,7 @@ const fs = require('fs')
 const jsdom = require('mocha-jsdom')
 const path = require('path')
 
+
 describe('arrays', () => {
   jsdom({
     src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
@@ -88,7 +89,7 @@ describe('arrays', () => {
       destructivelyRemoveElementFromBeginningOfArray(array);
       expect(array).to.eql([2, 3]);
     })
-  })
+  })  
 
   describe('removeElementFromBeginningOfArray(array)', () => {
     it('removes the first element from the array', () => {
