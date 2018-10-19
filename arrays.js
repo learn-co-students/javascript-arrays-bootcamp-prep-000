@@ -1,7 +1,7 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 
 function addElementToBeginningOfArray(array, element) {
-  return [element, ...array];  
+  return [element, ...array];
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
@@ -27,9 +27,8 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
   return array;
 }
 
-
 function removeElementFromBeginningOfArray(array) {
-  return array.slice(-2);
+  return array.slice(1);  
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
@@ -38,9 +37,20 @@ function destructivelyRemoveElementFromEndOfArray(array) {
 }
 
 function removeElementFromEndOfArray(array) {
- return array.slice(0, array.length - 1);
+  return array.slice(0, array.length - 1);
 }
 
 /*
-
+  describe('removeElementFromEndOfArray(array)', () => {
+    it('removes the last element from the array', () => {
+      expect(removeElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
+    })
+    
+    it('does not alter the original array', () => {
+      const array = [1, 2, 3];
+      removeElementFromEndOfArray(array);
+      expect(array).to.eql([1, 2, 3]);
+    })
+  })
+})
 */
