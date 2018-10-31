@@ -6,12 +6,7 @@
     I am doing this to utilize some of what I already know within the context of the assignment.
 */
 
-var chocolateBars = [
-  'snickers',
-  'hundred grand',
-  'kitkat',
-  'skittles'
-];
+var chocolateBars = ['snickers','hundred grand','kitkat','skittles'];
 
 function addElementToBeginningOfArray(arr, elem)
 {
