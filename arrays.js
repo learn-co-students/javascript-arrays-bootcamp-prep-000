@@ -4,8 +4,7 @@
 /*  NOTE:
     I am submitting this using more advanced syntax than the lab requests.
     I am doing this to utilize some of what I already know within the context of the assignment.
-    I am unable to get the tests to recognize my variables correctly despite editing this file.
-    I am electing to move on rather than engage in a fruitless struggle against the testing system.
+    Previous difficulties with tests revealed a missing closing brace (}) was the culprit.
 */
 
 var chocolateBars = [
@@ -13,7 +12,7 @@ var chocolateBars = [
   'hundred grand',
   'kitkat',
   'skittles'
-];
+]
 
 function addElementToBeginningOfArray(array, element)
 {
@@ -28,21 +27,23 @@ function addElementToBeginningOfArray(array, element)
   {
     return result; // return result regardless
   }
-};
+}
 
 function destructivelyAddElementToBeginningOfArray(array, element)
 {
   var result = false;
   try
   {
-    result = array.unshift(element);
+    array.unshift(element);
+    result = array;
   } catch(e)
   {
     console.log('ERROR: ' + e);
   } finally
   {
     return result;
-};
+  }
+}
 
 function addElementToEndOfArray(array, element)
 {
@@ -57,14 +58,15 @@ function addElementToEndOfArray(array, element)
   {
     return result;
   }
-};
+}
 
-function destrucivelyAddElementToEndOfArray(array, element)
+function destructivelyAddElementToEndOfArray(array, element)
 {
   var result = false;
   try
   {
-    result = array.push(element);
+    array.push(element);
+    result = array;
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -72,7 +74,7 @@ function destrucivelyAddElementToEndOfArray(array, element)
   {
     return result;
   }
-};
+}
 
 function accessElementInArray(array, index)
 {
@@ -87,7 +89,7 @@ function accessElementInArray(array, index)
   {
     return result;
   }
-};
+}
 
 function removeElementFromBeginningOfArray(array)
 {
@@ -102,14 +104,15 @@ function removeElementFromBeginningOfArray(array)
   {
     return result;
   }
-};
+}
 
 function destructivelyRemoveElementFromBeginningOfArray(array)
 {
   var result = false;
   try
   {
-    result = array.shift();
+    array.shift();
+    result = array;
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -117,7 +120,7 @@ function destructivelyRemoveElementFromBeginningOfArray(array)
   {
     return result;
   }
-};
+}
 
 function removeElementFromEndOfArray(array)
 {
@@ -132,14 +135,15 @@ function removeElementFromEndOfArray(array)
   {
     return result;
   }
-};
+}
 
 function destructivelyRemoveElementFromEndOfArray(array)
 {
   var result = false;
   try
   {
-    result = array.pop();
+    array.pop();
+    result = array;
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -147,7 +151,7 @@ function destructivelyRemoveElementFromEndOfArray(array)
   {
     return result;
   }
-};
+}
 
 // // //
 // BONUS SECTION
@@ -168,7 +172,7 @@ function removeElementFromMiddleOfArray(array)
   {
     return result;
   }
-};
+}
 
 function destructivelyRemoveElementFromMiddleOfArray(array)
 {
@@ -176,7 +180,8 @@ function destructivelyRemoveElementFromMiddleOfArray(array)
   var middle = Math.round(array.length * 0.5) - 1;
   try
   {
-    result = array.splice(middle, 1);
+    array.splice(middle, 1);
+    result = array;
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -184,4 +189,4 @@ function destructivelyRemoveElementFromMiddleOfArray(array)
   {
     return result;
   }
-};
+}
