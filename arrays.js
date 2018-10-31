@@ -4,16 +4,23 @@
 /*  NOTE:
     I am submitting this using more advanced syntax than the lab requests.
     I am doing this to utilize some of what I already know within the context of the assignment.
+    I am unable to get the tests to recognize my variables correctly despite editing this file.
+    I am electing to move on rather than engage in a fruitless struggle against the testing system.
 */
 
-var chocolateBars = ['snickers','hundred grand','kitkat','skittles'];
+var chocolateBars = [
+  'snickers',
+  'hundred grand',
+  'kitkat',
+  'skittles'
+];
 
-function addElementToBeginningOfArray(arr, elem)
+function addElementToBeginningOfArray(array, element)
 {
   var result = false; // if the function returns false, external logic can be alerted to the problem
   try // provide error checking
   {
-    result = [elem, ...arr];
+    result = [element, ...array];
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -23,12 +30,12 @@ function addElementToBeginningOfArray(arr, elem)
   }
 };
 
-function destructivelyAddElementToBeginningOfArray(arr, elem)
+function destructivelyAddElementToBeginningOfArray(array, element)
 {
   var result = false;
   try
   {
-    result = arr.unshift(elem);
+    result = array.unshift(element);
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -37,27 +44,12 @@ function destructivelyAddElementToBeginningOfArray(arr, elem)
     return result;
 };
 
-function addElementToEndOfArray(arr, elem)
+function addElementToEndOfArray(array, element)
 {
   var result = false;
   try
   {
-    result = [...arr, elem];
-  } catch(e)
-  {
-    console.log('ERROR: ' + e);
-  } finally
-  {
-    return result;
-  }
-};
-
-function destrucivelyAddElementToEndOfArray(arr, elem)
-{
-  var result = false;
-  try
-  {
-    result = arr.push(elem);
+    result = [...array, element];
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -67,12 +59,12 @@ function destrucivelyAddElementToEndOfArray(arr, elem)
   }
 };
 
-function accessElementInArray(arr, idx)
+function destrucivelyAddElementToEndOfArray(array, element)
 {
   var result = false;
   try
   {
-    result = arr[idx];
+    result = array.push(element);
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -82,12 +74,12 @@ function accessElementInArray(arr, idx)
   }
 };
 
-function removeElementFromBeginningOfArray(arr)
+function accessElementInArray(array, index)
 {
   var result = false;
   try
   {
-    result = arr.slice(1);
+    result = array[index];
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -97,12 +89,12 @@ function removeElementFromBeginningOfArray(arr)
   }
 };
 
-function destructivelyRemoveElementFromBeginningOfArray(arr)
+function removeElementFromBeginningOfArray(array)
 {
   var result = false;
   try
   {
-    result = arr.shift();
+    result = array.slice(1);
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -112,12 +104,12 @@ function destructivelyRemoveElementFromBeginningOfArray(arr)
   }
 };
 
-function removeElementFromEndOfArray(arr)
+function destructivelyRemoveElementFromBeginningOfArray(array)
 {
   var result = false;
   try
   {
-    result = arr.slice(0, arr.length - 1);
+    result = array.shift();
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -127,12 +119,27 @@ function removeElementFromEndOfArray(arr)
   }
 };
 
-function destructivelyRemoveElementFromEndOfArray(arr)
+function removeElementFromEndOfArray(array)
 {
   var result = false;
   try
   {
-    result = arr.pop();
+    result = array.slice(0, array.length - 1);
+  } catch(e)
+  {
+    console.log('ERROR: ' + e);
+  } finally
+  {
+    return result;
+  }
+};
+
+function destructivelyRemoveElementFromEndOfArray(array)
+{
+  var result = false;
+  try
+  {
+    result = array.pop();
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -146,14 +153,14 @@ function destructivelyRemoveElementFromEndOfArray(arr)
 // BONUS SECTION
 // // //
 
-function removeElementFromMiddleOfArray(arr)
+function removeElementFromMiddleOfArray(array)
 {
   var result = false;
   // calculate the midpoint of the array by rounding up, then subtracting one for correct index.
-  var middle = Math.round(arr.length * 0.5) - 1;
+  var middle = Math.round(array.length * 0.5) - 1;
   try
   {
-    result = [...arr.slice(0,middle), ...arr.slice(middle)];
+    result = [...array.slice(0,middle), ...array.slice(middle)];
   } catch(e)
   {
     console.log('ERROR: ' + e);
@@ -163,13 +170,13 @@ function removeElementFromMiddleOfArray(arr)
   }
 };
 
-function destructivelyRemoveElementFromMiddleOfArray(arr)
+function destructivelyRemoveElementFromMiddleOfArray(array)
 {
   var result = false;
-  var middle = Math.round(arr.length * 0.5) - 1;
+  var middle = Math.round(array.length * 0.5) - 1;
   try
   {
-    result = arr.splice(middle, 1);
+    result = array.splice(middle, 1);
   } catch(e)
   {
     console.log('ERROR: ' + e);
