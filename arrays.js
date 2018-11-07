@@ -87,3 +87,14 @@ function removeElementFromEndOfArray(array) {
   return karray
   jarray
 }
+
+/*removeFirstKitten function
+removes the first kitten from the kittens array and returns
+a new array, leaving the kittens array unchanged*/
+function removeFirstKitten(){
+  var gkittens = kittens
+  var hkittens = [...gkittens]
+  hkittens.shift()
+  return hkittens
+  gkittens
+}
