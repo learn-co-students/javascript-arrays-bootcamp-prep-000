@@ -26,3 +26,32 @@ function destructivelyAddElementToEndOfArray (){
   return ["reeses", ...chocolateBars];
 };
 addElementToBeginningOfArray();
+
+function accessElementInArray(){
+  return chocolateBars [2];
+};
+accessElementInArray();
+function destructivelyRemoveElementFromBeginningOfArray(){
+  return chocolateBars.shift();
+};
+destructivelyRemoveElementFromBeginningOfArray();
+
+function removeElementFromBeginningOfArray(){
+ return chocolateBars.slice(0);
+};
+destructivelyRemoveElementFromBeginningOfArray();
+
+function destructivelyRemoveElementFromEndOfArray (){
+  return chocolateBars.pop();
+}
+destructivelyRemoveElementFromEndOfArray();
+
+function removeElementFromEndOfArray (){
+  return chocolateBars.slice(0, chocolateBars.length - 1);
+};
+removeElementFromEndOfArray () ;
+
+function spliceySplice(){
+  return chocolateBars.splice(2);
+};
+spliceySplice();
