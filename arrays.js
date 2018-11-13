@@ -5,3 +5,4 @@ console.log (chocolateBars);
 chocolateBars.unshift("chocolove");
 ["devries", ...chocolateBars];
 console.log(chocolateBars);
+bar = "snickers";
