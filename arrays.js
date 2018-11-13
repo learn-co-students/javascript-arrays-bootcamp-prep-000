@@ -7,6 +7,9 @@ chocolateBars.unshift("chocolove");
 console.log(chocolateBars);
 bar = "snickers";
 
+console.log(chocolateBars[3]);
+
+
 function addElementToBeginningOfArray (){
   return chocolateBars.push("snickers");
 };
