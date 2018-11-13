@@ -6,3 +6,20 @@ chocolateBars.unshift("chocolove");
 ["devries", ...chocolateBars];
 console.log(chocolateBars);
 bar = "snickers";
+
+function addElementToBeginningOfArray (){
+  return chocolateBars.push("snickers");
+};
+addElementToBeginningOfArray();
+function destructivelyAddElementToBeginningOfArray (){
+  return chocolateBars.unshift("kitkat");
+};
+addElementToBeginningOfArray();
+function addElementToEndOfArray (){
+  return [chocolateBars, "snickers"];
+};
+addElementToBeginningOfArray ();
+function destructivelyAddElementToEndOfArray (){
+  return ["reeses", ...chocolateBars];
+};
+addElementToBeginningOfArray();
