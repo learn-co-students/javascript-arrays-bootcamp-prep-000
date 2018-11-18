@@ -5,8 +5,8 @@ function addElementToBeginningOfArray(array, element) {
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  array.unshift(element);
-  return array;
+ array.unshift(element); 
+ return array;
 }
 
 function addElementToEndOfArray(array, element) {
@@ -41,7 +41,7 @@ function removeElementFromEndOfArray(array) {
 }
 
 /*
-describe('removeElementFromEndOfArray(array)', () => {
+ describe('removeElementFromEndOfArray(array)', () => {
     it('removes the last element from the array', () => {
       expect(removeElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
