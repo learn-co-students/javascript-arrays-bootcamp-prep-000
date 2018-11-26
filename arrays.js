@@ -37,13 +37,12 @@ function removeElementFromBeginningOfArray(array1){
 }
 
 function destructivelyRemoveElementFromEndOfArray(){
-  const array = [1,2,3];
+ const array = [1,2,3];
  array.pop();
  return array;
 }
 
 function removeElementFromEndOfArray(){
   const array = [1,2,3];
-  array.splice(0, array.length-1);
-  return array;
+  return array.slice(0, array.length-1);
 }
