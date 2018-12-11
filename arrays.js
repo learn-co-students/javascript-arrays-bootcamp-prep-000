@@ -11,7 +11,12 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
   return array;
 }
 
+//I got pretty far, I should be proud of myself. Reread this portion of lesson and try again tomorrow.
 function addElementToEndOfArray(array, element) {
+  array[3]
+}
+
+function destructivelyAddElementToEndOfArray(array, element) {
   
 }
 
