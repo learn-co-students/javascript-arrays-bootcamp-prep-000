@@ -1,5 +1,5 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
-var array = [1];
+var array = [1, 2, 3];
 var element = 'foo';
 
 function addElementToBeginningOfArray(array, element) {
@@ -16,7 +16,7 @@ function accessElementInArray(array, index) {
 //Not too sure about this function!
 }
 
-accessElementInArray(array, 0);
+accessElementInArray(array, 2);
 //Or this call!
 
 function destructivelyRemoveElementFromBeginningOfArray(array) {
@@ -28,3 +28,24 @@ function destructivelyRemoveElementFromEndOfArray(array) {
   array.pop();
   return array;
 }
+
+function removeElementFromBeginningOfArray(array) {
+  array.slice(0);
+  return array;
+//"return the 'entire' array in the same line and *should not* mutate the original array"
+}
+
+function removeElementFromEndOfArray(array) {
+  array.slice(0, array.length - 1);
+  return array;
+}
+
+
+
+
+
+
+
+
+
+
