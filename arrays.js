@@ -11,9 +11,10 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
   return array;
 }
 
-//I got pretty far, I should be proud of myself. Reread this portion of lesson and try again tomorrow.
+//I got pretty far, reread this portion of lesson.
 function addElementToEndOfArray(array, element) {
-  array[3]
+  [...array, element];
+  return array;
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
@@ -45,7 +46,7 @@ function removeElementFromBeginningOfArray(array) {
 }
 
 function removeElementFromEndOfArray(array) {
-  array.slice(0, array.length - 1);
+  array.splice(2);
   return array;
 }
 
