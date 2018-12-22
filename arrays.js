@@ -2,33 +2,25 @@ var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 var array = [1, 2, 3];
 var element = 'foo';
 
-//                  CHANGE Arrays:
-// push - adds an element at the end of an array
-// unshift - adds an element to the beginning of an array
-// add element at any index. Will create space if array isn't long enough.
-
-//                CREATE NEW Arrays:
-// spread operator - adds element to the beginning or end of an array.
-// add element at any index. Will create space if array isn't long enough.
-
-
 function addElementToBeginningOfArray(array, element) {
-  return array
+  [element, ...array];
+  return array;
 }
+addElementToBeginningOfArray();
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
   array.unshift(element);
   return array;
 }
-
-//I got pretty far, reread this portion of lesson.
+ 
 function addElementToEndOfArray(array, element) {
    [...array, element];
   return array;
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
-  
+  array.push(element);
+  return array;
 }
 
 function accessElementInArray(array, index) {
@@ -61,6 +53,15 @@ function removeElementFromEndOfArray(array) {
 }
 
 
+
+//                  CHANGE Arrays:
+// push - adds an element at the end of an array
+// unshift - adds an element to the beginning of an array
+// add element at any index. Will create space if array isn't long enough.
+
+//                CREATE NEW Arrays:
+// spread operator - adds element to the beginning or end of an array.
+// add element at any index. Will create space if array isn't long enough.
 
 
 
