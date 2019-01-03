@@ -1,0 +1,48 @@
+var chocolateBars = 
+[
+  'snickers',
+  'hundred grand',
+  'kitkat',
+  'skittles'
+  ]
+  
+var addedElement = foo
+
+function addElementToBeginningOfArray(chocolateBars, addedElement){
+  return [addedElement, ...chocolateBars];
+}
+ 
+function destructivelyAddElementToBeginningOfArray(chocolateBars, addedElement){
+  chocolateBars.unshift(addedElement);
+  return chocolateBars;
+}
+ 
+function addElementToEndOfArray(chocolateBars, addedElement){
+  return [...chocolateBars, addedElement];
+}
+ 
+function destructivelyAddElementToEndOfArray(chocolateBars, addedElement){
+  chocolateBars.push(addedElement);
+  return chocolateBars;
+}
+ 
+function accessElementInArray(array, index){
+  return array[index];
+}
+ 
+function destructivelyRemoveElementFromBeginningOfArray(chocolateBars){chocolateBars.shift();
+  return chocolateBars;
+}
+ 
+function removeElementFromBeginningOfArray(chocolateBars){
+  return chocolateBars.slice(1);
+}
+ 
+function destructivelyRemoveElementFromEndOfArray(chocolateBars){
+  chocolateBars.pop();
+  return chocolateBars;
+}
+ 
+function removeElementFromEndOfArray(chocolateBars){
+  return chocolateBars.slice(0, chocolateBars.length - 1);
+}
