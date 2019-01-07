@@ -1,5 +1,4 @@
-# JavaScript Arrays
-
+m suppose
 ## Objectives
 
 - Explain what an array is and why we use it
