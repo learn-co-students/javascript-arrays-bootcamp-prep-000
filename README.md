@@ -1,5 +1,3 @@
-# JavaScript Arrays
-
 ## Objectives
 
 - Explain what an array is and why we use it
