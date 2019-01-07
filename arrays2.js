@@ -1,44 +1,54 @@
+// 1
 var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
-// don't modify array, add element to beginning
+
+// 2
 function addElementToBeginningOfArray (array, element) {
   var newArray = [element, ...array];
   return newArray;
 }
-// add element to beginning, alter the original array
+
+// 3
 function destructivelyAddElementToBeginningOfArray (array, element) {
   array.unshift(element);
   return array;
 }
-// add element to end of array, don't modify original
+
+// 4
 function addElementToEndOfArray (array, element) {
   var newArray = [...array, element];
   return newArray;
 }
-// add element to end of array, alter original
+
+// 5
 function destructivelyAddElementToEndOfArray (array, element) {
   array.push(element);
   return array;
 }
-// return element at given index
+
+// 6
 function accessElementInArray (array, index) {
   return array[index];
 }
-// remove element from beginning, alter original
+
+// 7
 function destructivelyRemoveElementFromBeginningOfArray (array) {
   array.shift();
   return array;
 }
-// remove element from beginning, don't alter 'slice(1) simply takes away first element'
+
+// 8
 function removeElementFromBeginningOfArray (array) {
   array = array.slice(1);
   return array;
 }
-// remove element from end, alter original
+
+// 9
 function destructivelyRemoveElementFromEndOfArray (array) {
   array.pop();
   return array;
 }
-// remove element from end of array, don't alter
+
+// 10
 function removeElementFromEndOfArray (array) {
   array = array.slice(0, -1);
   return array;
