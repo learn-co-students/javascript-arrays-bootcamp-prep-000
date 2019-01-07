@@ -180,6 +180,10 @@ entrepreneurs[9];
 
 **TODO**: Define a function in `arrays.js` called `accessElementInArray`. The function should accept an array and an index and return the element at that index.
 
+**NOTE**: If you had to guess, would you say that array indexes are *numbers* or *strings*? Think about it for a second, then read on.
+
+Array indexes are actually _strings_, even though we commonly refer to them as numbers. But you don't have to take my word for it: try typing `Object.keys([1, 2, ,3])` in your console and see what comes back.
+
 ## Removing an Element
 
 ### From the Beginning of an Array
@@ -260,7 +264,7 @@ iceCreams.slice(0, iceCreams.length - 1) // ["chocolate", "vanilla"]
 iceCreams // ["chocolate", "vanilla", "raspberry"]
 ```
 
-**TODO**: Define a function in `arrays.js` called `removeElementFromEndOfArray` that takes an array as its only argument and removes the last element. Your function should return the array without the last element, and it **should not** mutate the original array.
+**TODO**: Define a function in `arrays.js` called `removeElementFromEndOfArray` that takes an array as its only argument and removes the last element. Your function should return the entire array, and it **should not** mutate the array.
 
 ### From the Middle of an Array
 
@@ -315,29 +319,6 @@ Play around with this a bit until it makes sense. It's the trickiest thing that 
 
 ## Array Wackiness
 
-### Array indexes aren't exactly what they seem to be
-
-If you had to guess, would you say that array indexes are *numbers* or *strings*? Think about it for a second, then read on.
-
-Array indexes are actually _strings_, even though we commonly refer to them as numbers. But you don't have to take my word for it: try typing `Object.keys([1, 2, ,3])` in your console and see what comes back.
-
-Ultimately, this means array indexes are strings that can be accessed by array-style notation using brackets, and the numbers will be *coerced* into strings when they're needed under the hood.  In a console, try accessing an index using a string to see for yourself:
-
-```javascript
-var arr = ["under", "the", "hood"];
-
-arr[0];  // "under"
-arr['0']; // "under"
-arr[02]; // 02 the number *is* 2, so you get "hood"
-arr['02']: // '02' the string is *not* 2, so you get undefined
-```
-
-This little tidbit might come in handy if you ever try to assign a value to an array index by using a string unintentionally.  Like, say, by getting your array positions from a zero-filled formatted list of numbers which you store as strings, then using those strings to access array elements.
-
-Or by indexing an array with a variable whose contents don't in any way represent a number--like typing `myArray['bonobo monkey'] = 27`.
-
-You'll get no complaints, because rather than adding an index to the array, you're adding a *property*.  Speaking of which...
-
 ### We can add properties to arrays
 
 In JavaScript, everything is ultimately an object. We'll explore more about what that means when we cover objects, but for now, know that this means that we can add _properties_ to just about anything, including arrays.
@@ -384,5 +365,7 @@ We don't tend to do these kinds of things on purpose, but it's important to be a
 
 * [MDN - Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 * [Codecademy - Arrays](http://www.codecademy.com/glossary/javascript)
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-arrays.js' title='JavaScript Arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/javascript-arrays'>JavaScript Arrays</a> on Learn.co and start learning to code for free.</p>
