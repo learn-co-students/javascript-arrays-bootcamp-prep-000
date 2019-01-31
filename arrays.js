@@ -1,52 +1,36 @@
-var chocolateBars = ["snickers","hundred grand","snickers","kitkat","skittles"]
+var ingredient1 = "bread"
+var ingredient2 = "mild cheese"
+var ingredient3 = "sharp cheese"
+var ingredient4 = "butter"
+var ingredient5 = "tomato"
+var ingredient6 = "garlic"
 
-function destructivelyAddElementToBeginningOfArray(array,element)
-{
-  array.unshift(element);
-  array;
-  return array;
-}
+var = grilledCheeseIngredients = [
 
+  'bread',
+  'mild cheese',
+  'sharp cheese',
+  'butter',
+  'tomato',
+  'garlic',
+]
 
-function addElementToBeginningOfArray(array,element)
-{
-    array = [element, ...array]
-    array;
-    return array;
-}
+var tomatoSauceIngredients = [
+  'tomato',
+  'garlic',
+  'olive oil',
+  'basil',
+  'oregano'
+]
 
-
-function destructivelyAddElementToEndOfArray(array,element)
-{
-  array.push(element);
-  array;
-  return array;
-}
-
-
-function addElementToEndOfArray(array, element)
-{
-  array = [...array, element];
-  array;
-  return array;
-}
-
-function accessElementInArray(array,index)
-{
-  return array[index];
-}
+var chocolateBars = [
+  'snickers',
+  'hundred grand',
+  'kitkat',
+  'skittles',
+]
 
 
-function removeElementFromBeginningOfArray(array)
-{
-  array.shift();
-  array;
-  return array;
-}
+var superheroines = ["catwoman", "she-hulk", "mystique"];
 
-function removeElementFromEndOfArray(array)
-{
-  array.pop()
-  array;
-  return array;
-}
+superheroines.push("wonder woman");
