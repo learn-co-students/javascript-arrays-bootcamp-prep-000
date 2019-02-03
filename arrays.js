@@ -5,9 +5,9 @@ function addElementToBeginningOfArray(chocolateBars, candyString){
 }
 
 
-function destructivelyAddElementToBeginningOfArray(arr, elementN) {
-  array.unshift(elementN)
-  return arr
+function destructivelyAddElementToBeginningOfArray(chocolateBars, candyString){
+  chocolateBars.unshift(candyString);
+  return chocolateBars;
 }
 
 
@@ -33,7 +33,17 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 }
 
 
-functionremoveElementFromBeginningOfArray(array) {
-  array.shift();
+function removeElementFromBeginningOfArray(array) {
+  return array.slice(1);
+}
+
+
+function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop();
   return array;
+}
+
+
+function removeElementFromEndOfArray(array) {
+  return array.slice(0, array.length -1);
 }
