@@ -73,3 +73,4 @@ function removeElementFromEndOfArray(array) {
 var array = [1, 2, 3];
 
 array.myProperty = "I'm a property!";
+array.length
