@@ -69,3 +69,7 @@ function destructivelyRemoveElementFromEndOfArray(array) {
 function removeElementFromEndOfArray(array) {
   return array.slice(0, array.length - 1);;
 }
+
+var array = [1, 2, 3];
+
+array.myProperty = "I'm a property!";
