@@ -20,7 +20,7 @@ array3.push(element3);
 
 return array3
 }
-function accessElementInArray(array5,element5){return element5}
+function accessElementInArray(array5,index){return array5[index]}
 //{return accessElementInArray[1];
 //}
 
