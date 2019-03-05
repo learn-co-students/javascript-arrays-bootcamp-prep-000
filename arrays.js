@@ -1,10 +1,11 @@
-chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles']
+var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles']
 
-function addElementToBeginningOfArray(chocolateBars, milkyway){
+
+function addElementToBeginningOfArray(chocolateBars, milkyway) {
   return [milkyway, ...chocolateBars]
 }
 
-function destructivelyAddElementToBeginningOfArray(chocolateBars, milkyway) {
+function destructivelyAddElementToBeginningOfArray(chocolateBars, milkyway){
   chocolateBars.unshift(milkyway);
   return chocolateBars;
 }
@@ -18,18 +19,17 @@ function destructivelyAddElementToEndOfArray(chocolateBars, milkyway) {
   return chocolateBars;
 }
 
-function accessElementInArray (chocolateBars) {
+function accessElementInArray(chocolateBars) {
   return chocolateBars[2]
 }
 
-function destructivelyRemoveElementFromBeginningOfArray (chocolateBars) {
-  chocolateBars.shift();
-  return chocolateBars;
+function destructivelyRemoveElementFromBeginningOfArray(chocolateBars) {
+  chocolateBars.shift()
+  return chocolateBars
 }
 
 function removeElementFromBeginningOfArray(chocolateBars) {
-  chocolateBars = chocolateBars.slice(1);
-  return chocolateBars;
+  return chocolateBars.slice(1)
 }
 
 function destructivelyRemoveElementFromEndOfArray(chocolateBars) {
@@ -40,4 +40,3 @@ function destructivelyRemoveElementFromEndOfArray(chocolateBars) {
 function removeElementFromEndOfArray(chocolateBars) {
   return chocolateBars.slice(0, chocolateBars.length - 1)
 }
-
