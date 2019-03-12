@@ -30,6 +30,6 @@ function removeElementFromEndOfArray (array) {
 }
 
 function accessElementInArray(array, index)
- myArray = [index]
+ myArray = {index}
  
  myArray
