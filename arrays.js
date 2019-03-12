@@ -18,6 +18,11 @@ function destructivelyAddElementToEndOfArray (array, element) {
   array.push(element) ;
   return array
 }
+
+function destructivelyRemoveElementFromBeginningOfArray (array, element) {
+  array.shift()
+  return array 
+}
 function destructivelyRemoveElementFromEndOfArray (array, element) {
 array.pop()
 array 
@@ -30,8 +35,5 @@ function removeElementFromEndOfArray (array) {
 }
 
 function accessElementInArray(array, index) {
- var array = [0, 1, 2]
- 
- array [3] = 3 
- 
- array
+return array[index]
+}
