@@ -36,7 +36,7 @@ return array
 
 function removeElementFromEndOfArray (array) {
   array.pop()
-  array 
+  return array 
 }
 
 function accessElementInArray(array, index) {
