@@ -26,12 +26,12 @@ function destructivelyRemoveElementFromBeginningOfArray (array, element) {
 
 function removeElementFromBeginningOfArray (array) {
 array.shift()
-array
+return array
 }
 
 function destructivelyRemoveElementFromEndOfArray (array) {
 array.pop()
-array 
+return array 
 }
 
 function removeElementFromEndOfArray (array) {
