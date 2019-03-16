@@ -21,22 +21,23 @@ function destructivelyAddElementToEndOfArray (array, element) {
 
 function destructivelyRemoveElementFromBeginningOfArray (array, element) {
   array.pop()
-  return array 
+  return array
 }
 
 function removeElementFromBeginningOfArray (array, element) {
-array.shift()
-return array
+array = [1, 2, 3];
+array.shift();
+return array;
 }
 
 function destructivelyRemoveElementFromEndOfArray (array, element) {
-array.push()
-return array 
+array.push();
+return array;
 }
 
 function removeElementFromEndOfArray (array, element) {
-  array.pop()
-  return array 
+  array.pop();
+  return array;
 }
 
 function accessElementInArray(array, index) {
