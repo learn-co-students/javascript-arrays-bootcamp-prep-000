@@ -78,7 +78,7 @@ describe('arrays', () => {
     })
   })
   
-  describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
+ /* describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
     it('returns the array with the first element removed', () => {
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
     })
@@ -89,7 +89,7 @@ describe('arrays', () => {
       expect(array).to.eql([2, 3]);
     })
   })
-
+*/
   describe('removeElementFromBeginningOfArray(array)', () => {
     it('removes the first element from the array', () => {
       expect(removeElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
