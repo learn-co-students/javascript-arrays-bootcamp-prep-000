@@ -11,7 +11,8 @@ function addElementToBeginningOfArray() {
         'la',
         'ti'
     ];
-    ['Do, ...musicScale']
+    [...musicScale, 'do']
+    musicScale
 }
 
 function destructivelyAddElementToBeginningOfArray() {
@@ -24,4 +25,5 @@ function destructivelyAddElementToBeginningOfArray() {
         'ti'
     ];
     musicScale.push('Do');
+    musicScale
 }
