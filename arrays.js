@@ -25,5 +25,5 @@ function destructivelyAddElementToBeginningOfArray() {
         'ti'
     ];
     musicScale.push('Do');
-    musicScale
+    musicScalw
 }
