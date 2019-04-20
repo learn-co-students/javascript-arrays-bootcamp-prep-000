@@ -4,6 +4,7 @@
 
 - Explain what an array is and why we use it
 - Create an array
+
 - Add an element to an array
 - Access an element in an array
 - Delete an element from an array
