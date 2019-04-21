@@ -12,10 +12,8 @@ function destructivelyAddElementToBeginningOfArray(array, element){
 }
 //arrays destructivelyAddElementToEndOfArray(array, element) alters the original array:
 //function destructivelyAddElementToEndOfArray(array, element){
-//  array.push(element);
-=======
+//  array.push(element
 function addElementToBeginningOfArray(array, element){
-  [element,....array];
+  [element,...array];
   return array;
 }
->>>>>>> 33aa8fe1ed0695aa33c62d330de9b2b9c1872359
