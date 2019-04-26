@@ -1,4 +1,4 @@
-# JavaScript Arrays
+odd, abstract e# JavaScript Arrays
 
 ## Objectives
 
