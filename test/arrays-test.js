@@ -9,7 +9,6 @@ describe('arrays', () => {
   jsdom({
     src: fs.readFileSync(path.resolve(__dirname, '..', 'arrays.js'), 'utf-8')
   })
-
   describe('chocolateBars', () => {
     it('is an array containing "snickers", "hundred grand", "kitkat", and "skittles"', () => {
       expect(chocolateBars).to.eql['snickers', 'hundred grand', 'kitkat', 'skittles']
@@ -32,7 +31,7 @@ describe('arrays', () => {
 
   describe('destructivelyAddElementToBeginningOfArray(array, element)', () => {
     it('adds an element to the beginning of an array', () => {
-      expect(destructivelyAddElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
+      expect(destructivelyAddElementToBeginningOfArray([1])).to.eql(['foo', 1])
     })
 
     it('alters the original array', () => {
@@ -77,12 +76,12 @@ describe('arrays', () => {
       expect(accessElementInArray([1, 2, 3], 2)).to.equal(3)
     })
   })
-  
+
   describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
     it('returns the array with the first element removed', () => {
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
     })
-    
+
     it('alters the original array', ()=>{
       const array = [1, 2, 3];
       destructivelyRemoveElementFromBeginningOfArray(array);
@@ -108,19 +107,19 @@ describe('arrays', () => {
     it('returns the array with the last element removed', () => {
       expect(destructivelyRemoveElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
-    
+
     it('alters the original array', ()=>{
       const array = [1, 2, 3];
       destructivelyRemoveElementFromEndOfArray(array);
       expect(array).to.eql([1, 2]);
     })
   })
-  
+
   describe('removeElementFromEndOfArray(array)', () => {
     it('removes the last element from the array', () => {
       expect(removeElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
-    
+
     it('does not alter the original array', () => {
       const array = [1, 2, 3];
       removeElementFromEndOfArray(array);
