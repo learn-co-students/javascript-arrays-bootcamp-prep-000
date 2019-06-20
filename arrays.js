@@ -1,41 +1,42 @@
-var snickers = ["snickers", "hundred grand", "kitkat", "skittles"];
+var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
+var sweet = "chocolateBars"
 
-function addElementToBeginningOfArray(snickers, hundredGrand){
-  return [hundredGrand, ...snickers];
+function addElementToBeginningOfArray(chocolateBars, sweet){
+  return [sweet, ...chocolateBars];
 }
- 
-function destructivelyAddElementToBeginningOfArray(snickers, hundredGrand){
-  snickers.unshift(hundredGrand);
-  return snickers;
+
+function destructivelyAddElementToBeginningOfArray(chocolateBars, sweet){
+  chocolateBars.unshift(sweet);
+  return chocolateBars;
 }
- 
-function addElementToEndOfArray(snickers, hundredGrand){
-  return [...snickers, hundredGrand];
+
+function addElementToEndOfArray(chocolateBars, candyString){
+  return [...chocolateBars, candyString];
 }
- 
-function destructivelyAddElementToEndOfArray(snickers, hundredGrand){
-  snickers.push(hundredGrand);
-  return snickers;
+
+function destructivelyAddElementToEndOfArray(chocolateBars, candyString){
+  chocolateBars.push(candyString);
+  return chocolateBars;
 }
- 
+
 function accessElementInArray(array, index){
   return array[index];
 }
- 
-function destructivelyRemoveElementFromBeginningOfArray(snickers){
-  snickers.shift();
-  return snickers;
+
+function destructivelyRemoveElementFromBeginningOfArray(chocolateBars){
+  chocolateBars.shift();
+  return chocolateBars;
+}
+
+function removeElementFromBeginningOfArray(chocolateBars){
+  return chocolateBars.slice(1);
 }
  
-function removeElementFromBeginningOfArray(snickers){
-  return snickers.slice(1);
+function destructivelyRemoveElementFromEndOfArray(chocolateBars){
+  chocolateBars.pop();
+  return chocolateBars;
 }
- 
-function destructivelyRemoveElementFromEndOfArray(snickers){
-  snickers.pop();
-  return snickers;
-}
- 
-function removeElementFromEndOfArray(snickers){
-  return snickers.slice(0, snickers.length - 1);
+
+function removeElementFromEndOfArray(chocolateBars){
+  return chocolateBars.slice(0, chocolateBars.length - 1);
 }
