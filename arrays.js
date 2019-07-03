@@ -7,7 +7,7 @@ chocolateBars()
 function addElementToBeginningOfArray(array, element) {
   return [element, ...array]
 }
-console.log(addElementToBeginningOfArray([1], 'foo'))
+addElementToBeginningOfArray([1], 'foo')
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
   array.unshift(element)
