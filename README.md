@@ -1,4 +1,4 @@
-# JavaScript Arrays
+ # JavaScript Arrays
 
 ## Objectives
 
@@ -21,13 +21,6 @@ var ingredient1 = "bread"
 var ingredient2 = "mild cheese"
 var ingredient3 = "sharp cheese"
 var ingredient4 = "butter"
-var ingredient5 = "tomato"
-var ingredient6 = "garlic"
-```
-
-But now what if we want to make a tomato sauce? Well, we already have garlic and tomato — but we have no idea what recipe they belong to. Pretty soon, we'll have a hard time keeping our ingredients safe, and we'd end up with bread in our tomato sauce.
-
-![noooooooo](http://i.giphy.com/fIyBQtxwwZYhq.gif)
 
 This is an admittedly contrived example, but it goes to show that we can't just put everything in a variable and hope to remember what order things should go in. It also shows that sometimes it would be helpful to be able to group like items together.
 
