@@ -26,3 +26,25 @@ function destructivelyAddElementToEndOfArray(array,element){
    //return [array,index];
    return array[index];
  }
+ 
+ function destructivelyRemoveElementFromBeginningOfArray(array){
+   
+   array.shift();
+   return array;
+ }
+ 
+ function removeElementFromBeginningOfArray(array){
+   //array.slice();
+   //return array;
+   return array.slice(1);
+ }
+ 
+ 
+ function destructivelyRemoveElementFromEndOfArray(array){
+   
+ }
+
+
+function removeElementFromEndOfArray(){
+  
+}
