@@ -40,11 +40,16 @@ function destructivelyAddElementToEndOfArray(array,element){
  }
  
  
- function destructivelyRemoveElementFromEndOfArray(array){
+function destructivelyRemoveElementFromEndOfArray(array){
+   //return array.pop();
+   array.pop();
+   return array;
    
- }
+ } 
 
 
-function removeElementFromEndOfArray(){
-  
+function removeElementFromEndOfArray(array){
+  //return array.slice(array.length - 1);
+   // return array.slice(array.length - 1);
+   return array.slice(0, array.length - 1)
 }
