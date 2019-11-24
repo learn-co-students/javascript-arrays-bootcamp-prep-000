@@ -34,7 +34,13 @@ return array.slice(1)
 function destructivelyRemoveElementFromEndOfArray(array){
   array.pop()
   return array
+}
 function removeElementFromEndOfArray(array) {
  array.slice(0)
- return array.slice(36)
+ return array.slice(n)
+}
+
+function removeElementFromEndOfArray(array) {
+return array.slice(0,array.length-1)
+
 }
