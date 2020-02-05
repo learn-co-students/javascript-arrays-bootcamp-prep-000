@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
   },
   "repository": {
     "type": "git",
@@ -27,8 +27,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "jsdom": "^9.0.0",
-    "mocha": "^2.4.5",
+    "mocha": "^7.0.1",
     "mocha-jsdom": "~1.1.0",
-    "mocha-multi": "^0.9.0"
+    "mocha-multi": "^1.1.3"
   }
 }
