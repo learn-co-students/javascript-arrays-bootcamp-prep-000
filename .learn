@@ -1,7 +1,10 @@
-tags:
-  - arrays
-  - iteration
-  - readme
-languages:
-  - javascript
-resources: 2
+function addElementToBeginningOfArray() {
+  var array = [1]
+  return  array.unshift('foo') }
+var array = console.log(array)
+
+function addElementToBeginningOfArray() {
+  var array = [1]
+  return  array.unshift('foo') }
+var array = addElementToBeginningOfArray()
+array()
