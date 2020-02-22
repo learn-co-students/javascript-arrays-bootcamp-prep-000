@@ -40,9 +40,6 @@ function accessElementInArray(array, index) {
   return array[index]
 }
 
-
-
-
 // 1) arrays chocolateBars is an array containing "snickers", "hundred grand", "kitkat", and "skittles":
   
 // 2) arrays addElementToBeginningOfArray(array, element) adds an element to thebeginning of an array:
