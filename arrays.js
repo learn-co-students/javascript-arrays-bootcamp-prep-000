@@ -13,3 +13,6 @@ return [...Array,Element]
 function destructivelyAddElementToEndOfArray(Element,Array){
 return push.Array(Element)
 }
+function accessElementInArray(elementIndex,Array){
+return Array[elementIndex]
+}
