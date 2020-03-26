@@ -1,8 +1,15 @@
-function addElementToBeginningOfArray(array , element){
-  array.push(element);
-  console.log(array);
+function addElementToBeginningOfArray(Element,Array){
+return [Element,...Array]
 }
-var array=[];
-  var element=1;
-  addElementToBeginningOfArray(array , element)
- //and `destructivelyAddElementToBeginningOfArray
+
+function destructivelyAddElementToBeginningOfArray(Element,Array){
+return unshift.Array(Element)
+}
+
+function addElementToEndOfArray(Element,Array){
+return [...Array,Element]
+}
+
+function destructivelyAddElementToEndOfArray(Element,Array){
+return push.Array(Element)
+}
