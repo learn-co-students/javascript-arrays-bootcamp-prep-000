@@ -16,3 +16,7 @@ return push.Array(Element)
 function accessElementInArray(elementIndex,Array){
 return Array[elementIndex]
 }
+function removeElementFromBeginningOfArray(Array){
+return Array.slice(1)
+}
+}
