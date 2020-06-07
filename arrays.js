@@ -97,9 +97,14 @@ function destructivelyAddElementToEndOfArray(array, elements){
 destructivelyAddElementToEndOfArray.push("Papa Johns");
 
 function accessElementInArray(array, index){
-  var family= [
+  var family = [
     0,1,2,3,];
     
     return family[3];
 }
 
+function destructivelyRemoveElementFromBeginningOfArray(array){var family = [
+  1,2,3]
+  family.shift();
+  return family;
+}
