@@ -65,24 +65,33 @@ myArray[5] = 5
 myArray // [1, 2, 3, undefined, undefined, 5]
 
 function addElementToBeginningOfArray(array, element){
-  var pizzaJoints = ["Dominoes", "Little Ceasars"];
-  
+  //var pizzaJoints = ["Dominoes", "Little Ceasars"];
+  var pizzaJoints = ['foo', 1 ]
+  return pizzaJoints;
 }
-  addElementToBeginningOfArray.unshift("Papa Johns",...pizzaJoints);
+   addElementToBeginningOfArray();
+   pizzaJoints = ["Papa Johns",...pizzaJoints];
   
 function  destructivelyAddElementToBeginningOfArray(array, element){
-  var pizzaJoints = ["Dominoes", "Little Ceasars"];
+  //var pizzaJoints = ["Dominoes", "Little Ceasars"];
+  var pizzaJoints = ['foo', 1 ];
+  return pizzaJoints;
 } 
 
 destructivelyAddElementToBeginningOfArray.unshift("Papa Johns");
 
 function addElementToEndOfArray(array, element){
-  var pizzaJoints = ["Dominoes", "Little Ceasars"];
+   //var pizzaJoints = ["Dominoes", "Little Ceasars"];
+   var pizzaJoints = ['foo', 1 ];
+   return pizzaJoints;
 }
-pizzaJoints = [...pizzaJoints,"Papa Johns"];
+ 
+ pizzaJoints = [...pizzaJoints,"Papa Johns"];
   
 function destructivelyAddElementToEndOfArray(array, elements){
-  var pizzaJoints = ["Dominoes", "Little Ceasars"];
+   //var pizzaJoints = ["Dominoes", "Little Ceasars"];
+   var pizzaJoints = ['foo', 1 ];
+   return pizzaJoints;
 }
 
 destructivelyAddElementToEndOfArray.push("Papa Johns");
