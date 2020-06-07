@@ -46,3 +46,20 @@ var cities = ["New York", "San Francisco"];
  
 //[...cities, "Philadelphia"] 
 // ["New York", "San Francisco", "Philadelphia"]
+
+var cities = ["New York", "San Francisco"]
+ 
+// we can assign it to the existing `cities` variable
+cities = ["Philadelphia", ...cities]
+ 
+// but if we have a const
+const cats = ["Milo", "Garfield"]
+ 
+// we need a new variable:
+const moreCats = ["Felix", ...cats]
+
+var myArray = [1, 2, 3]
+ 
+myArray[5] = 5
+ 
+myArray // [1, 2, 3, undefined, undefined, 5]
