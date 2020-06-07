@@ -74,15 +74,15 @@ function addElementToBeginningOfArray(array, element){
   
 function  destructivelyAddElementToBeginningOfArray(array, element){
   //var pizzaJoints = ["Dominoes", "Little Ceasars"];
-  var pizzaJoints = ['foo', 1 ];
+  var pizzaJoints = [ 'foo',  1  ];
   return pizzaJoints;
 } 
 
-destructivelyAddElementToBeginningOfArray.unshift("Papa Johns");
+destructivelyAddElementToBeginningOfArray.unshift("foo");
 
 function addElementToEndOfArray(array, element){
    //var pizzaJoints = ["Dominoes", "Little Ceasars"];
-   var pizzaJoints = ['foo', 1 ];
+   var pizzaJoints = [ 1, 'foo' ];
    return pizzaJoints;
 }
  
@@ -90,8 +90,16 @@ function addElementToEndOfArray(array, element){
   
 function destructivelyAddElementToEndOfArray(array, elements){
    //var pizzaJoints = ["Dominoes", "Little Ceasars"];
-   var pizzaJoints = ['foo', 1 ];
+   var pizzaJoints = [ 1, 'foo' ];
    return pizzaJoints;
 }
 
 destructivelyAddElementToEndOfArray.push("Papa Johns");
+
+function accessElementInArray(array, index){
+  var family= [
+    0,1,2,3,];
+    
+    return family[3];
+}
+
