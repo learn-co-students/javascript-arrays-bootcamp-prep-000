@@ -63,3 +63,24 @@ var myArray = [1, 2, 3]
 myArray[5] = 5
  
 myArray // [1, 2, 3, undefined, undefined, 5]
+
+function addElementToBeginningOfArray(array, element){
+  var pizzaJoints = ["Dominoes", "Little Ceasars"];
+  
+}
+  addElementToBeginningOfArray.unshift("Papa Johns");
+  
+function  destructivelyAddElementToBeginningOfArray(array, element){
+  var pizzaJoints = ["Dominoes", "Little Ceasars"];
+} 
+
+destructivelyAddElementToBeginningOfArray[0] = "Papa Johns";
+
+function addElementToEndOfArray(array, element){
+  var pizzaJoints = ["Dominoes", "Little Ceasars"];
+}
+  addElementToEndOfArray.push("Papa Johns");
+  
+function destructivelyAddElementToEndOfArray(array, elements){
+  var pizzaJoints = ["Dominoes", "Little Ceasars"];
+}
