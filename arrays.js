@@ -136,15 +136,18 @@ days.shift() // returns the removed element, in this case "Monday"
 days // ["Tuesday", "Wednesday"]
 
 function destructivelyRemoveElementFromBeginningOfArray(){
+  const array = [ 1, 2, 3];
+  array.shift();
   
+  return array;
 }
 
 
 //var cats = ["Milo", "Garfield", "Otis"]
  
-cats.slice(1) // ["Garfield", "Otis"]
+//cats.slice(1) // ["Garfield", "Otis"]
  
-cats // ["Milo", "Garfield", "Otis"]
+//cats // ["Milo", "Garfield", "Otis"]
 
 
 
