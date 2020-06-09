@@ -149,6 +149,26 @@ function destructivelyRemoveElementFromBeginningOfArray(){
  
 //cats // ["Milo", "Garfield", "Otis"]
 
+//var cats = ["Milo", "Garfield", "Otis"]
+ 
+//cats = cats.slice(1) // ["Garfield", "Otis"]
+ 
+//cats // ["Garfield", "Otis"]
 
 
+
+//var cats = ["Milo", "Garfield", "Otis"]
+ 
+// get the last 2 cats
+//cats.slice(-2) // ["Garfield", "Otis"]
+ 
+// get the last 1 cat
+//cats.slice(-1) // ["Otis"]
+
+function removeElementFromBeginningOfArray(){
+const array = [ 1, 2, 3];
+array.slice(1);
+
+return array;
+}
 
