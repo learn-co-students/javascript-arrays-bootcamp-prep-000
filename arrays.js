@@ -172,3 +172,20 @@ array.slice(1);
 return array;
 }
 
+var iceCreams = ["chocolate", "vanilla", "raspberry"]
+ 
+iceCreams.pop() // returns the removed element, in this case "raspberry"
+ 
+iceCreams // ["chocolate", "vanilla"]
+
+function destructivelyRemoveElementFromEndOfArray(){
+  const array = [ 1, 2, 3 ];
+  array.pop();
+  
+  return array;
+}
+
+
+
+
+
