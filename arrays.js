@@ -103,8 +103,35 @@ function accessElementInArray(array, index){
     return family[3];
 }
 
-function destructivelyRemoveElementFromBeginningOfArray(array){var family = [
-  1,2,3]
+function destructivelyRemoveElementFromBeginningOfArray(array){ var family = [
+  1, 2, 3 ];
   family.shift();
+  
   return family;
 }
+
+var entrepreneurs = ["Oprah Winfrey", "Laurene Powell Jobs", "Arianna Huffington"];
+ 
+// the line below will print the string "Oprah Winfrey"
+console.log(entrepreneurs[0]);
+ 
+// the code below will print the string "Arianna Huffington is the co-founder and editress-in-chief of The Huffington Post"
+var bio = " is the co-founder and editress-in-chief of The Huffington Post";
+console.log(entrepreneurs[2] + bio);
+ 
+// the line below will return undefined
+entrepreneurs[9];
+
+
+function accessElementInArray(){
+  var numbers = [ 1, 2, 3 ];
+  
+  return numbers[2];
+}
+  
+const days = ["Monday", "Tuesday", "Wednesday"]
+ 
+days.shift() // returns the removed element, in this case "Monday"
+ 
+days // ["Tuesday", "Wednesday"]
+
