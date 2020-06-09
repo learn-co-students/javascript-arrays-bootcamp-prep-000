@@ -185,7 +185,19 @@ function destructivelyRemoveElementFromEndOfArray(){
   return array;
 }
 
+var iceCreams = ["chocolate", "vanilla", "raspberry"]
+ 
+iceCreams.slice(0, iceCreams.length - 1) // ["chocolate", "vanilla"]
+ 
+iceCreams // ["chocolate", "vanilla", "raspberry"]
 
+
+function removeElementFromEndOfArray(){
+  const array = [ 1, 2, 3 ];
+  array.slice(0, array.length - 1);
+  
+  return array;
+}
 
 
 
