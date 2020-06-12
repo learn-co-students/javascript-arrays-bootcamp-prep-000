@@ -122,7 +122,7 @@ function removeElementFromBeginningOfArray(){
 
  function destructivelyRemoveElementFromEndOfArray(){
    
-  array = [1, 2, 3];
+  const array = [1, 2, 3];
   array.pop();
 
  return array;
