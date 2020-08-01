@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "test": "mocha -b -R mocha-multi --reporter-options spec=-,json=.results.json"
   },
   "repository": {
     "type": "git",
