@@ -86,6 +86,8 @@ Arrays are _ordered_, meaning that the elements in them will always appear in th
 
 **TODO**: In `arrays.js`, define a variable called `chocolateBars`. Its value should be an array of the strings `snickers`, `hundred grand`, `kitkat`, and `skittles`.
 
+var 
+
 ## Adding an Element
 
 JavaScript allows us to `push` elements onto the end of an array:
