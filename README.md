@@ -1,4 +1,4 @@
-# JavaScript Arrays
+lea# JavaScript Arrays
 
 ## Objectives
 
