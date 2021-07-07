@@ -78,12 +78,12 @@ describe('arrays', () => {
     })
   })
   
-  describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
+  describe('destructivelyRemoveElementFromBeginningOfArray(array)', () => {
     it('returns the array with the first element removed', () => {
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
     })
     
-    it('alters the original array', ()=>{
+    it('alters the original array', () => {
       const array = [1, 2, 3];
       destructivelyRemoveElementFromBeginningOfArray(array);
       expect(array).to.eql([2, 3]);
@@ -109,7 +109,7 @@ describe('arrays', () => {
       expect(destructivelyRemoveElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
     
-    it('alters the original array', ()=>{
+    it('alters the original array', () => {
       const array = [1, 2, 3];
       destructivelyRemoveElementFromEndOfArray(array);
       expect(array).to.eql([1, 2]);
