@@ -72,13 +72,13 @@ describe('arrays', () => {
     })
   })
 
-  describe('accessElementInArray(array, index)', () => {
+ describe('accessElementInArray(array, index)', () => {
     it('accesses the element in array at the given index', () => {
       expect(accessElementInArray([1, 2, 3], 2)).to.equal(3)
     })
   })
   
-  describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
+ describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
     it('returns the array with the first element removed', () => {
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
     })
@@ -104,7 +104,7 @@ describe('arrays', () => {
     })
   })
 
-  describe('destructivelyRemoveElementFromEndOfArray(array)', () => {
+ describe('destructivelyRemoveElementFromEndOfArray(array)', () => {
     it('returns the array with the last element removed', () => {
       expect(destructivelyRemoveElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
