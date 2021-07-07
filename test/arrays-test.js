@@ -1,4 +1,4 @@
-/*global describe, it */
+var chocolateBars = ['snickers', 'hundred grand','kitkat', 'skittles']
 
 const expect = require('chai').expect
 const fs = require('fs')
