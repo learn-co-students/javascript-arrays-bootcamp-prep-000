@@ -1,4 +1,4 @@
-# JavaScript Arrays
+slice# JavaScript Arrays
 
 ## Objectives
 
