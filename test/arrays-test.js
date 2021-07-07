@@ -1,3 +1,4 @@
+
 /*global describe, it */
 
 const expect = require('chai').expect
@@ -36,11 +37,11 @@ describe('arrays', () => {
     })
 
     it('alters the original array', () => {
-      const array = [1]
+      var array = [1]
 
       destructivelyAddElementToBeginningOfArray(array, 'foo')
 
-      expect(array).to.eql(['foo', 1])
+      expect(['foo',...array]).to.eql(['foo', 1])
     })
   })
 
@@ -50,7 +51,7 @@ describe('arrays', () => {
     })
 
     it('does not alter the original array', () => {
-      const array = [1]
+      var array = [1]
 
       addElementToEndOfArray(array, 'foo')
 
@@ -64,11 +65,11 @@ describe('arrays', () => {
     })
 
     it('alters the original array', () => {
-      const array = [1]
+      var array = [1]
 
       destructivelyAddElementToEndOfArray(array, 'foo')
 
-      expect(array).to.eql([1, 'foo'])
+      expect([...array, 'foo']).to.eql([1, 'foo'])
     })
   })
 
@@ -84,7 +85,7 @@ describe('arrays', () => {
     })
     
     it('alters the original array', ()=>{
-      const array = [1, 2, 3];
+      var array = [1, 2, 3];
       destructivelyRemoveElementFromBeginningOfArray(array);
       expect(array).to.eql([2, 3]);
     })
